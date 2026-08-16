@@ -1,0 +1,2274 @@
+[
+  {
+    "id": 149,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/birthdays/",
+    "name": "Birthdays",
+    "slug": "birthdays",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Birthdays Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/birthdays/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Birthdays Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/birthdays/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/birthdays\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/birthdays\\/\",\"name\":\"Birthdays Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/birthdays\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/birthdays\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Birthdays\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Birthdays Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/birthdays/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Birthdays Archives",
+      "og_url": "https://yallatogether.com/by_occasion/birthdays/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/birthdays/",
+            "url": "https://yallatogether.com/by_occasion/birthdays/",
+            "name": "Birthdays Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/birthdays/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/birthdays/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Birthdays"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/149",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=149"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 150,
+    "count": 2,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/graduation/",
+    "name": "Graduation",
+    "slug": "graduation",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Graduation Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/graduation/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Graduation Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/graduation/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/graduation\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/graduation\\/\",\"name\":\"Graduation Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/graduation\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/graduation\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduation\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Graduation Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/graduation/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Graduation Archives",
+      "og_url": "https://yallatogether.com/by_occasion/graduation/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/graduation/",
+            "url": "https://yallatogether.com/by_occasion/graduation/",
+            "name": "Graduation Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/graduation/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/graduation/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Graduation"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/150",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=150"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 151,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/mothers-day/",
+    "name": "Mother's Day",
+    "slug": "mothers-day",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Mother&#039;s Day Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/mothers-day/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Mother&#039;s Day Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/mothers-day/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/mothers-day\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/mothers-day\\/\",\"name\":\"Mother's Day Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/mothers-day\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/mothers-day\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Mother's Day\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Mother's Day Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/mothers-day/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Mother's Day Archives",
+      "og_url": "https://yallatogether.com/by_occasion/mothers-day/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/mothers-day/",
+            "url": "https://yallatogether.com/by_occasion/mothers-day/",
+            "name": "Mother's Day Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/mothers-day/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/mothers-day/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Mother's Day"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/151",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=151"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 152,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/fathers-day/",
+    "name": "Father's Day",
+    "slug": "fathers-day",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Father&#039;s Day Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/fathers-day/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Father&#039;s Day Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/fathers-day/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/fathers-day\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/fathers-day\\/\",\"name\":\"Father's Day Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/fathers-day\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/fathers-day\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Father's Day\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Father's Day Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/fathers-day/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Father's Day Archives",
+      "og_url": "https://yallatogether.com/by_occasion/fathers-day/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/fathers-day/",
+            "url": "https://yallatogether.com/by_occasion/fathers-day/",
+            "name": "Father's Day Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/fathers-day/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/fathers-day/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Father's Day"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/152",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=152"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 153,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/diwali/",
+    "name": "Diwali",
+    "slug": "diwali",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Diwali Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/diwali/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Diwali Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/diwali/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/diwali\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/diwali\\/\",\"name\":\"Diwali Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/diwali\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/diwali\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Diwali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Diwali Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/diwali/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Diwali Archives",
+      "og_url": "https://yallatogether.com/by_occasion/diwali/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/diwali/",
+            "url": "https://yallatogether.com/by_occasion/diwali/",
+            "name": "Diwali Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/diwali/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/diwali/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Diwali"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/153",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=153"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 154,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/halloween/",
+    "name": "Halloween",
+    "slug": "halloween",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Halloween Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/halloween/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Halloween Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/halloween/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/halloween\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/halloween\\/\",\"name\":\"Halloween Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/halloween\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/halloween\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Halloween\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Halloween Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/halloween/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Halloween Archives",
+      "og_url": "https://yallatogether.com/by_occasion/halloween/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/halloween/",
+            "url": "https://yallatogether.com/by_occasion/halloween/",
+            "name": "Halloween Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/halloween/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/halloween/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Halloween"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/154",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=154"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 155,
+    "count": 6,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/christmas-new-year/",
+    "name": "Christmas &amp; New Year",
+    "slug": "christmas-new-year",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Christmas &amp; New Year Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/christmas-new-year/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Christmas &amp; New Year Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/christmas-new-year/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/christmas-new-year\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/christmas-new-year\\/\",\"name\":\"Christmas &amp; New Year Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/christmas-new-year\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/christmas-new-year\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Christmas &amp; New Year\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Christmas &amp; New Year Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/christmas-new-year/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Christmas &amp; New Year Archives",
+      "og_url": "https://yallatogether.com/by_occasion/christmas-new-year/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/christmas-new-year/",
+            "url": "https://yallatogether.com/by_occasion/christmas-new-year/",
+            "name": "Christmas &amp; New Year Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/christmas-new-year/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/christmas-new-year/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Christmas &amp; New Year"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/155",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=155"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 156,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/ramadan/",
+    "name": "Ramadan",
+    "slug": "ramadan",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Ramadan Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/ramadan/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Ramadan Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/ramadan/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/ramadan\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/ramadan\\/\",\"name\":\"Ramadan Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/ramadan\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/ramadan\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Ramadan\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Ramadan Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/ramadan/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Ramadan Archives",
+      "og_url": "https://yallatogether.com/by_occasion/ramadan/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/ramadan/",
+            "url": "https://yallatogether.com/by_occasion/ramadan/",
+            "name": "Ramadan Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/ramadan/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/ramadan/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Ramadan"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/156",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=156"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 157,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/eid/",
+    "name": "Eid",
+    "slug": "eid",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Eid Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/eid/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Eid Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/eid/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/eid\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/eid\\/\",\"name\":\"Eid Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/eid\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/eid\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Eid\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Eid Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/eid/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Eid Archives",
+      "og_url": "https://yallatogether.com/by_occasion/eid/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/eid/",
+            "url": "https://yallatogether.com/by_occasion/eid/",
+            "name": "Eid Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/eid/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/eid/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eid"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/157",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=157"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 158,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/valentines-day/",
+    "name": "Valentine's Day",
+    "slug": "valentines-day",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Valentine&#039;s Day Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/valentines-day/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Valentine&#039;s Day Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/valentines-day/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/valentines-day\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/valentines-day\\/\",\"name\":\"Valentine's Day Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/valentines-day\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/valentines-day\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Valentine's Day\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Valentine's Day Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/valentines-day/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Valentine's Day Archives",
+      "og_url": "https://yallatogether.com/by_occasion/valentines-day/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/valentines-day/",
+            "url": "https://yallatogether.com/by_occasion/valentines-day/",
+            "name": "Valentine's Day Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/valentines-day/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/valentines-day/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Valentine's Day"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/158",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=158"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 159,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/housewarming/",
+    "name": "Housewarming",
+    "slug": "housewarming",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Housewarming Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/housewarming/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Housewarming Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/housewarming/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/housewarming\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/housewarming\\/\",\"name\":\"Housewarming Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/housewarming\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/housewarming\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Housewarming\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Housewarming Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/housewarming/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Housewarming Archives",
+      "og_url": "https://yallatogether.com/by_occasion/housewarming/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/housewarming/",
+            "url": "https://yallatogether.com/by_occasion/housewarming/",
+            "name": "Housewarming Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/housewarming/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/housewarming/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Housewarming"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/159",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=159"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 160,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/new-baby/",
+    "name": "New Baby",
+    "slug": "new-baby",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>New Baby Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/new-baby/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"New Baby Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/new-baby/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/new-baby\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/new-baby\\/\",\"name\":\"New Baby Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/new-baby\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/new-baby\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"New Baby\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "New Baby Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/new-baby/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "New Baby Archives",
+      "og_url": "https://yallatogether.com/by_occasion/new-baby/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/new-baby/",
+            "url": "https://yallatogether.com/by_occasion/new-baby/",
+            "name": "New Baby Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/new-baby/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/new-baby/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "New Baby"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/160",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=160"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 161,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/wedding-anniversary/",
+    "name": "Wedding/Anniversary",
+    "slug": "wedding-anniversary",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Wedding/Anniversary Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/wedding-anniversary/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Wedding/Anniversary Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/wedding-anniversary/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/wedding-anniversary\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/wedding-anniversary\\/\",\"name\":\"Wedding\\/Anniversary Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/wedding-anniversary\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/wedding-anniversary\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Wedding\\/Anniversary\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Wedding/Anniversary Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/wedding-anniversary/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Wedding/Anniversary Archives",
+      "og_url": "https://yallatogether.com/by_occasion/wedding-anniversary/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/wedding-anniversary/",
+            "url": "https://yallatogether.com/by_occasion/wedding-anniversary/",
+            "name": "Wedding/Anniversary Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/wedding-anniversary/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/wedding-anniversary/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Wedding/Anniversary"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/161",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=161"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 162,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/farewell/",
+    "name": "Farewell",
+    "slug": "farewell",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Farewell Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/farewell/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Farewell Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/farewell/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/farewell\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/farewell\\/\",\"name\":\"Farewell Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/farewell\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/farewell\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Farewell\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Farewell Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/farewell/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Farewell Archives",
+      "og_url": "https://yallatogether.com/by_occasion/farewell/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/farewell/",
+            "url": "https://yallatogether.com/by_occasion/farewell/",
+            "name": "Farewell Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/farewell/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/farewell/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Farewell"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/162",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=162"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 163,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/just-because/",
+    "name": "Just Because",
+    "slug": "just-because",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Just Because Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/just-because/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Just Because Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/just-because/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/just-because\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/just-because\\/\",\"name\":\"Just Because Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/just-because\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/just-because\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Just Because\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Just Because Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/just-because/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Just Because Archives",
+      "og_url": "https://yallatogether.com/by_occasion/just-because/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/just-because/",
+            "url": "https://yallatogether.com/by_occasion/just-because/",
+            "name": "Just Because Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/just-because/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/just-because/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Just Because"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/163",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=163"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 164,
+    "count": 2,
+    "description": "",
+    "link": "https://yallatogether.com/by_occasion/summer-travel/",
+    "name": "Summer &amp; Travel",
+    "slug": "summer-travel",
+    "taxonomy": "by_occasion",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Summer &amp; Travel Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_occasion/summer-travel/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Summer &amp; Travel Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_occasion/summer-travel/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/summer-travel\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/summer-travel\\/\",\"name\":\"Summer &amp; Travel Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/summer-travel\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_occasion\\/summer-travel\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Summer &amp; Travel\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Summer &amp; Travel Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_occasion/summer-travel/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Summer &amp; Travel Archives",
+      "og_url": "https://yallatogether.com/by_occasion/summer-travel/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_occasion/summer-travel/",
+            "url": "https://yallatogether.com/by_occasion/summer-travel/",
+            "name": "Summer &amp; Travel Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_occasion/summer-travel/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_occasion/summer-travel/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Summer &amp; Travel"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion/164",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_occasion"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_occasion"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_occasion=164"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

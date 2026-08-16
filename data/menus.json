@@ -1,0 +1,64 @@
+[
+  {
+    "id": 5,
+    "date": "2025-12-05T07:48:13",
+    "date_gmt": "2025-12-05T07:48:13",
+    "guid": {
+      "rendered": "https://sol.glq.mybluehost.me/navigation/"
+    },
+    "modified": "2025-12-05T07:48:13",
+    "modified_gmt": "2025-12-05T07:48:13",
+    "slug": "navigation",
+    "status": "publish",
+    "type": "wp_navigation",
+    "link": "https://yallatogether.com/navigation/",
+    "title": {
+      "rendered": "Navigation"
+    },
+    "content": {
+      "rendered": "<ul class=\"wp-block-page-list\"><li class=\"wp-block-pages-list__item\"><a class=\"wp-block-pages-list__item__link\" href=\"https://yallatogether.com/gift-finder/\">Gift Finder</a></li><li class=\"wp-block-pages-list__item\"><a class=\"wp-block-pages-list__item__link\" href=\"https://yallatogether.com/blog/\">Blog</a></li><li class=\"wp-block-pages-list__item\"><a class=\"wp-block-pages-list__item__link\" href=\"https://yallatogether.com/about/\">About</a></li><li class=\"wp-block-pages-list__item\"><a class=\"wp-block-pages-list__item__link\" href=\"https://yallatogether.com/services/\">Services</a></li><li class=\"wp-block-pages-list__item\"><a class=\"wp-block-pages-list__item__link\" href=\"https://yallatogether.com/contact/\">Contact</a></li><li class=\"wp-block-pages-list__item\"><a class=\"wp-block-pages-list__item__link\" href=\"https://yallatogether.com/cookies-and-privacy-policy/\">Cookies and Privacy Policy</a></li></ul>",
+      "protected": false
+    },
+    "template": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/navigation/5",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/navigation"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/types/wp_navigation"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://yallatogether.com/wp-json/wp/v2/navigation/5/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=5"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

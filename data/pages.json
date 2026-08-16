@@ -1,0 +1,1573 @@
+[
+  {
+    "wordpressId": 1324,
+    "slug": "gift-finder",
+    "status": "publish",
+    "type": "page",
+    "link": "https://yallatogether.com/gift-finder/",
+    "title": "Gift Finder",
+    "excerpt": "",
+    "content": {
+      "rendered": "<style id=\"bwg-style-0\">    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails {      width: 1054px;              justify-content: center;        margin:0 auto !important;              background-color: rgba(255, 255, 255, 0.00);            padding-left: 4px;      padding-top: 4px;      max-width: 100%;            }        #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item {    justify-content: flex-start;      max-width: 350px;          }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item a {       margin-right: 4px;       margin-bottom: 4px;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item0 {      padding: 0px;            background-color:rgba(0,0,0, 0.30);      border: 0px none #CCCCCC;      opacity: 1.00;      border-radius: 0;      box-shadow: ;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 img {      max-height: none;      max-width: none;      padding: 0 !important;    }         @media only screen and (min-width: 480px) {\t\t#bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 img {\t\t\t-webkit-transition: all .3s; transition: all .3s;\t\t}\t\t#bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 img:hover {\t\t\t-ms-transform: scale(1.08);\t\t\t-webkit-transform: scale(1.08);\t\t\ttransform: scale(1.08);\t\t}\t\t      }\t    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 {      padding-top: 100%;    }        #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-title2,    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-ecommerce2 {      color: #323A45;      font-family: Ubuntu;      font-size: 16px;      font-weight: bold;      padding: 2px;      text-shadow: ;      max-height: 100%;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-thumb-description span {    color: #323A45;    font-family: Ubuntu;    font-size: 12px;    max-height: 100%;    word-wrap: break-word;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-play-icon2 {      font-size: 32px;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-ecommerce2 {      font-size: 19.2px;      color: #323A45;    }    </style>    <div id=\"bwg_container1_0\"         class=\"bwg_container bwg_thumbnail bwg_thumbnails \"         data-right-click-protection=\"0\"         data-bwg=\"0\"         data-scroll=\"0\"         data-gallery-type=\"thumbnails\"         data-gallery-view-type=\"thumbnails\"         data-current-url=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1\"         data-lightbox-url=\"https://yallatogether.com/wp-admin/admin-ajax.php?action=GalleryBox&#038;current_view=0&#038;gallery_id=2&#038;tag=0&#038;theme_id=1&#038;shortcode_id=5&#038;sort_by=order&#038;order_by=asc&#038;current_url=%2Fwp-json%2Fwp%2Fv2%2Fpages%3Fper_page%3D100%26page%3D1\"         data-gallery-id=\"2\"         data-popup-width=\"800\"         data-popup-height=\"500\"         data-is-album=\"gallery\"         data-buttons-position=\"bottom\">      <div id=\"bwg_container2_0\">             <div id=\"ajax_loading_0\" class=\"bwg_loading_div_1\">      <div class=\"bwg_loading_div_2\">        <div class=\"bwg_loading_div_3\">          <div id=\"loading_div_0\" class=\"bwg_spider_ajax_loading\">          </div>        </div>      </div>    </div>            <form id=\"gal_front_form_0\"              class=\"bwg-hidden\"              method=\"post\"              action=\"#\"              data-current=\"0\"              data-shortcode-id=\"5\"              data-gallery-type=\"thumbnails\"              data-gallery-id=\"2\"              data-tag=\"0\"              data-album-id=\"0\"              data-theme-id=\"1\"              data-ajax-url=\"https://yallatogether.com/wp-admin/admin-ajax.php?action=bwg_frontend_data\">          <div id=\"bwg_container3_0\" class=\"bwg-background bwg-background-0\">                <div data-max-count=\"3\"         data-thumbnail-width=\"350\"         data-bwg=\"0\"         data-gallery-id=\"2\"         data-lightbox-url=\"https://yallatogether.com/wp-admin/admin-ajax.php?action=GalleryBox&amp;current_view=0&amp;gallery_id=2&amp;tag=0&amp;theme_id=1&amp;shortcode_id=5&amp;sort_by=order&amp;order_by=asc&amp;current_url=%2Fwp-json%2Fwp%2Fv2%2Fpages%3Fper_page%3D100%26page%3D1\"         id=\"bwg_thumbnails_0\"         class=\"bwg-container-0 bwg-thumbnails bwg-standard-thumbnails bwg-container bwg-border-box\">            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-recipient/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"16\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00007.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00007.png?bwg=1780480266\"                   alt=\"The Gift Finder Search Recipient\"                   title=\"The Gift Finder Search Recipient\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-interest/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"14\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00005.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00005.png?bwg=1780480266\"                   alt=\"The Gift Finder Search Interest\"                   title=\"The Gift Finder Search Interest\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-occasion/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"15\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00004.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00004.png?bwg=1780480266\"                   alt=\"The Gift Finder Search Occasion\"                   title=\"The Gift Finder Search Occasion\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-budget/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"13\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00008.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00008.png?bwg=1780480266\"                   alt=\"The Gift Finder Search Budget\"                   title=\"The Gift Finder Search Budget\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-meaning/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"12\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00003.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00003.png?bwg=1780480266\"                   alt=\"The Gift Finder Search Meaning\"                   title=\"The Gift Finder Search Meaning\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/signature-edits/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"11\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00001.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00001.png?bwg=1780480266\"                   alt=\"The Gift Finder Search Signature Edits\"                   title=\"The Gift Finder Search Signature Edits\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/the-journal/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"10\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00002.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00002.png?bwg=1780480266\"                   alt=\"The Gift Finder Search The Journal\"                   title=\"The Gift Finder Search The Journal\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/the-paper-edit/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"9\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00006.png?bwg=1780480266\"                   src=\"https://yallatogether.com/wp-content/uploads/photo-gallery/thumb/image00006.png?bwg=1780480266\"                   alt=\"The Gift Finder Search The Paper Edit\"                   title=\"The Gift Finder Search The Paper Edit\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>          </div>    <style>      /*pagination styles*/      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {\t\t\t\ttext-align: center;\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\tmargin: 6px 0 4px;\t\t\t\tdisplay: block;      }      @media only screen and (max-width : 320px) {      #bwg_container1_0 #bwg_container2_0 .displaying-num_0 {     \t display: none;      }      }      #bwg_container1_0 #bwg_container2_0 .displaying-num_0 {\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\tmargin-right: 10px;\t\t\t\tvertical-align: middle;      }      #bwg_container1_0 #bwg_container2_0 .paging-input_0 {\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\tvertical-align: middle;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled:hover,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled:focus,\t\t\t#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 input.bwg_current_page {\t\t\t\tcursor: default;\t\t\t\tcolor: rgba(102, 102, 102, 0.5);      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 input.bwg_current_page {\t\t\t\tcursor: pointer;\t\t\t\ttext-align: center;\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\ttext-decoration: none;\t\t\t\tpadding: 3px 6px;\t\t\t\tmargin: 0;\t\t\t\tborder-radius: 0;\t\t\t\tborder-style: solid;\t\t\t\tborder-width: 1px;\t\t\t\tborder-color: #E3E3E3;\t\t\t\t\t\t\t\tbackground-color: rgba(255, 255, 255, 1.00);\t\t\t\tbox-shadow: 0;\t\t\t\ttransition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;      }      </style>      <span class=\"bwg_nav_cont_0\">              <div class=\"tablenav-pages_0\">                  </div>                <input type=\"hidden\" id=\"page_number_0\" name=\"page_number_0\" value=\"1\" />      <script type=\"text/javascript\">        if( jQuery('.bwg_nav_cont_0').length > 1 ) {          jQuery('.bwg_nav_cont_0').first().remove()        }        function spider_page_0(cur, x, y, load_more) {          if (typeof load_more == \"undefined\") {            var load_more = false;          }          if (jQuery(cur).hasClass('disabled')) {            return false;          }          var items_county_0 = 1;          switch (y) {            case 1:              if (x >= items_county_0) {                document.getElementById('page_number_0').value = items_county_0;              }              else {                document.getElementById('page_number_0').value = x + 1;              }              break;            case 2:              document.getElementById('page_number_0').value = items_county_0;              break;            case -1:              if (x == 1) {                document.getElementById('page_number_0').value = 1;              }              else {                document.getElementById('page_number_0').value = x - 1;              }              break;            case -2:              document.getElementById('page_number_0').value = 1;              break;\t\t\t\t\t\tcase 0:              document.getElementById('page_number_0').value = x;              break;            default:              document.getElementById('page_number_0').value = 1;          }          bwg_ajax('gal_front_form_0', '0', 'bwg_thumbnails_0', '0', '', 'gallery', 0, '', '', load_more, '', 1);        }                    jQuery('.first-page-0').on('click', function () {              spider_page_0(this, 1, -2, 'numeric');              return false;            });            jQuery('.prev-page-0').on('click', function () {              spider_page_0(this, 1, -1, 'numeric');              return false;            });            jQuery('.next-page-0').on('click', function () {              spider_page_0(this, 1, 1, 'numeric');              return false;            });            jQuery('.last-page-0').on('click', function () {              spider_page_0(this, 1, 2, 'numeric');              return false;            });        \t\t\t\t/* Change page on input enter. */        function bwg_change_page_0( e, that ) {          if (  e.key == 'Enter' ) {            var to_page = parseInt(jQuery(that).val());            var pages_count = jQuery(that).parents(\".pagination-links\").data(\"pages-count\");            var current_url_param = jQuery(that).attr('data-url-info');            if (to_page > pages_count) {              to_page = 1;            }\t \t\t\t\t\t\t\t\t\t\t\t\tspider_page_0(this, to_page, 0, 'numeric');\t\t\t\t\t\t\treturn false;\t\t\t\t\t\t          }          return true;        }        jQuery('.bwg_load_btn_0').on('click', function () {            spider_page_0(this, 1, 1, true);            return false;        });      </script>      </span>                </div>        </form>              </div>    </div>    <script>      if (document.readyState === 'complete') {        if( typeof bwg_main_ready == 'function' ) {          if ( jQuery(\"#bwg_container1_0\").height() ) {            bwg_main_ready(jQuery(\"#bwg_container1_0\"));          }        }      } else {        document.addEventListener('DOMContentLoaded', function() {          if( typeof bwg_main_ready == 'function' ) {            if ( jQuery(\"#bwg_container1_0\").height() ) {             bwg_main_ready(jQuery(\"#bwg_container1_0\"));            }          }        });      }    </script>    \n",
+      "raw": null,
+      "transformed": "<style id=\"bwg-style-0\">    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails {      width: 1054px;              justify-content: center;        margin:0 auto !important;              background-color: rgba(255, 255, 255, 0.00);            padding-left: 4px;      padding-top: 4px;      max-width: 100%;            }        #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item {    justify-content: flex-start;      max-width: 350px;          }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item a {       margin-right: 4px;       margin-bottom: 4px;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item0 {      padding: 0px;            background-color:rgba(0,0,0, 0.30);      border: 0px none #CCCCCC;      opacity: 1.00;      border-radius: 0;      box-shadow: ;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 img {      max-height: none;      max-width: none;      padding: 0 !important;    }         @media only screen and (min-width: 480px) {\t\t#bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 img {\t\t\t-webkit-transition: all .3s; transition: all .3s;\t\t}\t\t#bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 img:hover {\t\t\t-ms-transform: scale(1.08);\t\t\t-webkit-transform: scale(1.08);\t\t\ttransform: scale(1.08);\t\t}\t\t      }\t    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item1 {      padding-top: 100%;    }        #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-title2,    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-ecommerce2 {      color: #323A45;      font-family: Ubuntu;      font-size: 16px;      font-weight: bold;      padding: 2px;      text-shadow: ;      max-height: 100%;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-thumb-description span {    color: #323A45;    font-family: Ubuntu;    font-size: 12px;    max-height: 100%;    word-wrap: break-word;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-play-icon2 {      font-size: 32px;    }    #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-ecommerce2 {      font-size: 19.2px;      color: #323A45;    }    </style>    <div id=\"bwg_container1_0\"         class=\"bwg_container bwg_thumbnail bwg_thumbnails \"         data-right-click-protection=\"0\"         data-bwg=\"0\"         data-scroll=\"0\"         data-gallery-type=\"thumbnails\"         data-gallery-view-type=\"thumbnails\"         data-current-url=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1\"         data-lightbox-url=\"https://yallatogether.com/wp-admin/admin-ajax.php?action=GalleryBox&#038;current_view=0&#038;gallery_id=2&#038;tag=0&#038;theme_id=1&#038;shortcode_id=5&#038;sort_by=order&#038;order_by=asc&#038;current_url=%2Fwp-json%2Fwp%2Fv2%2Fpages%3Fper_page%3D100%26page%3D1\"         data-gallery-id=\"2\"         data-popup-width=\"800\"         data-popup-height=\"500\"         data-is-album=\"gallery\"         data-buttons-position=\"bottom\">      <div id=\"bwg_container2_0\">             <div id=\"ajax_loading_0\" class=\"bwg_loading_div_1\">      <div class=\"bwg_loading_div_2\">        <div class=\"bwg_loading_div_3\">          <div id=\"loading_div_0\" class=\"bwg_spider_ajax_loading\">          </div>        </div>      </div>    </div>            <form id=\"gal_front_form_0\"              class=\"bwg-hidden\"              method=\"post\"              action=\"#\"              data-current=\"0\"              data-shortcode-id=\"5\"              data-gallery-type=\"thumbnails\"              data-gallery-id=\"2\"              data-tag=\"0\"              data-album-id=\"0\"              data-theme-id=\"1\"              data-ajax-url=\"https://yallatogether.com/wp-admin/admin-ajax.php?action=bwg_frontend_data\">          <div id=\"bwg_container3_0\" class=\"bwg-background bwg-background-0\">                <div data-max-count=\"3\"         data-thumbnail-width=\"350\"         data-bwg=\"0\"         data-gallery-id=\"2\"         data-lightbox-url=\"https://yallatogether.com/wp-admin/admin-ajax.php?action=GalleryBox&amp;current_view=0&amp;gallery_id=2&amp;tag=0&amp;theme_id=1&amp;shortcode_id=5&amp;sort_by=order&amp;order_by=asc&amp;current_url=%2Fwp-json%2Fwp%2Fv2%2Fpages%3Fper_page%3D100%26page%3D1\"         id=\"bwg_thumbnails_0\"         class=\"bwg-container-0 bwg-thumbnails bwg-standard-thumbnails bwg-container bwg-border-box\">            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-recipient/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"16\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00007.png\"                   src=\"/media/photo-gallery/thumb/image00007.png\"                   alt=\"The Gift Finder Search Recipient\"                   title=\"The Gift Finder Search Recipient\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-interest/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"14\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00005.png\"                   src=\"/media/photo-gallery/thumb/image00005.png\"                   alt=\"The Gift Finder Search Interest\"                   title=\"The Gift Finder Search Interest\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-occasion/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"15\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00004.png\"                   src=\"/media/photo-gallery/thumb/image00004.png\"                   alt=\"The Gift Finder Search Occasion\"                   title=\"The Gift Finder Search Occasion\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-budget/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"13\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00008.png\"                   src=\"/media/photo-gallery/thumb/image00008.png\"                   alt=\"The Gift Finder Search Budget\"                   title=\"The Gift Finder Search Budget\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/by-meaning/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"12\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00003.png\"                   src=\"/media/photo-gallery/thumb/image00003.png\"                   alt=\"The Gift Finder Search Meaning\"                   title=\"The Gift Finder Search Meaning\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/signature-edits/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"11\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00001.png\"                   src=\"/media/photo-gallery/thumb/image00001.png\"                   alt=\"The Gift Finder Search Signature Edits\"                   title=\"The Gift Finder Search Signature Edits\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/the-journal/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"10\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00002.png\"                   src=\"/media/photo-gallery/thumb/image00002.png\"                   alt=\"The Gift Finder Search The Journal\"                   title=\"The Gift Finder Search The Journal\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>            <div class=\"bwg-item\">        <a class=\"bwg-a \"  href=\"https://yallatogether.com/category/the-paper-edit/\" target=\"_blank\" data-elementor-open-lightbox=\"no\">                <div class=\"bwg-item0 \">          <div class=\"bwg-item1 \">            <div class=\"bwg-item2\">              <img decoding=\"async\" class=\"skip-lazy bwg_standart_thumb_img_0 \"                   data-id=\"9\"                   data-width=\"500.00\"                   data-height=\"500.00\"                   data-src=\"/media/photo-gallery/thumb/image00006.png\"                   src=\"/media/photo-gallery/thumb/image00006.png\"                   alt=\"The Gift Finder Search The Paper Edit\"                   title=\"The Gift Finder Search The Paper Edit\" />            </div>            <div class=\"\">                                                      </div>          </div>        </div>                        </a>              </div>          </div>    <style>      /*pagination styles*/      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {\t\t\t\ttext-align: center;\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\tmargin: 6px 0 4px;\t\t\t\tdisplay: block;      }      @media only screen and (max-width : 320px) {      #bwg_container1_0 #bwg_container2_0 .displaying-num_0 {     \t display: none;      }      }      #bwg_container1_0 #bwg_container2_0 .displaying-num_0 {\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\tmargin-right: 10px;\t\t\t\tvertical-align: middle;      }      #bwg_container1_0 #bwg_container2_0 .paging-input_0 {\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\tvertical-align: middle;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled:hover,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled:focus,\t\t\t#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 input.bwg_current_page {\t\t\t\tcursor: default;\t\t\t\tcolor: rgba(102, 102, 102, 0.5);      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 input.bwg_current_page {\t\t\t\tcursor: pointer;\t\t\t\ttext-align: center;\t\t\t\tfont-size: 12px;\t\t\t\tfont-family: Ubuntu;\t\t\t\tfont-weight: bold;\t\t\t\tcolor: #666666;\t\t\t\ttext-decoration: none;\t\t\t\tpadding: 3px 6px;\t\t\t\tmargin: 0;\t\t\t\tborder-radius: 0;\t\t\t\tborder-style: solid;\t\t\t\tborder-width: 1px;\t\t\t\tborder-color: #E3E3E3;\t\t\t\t\t\t\t\tbackground-color: rgba(255, 255, 255, 1.00);\t\t\t\tbox-shadow: 0;\t\t\t\ttransition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;      }      </style>      <span class=\"bwg_nav_cont_0\">              <div class=\"tablenav-pages_0\">                  </div>                <input type=\"hidden\" id=\"page_number_0\" name=\"page_number_0\" value=\"1\" />      <script type=\"text/javascript\">        if( jQuery('.bwg_nav_cont_0').length > 1 ) {          jQuery('.bwg_nav_cont_0').first().remove()        }        function spider_page_0(cur, x, y, load_more) {          if (typeof load_more == \"undefined\") {            var load_more = false;          }          if (jQuery(cur).hasClass('disabled')) {            return false;          }          var items_county_0 = 1;          switch (y) {            case 1:              if (x >= items_county_0) {                document.getElementById('page_number_0').value = items_county_0;              }              else {                document.getElementById('page_number_0').value = x + 1;              }              break;            case 2:              document.getElementById('page_number_0').value = items_county_0;              break;            case -1:              if (x == 1) {                document.getElementById('page_number_0').value = 1;              }              else {                document.getElementById('page_number_0').value = x - 1;              }              break;            case -2:              document.getElementById('page_number_0').value = 1;              break;\t\t\t\t\t\tcase 0:              document.getElementById('page_number_0').value = x;              break;            default:              document.getElementById('page_number_0').value = 1;          }          bwg_ajax('gal_front_form_0', '0', 'bwg_thumbnails_0', '0', '', 'gallery', 0, '', '', load_more, '', 1);        }                    jQuery('.first-page-0').on('click', function () {              spider_page_0(this, 1, -2, 'numeric');              return false;            });            jQuery('.prev-page-0').on('click', function () {              spider_page_0(this, 1, -1, 'numeric');              return false;            });            jQuery('.next-page-0').on('click', function () {              spider_page_0(this, 1, 1, 'numeric');              return false;            });            jQuery('.last-page-0').on('click', function () {              spider_page_0(this, 1, 2, 'numeric');              return false;            });        \t\t\t\t/* Change page on input enter. */        function bwg_change_page_0( e, that ) {          if (  e.key == 'Enter' ) {            var to_page = parseInt(jQuery(that).val());            var pages_count = jQuery(that).parents(\".pagination-links\").data(\"pages-count\");            var current_url_param = jQuery(that).attr('data-url-info');            if (to_page > pages_count) {              to_page = 1;            }\t \t\t\t\t\t\t\t\t\t\t\t\tspider_page_0(this, to_page, 0, 'numeric');\t\t\t\t\t\t\treturn false;\t\t\t\t\t\t          }          return true;        }        jQuery('.bwg_load_btn_0').on('click', function () {            spider_page_0(this, 1, 1, true);            return false;        });      </script>      </span>                </div>        </form>              </div>    </div>    <script>      if (document.readyState === 'complete') {        if( typeof bwg_main_ready == 'function' ) {          if ( jQuery(\"#bwg_container1_0\").height() ) {            bwg_main_ready(jQuery(\"#bwg_container1_0\"));          }        }      } else {        document.addEventListener('DOMContentLoaded', function() {          if( typeof bwg_main_ready == 'function' ) {            if ( jQuery(\"#bwg_container1_0\").height() ) {             bwg_main_ready(jQuery(\"#bwg_container1_0\"));            }          }        });      }    </script>    \n"
+    },
+    "publishedAt": "2026-05-26T18:32:43",
+    "modifiedAt": "2026-06-03T09:55:59",
+    "authorId": 1,
+    "featuredMediaId": null,
+    "featuredImage": null,
+    "categories": [],
+    "tags": [],
+    "parentId": null,
+    "menuOrder": 0,
+    "template": "",
+    "acf": null,
+    "seo": {
+      "title": "Gift Finder - Yalla Together",
+      "description": "",
+      "canonical": "https://yallatogether.com/gift-finder/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "openGraph": {
+        "title": "Gift Finder",
+        "description": "",
+        "image": []
+      },
+      "twitter": {},
+      "raw": {
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Gift Finder - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/gift-finder/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Gift Finder\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/gift-finder/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta property=\"article:modified_time\" content=\"2026-06-03T09:55:59+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/gift-finder\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/gift-finder\\/\",\"name\":\"Gift Finder - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"datePublished\":\"2026-05-26T18:32:43+00:00\",\"dateModified\":\"2026-06-03T09:55:59+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/gift-finder\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/yallatogether.com\\/gift-finder\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/gift-finder\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Gift Finder\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+        "yoast_head_json": {
+          "title": "Gift Finder - Yalla Together",
+          "robots": {
+            "index": "index",
+            "follow": "follow",
+            "max-snippet": "max-snippet:-1",
+            "max-image-preview": "max-image-preview:large",
+            "max-video-preview": "max-video-preview:-1"
+          },
+          "canonical": "https://yallatogether.com/gift-finder/",
+          "og_locale": "en_US",
+          "og_type": "article",
+          "og_title": "Gift Finder",
+          "og_url": "https://yallatogether.com/gift-finder/",
+          "og_site_name": "Yalla Together",
+          "article_modified_time": "2026-06-03T09:55:59+00:00",
+          "twitter_card": "summary_large_image",
+          "twitter_misc": {
+            "Est. reading time": "1 minute"
+          },
+          "schema": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://yallatogether.com/gift-finder/",
+                "url": "https://yallatogether.com/gift-finder/",
+                "name": "Gift Finder - Yalla Together",
+                "isPartOf": {
+                  "@id": "https://yallatogether.com/#website"
+                },
+                "datePublished": "2026-05-26T18:32:43+00:00",
+                "dateModified": "2026-06-03T09:55:59+00:00",
+                "breadcrumb": {
+                  "@id": "https://yallatogether.com/gift-finder/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": [
+                      "https://yallatogether.com/gift-finder/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://yallatogether.com/gift-finder/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yallatogether.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Gift Finder"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://yallatogether.com/#website",
+                "url": "https://yallatogether.com/",
+                "name": "Yalla Together",
+                "description": "your go-to resource for gifts that do good and delight",
+                "publisher": {
+                  "@id": "https://yallatogether.com/#organization"
+                },
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://yallatogether.com/#organization",
+                "name": "Yalla Together",
+                "url": "https://yallatogether.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-US",
+                  "@id": "https://yallatogether.com/#/schema/logo/image/",
+                  "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "width": 1250,
+                  "height": 542,
+                  "caption": "Yalla Together"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/#/schema/logo/image/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "elementor": null,
+    "metadata": {
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "meta": {
+        "nf_dc_page": "",
+        "om_disable_all_campaigns": false,
+        "_genesis_hide_title": false,
+        "_genesis_hide_breadcrumbs": false,
+        "_genesis_hide_singular_image": false,
+        "_genesis_hide_footer_widgets": false,
+        "_genesis_custom_body_class": "",
+        "_genesis_custom_post_class": "",
+        "_genesis_layout": "full-width-content",
+        "footnotes": ""
+      },
+      "class_list": [
+        "post-1324",
+        "page",
+        "type-page",
+        "status-publish",
+        "entry",
+        "has-post-thumbnail"
+      ],
+      "jetpack_sharing_enabled": true,
+      "links": {
+        "self": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/1324",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/comments?post=1324"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 12,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/1324/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 1385,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/1324/revisions/1385"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=1324"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "hierarchicalPath": "/gift-finder"
+  },
+  {
+    "wordpressId": 517,
+    "slug": "services",
+    "status": "publish",
+    "type": "page",
+    "link": "https://yallatogether.com/services/",
+    "title": "Services",
+    "excerpt": "<p>What you will discover here: Curated gifts for her, him, kids, friends, coworkers, and those impossible to shop for people. Thoughtful picks for every budget: splurges, smart buys, and wallet-friendly favorites. Seasonal and last minute solutions. Fresh discoveries from emerging designers and makers. Handpicked treasures from small businesses and local markets. Thoughtful, woman-led brands across &#8230; <a href=\"https://yallatogether.com/services/\" class=\"more-link\">Read More <span class=\"screen-reader-text\">about  Services</span></a></p>\n",
+    "content": {
+      "rendered": "<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignnone size-large wp-image-641\" src=\"https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image2.jpeg?resize=1024%2C576&#038;ssl=1\" alt=\"Yalla Together | Dubai Gift Guide\" width=\"1024\" height=\"576\" /></p>\n<p>What you will discover here:</p>\n<ul>\n<li>Curated gifts for her, him, kids, friends, coworkers, and those impossible to shop for people.</li>\n<li>Thoughtful picks for every budget: splurges, smart buys, and wallet-friendly favorites.</li>\n<li>Seasonal and last minute solutions.</li>\n<li>Fresh discoveries from emerging designers and makers.</li>\n<li>Handpicked treasures from small businesses and local markets.</li>\n<li>Thoughtful, woman-led brands across categories.</li>\n<li>Eco-friendly, low waste, and responsibly produced products.</li>\n</ul>\n<p>&nbsp;</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignleft size-thumbnail wp-image-485\" src=\"https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?resize=150%2C150&#038;ssl=1\" alt=\"\" width=\"150\" height=\"150\" srcset=\"https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Site-Icon.webp?w=1067&amp;ssl=1 1067w\" sizes=\"auto, (max-width: 150px) 100vw, 150px\" /> GET IN TOUCH&#8230;  </p>\n<p>If you&#8217;re a maker, please share your products with us&#8230; <a href=\"https://yallatogether.com/contact/\"></p>\n<p><strong>Tell us your story!</strong></a></p>\n<p>&nbsp;</p>\n",
+      "raw": null,
+      "transformed": "<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignnone size-large wp-image-641\" src=\"/media/2026/01/image2.jpeg\" alt=\"Yalla Together | Dubai Gift Guide\" width=\"1024\" height=\"576\" /></p>\n<p>What you will discover here:</p>\n<ul>\n<li>Curated gifts for her, him, kids, friends, coworkers, and those impossible to shop for people.</li>\n<li>Thoughtful picks for every budget: splurges, smart buys, and wallet-friendly favorites.</li>\n<li>Seasonal and last minute solutions.</li>\n<li>Fresh discoveries from emerging designers and makers.</li>\n<li>Handpicked treasures from small businesses and local markets.</li>\n<li>Thoughtful, woman-led brands across categories.</li>\n<li>Eco-friendly, low waste, and responsibly produced products.</li>\n</ul>\n<p>&nbsp;</p>\n<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignleft size-thumbnail wp-image-485\" src=\"/media/2025/12/Yalla-Together-Site-Icon.webp\" alt=\"\" width=\"150\" height=\"150\" srcset=\"/media/2025/12/Yalla-Together-Site-Icon.webp 150w, /media/2025/12/Yalla-Together-Site-Icon.webp 300w, /media/2025/12/Yalla-Together-Site-Icon.webp 768w, /media/2025/12/Yalla-Together-Site-Icon.webp 1024w, /media/2025/12/Yalla-Together-Site-Icon.webp 400w, /media/2025/12/Yalla-Together-Site-Icon.webp 1067w\" sizes=\"auto, (max-width: 150px) 100vw, 150px\" /> GET IN TOUCH&#8230;  </p>\n<p>If you&#8217;re a maker, please share your products with us&#8230; <a href=\"https://yallatogether.com/contact/\"></p>\n<p><strong>Tell us your story!</strong></a></p>\n<p>&nbsp;</p>\n"
+    },
+    "publishedAt": "2025-12-09T09:52:44",
+    "modifiedAt": "2026-05-19T20:16:17",
+    "authorId": 1,
+    "featuredMediaId": 601,
+    "featuredImage": {
+      "id": 601,
+      "originalUrl": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png",
+      "localPath": "media/2026/01/Home-Featured-Page-Artwork2.png",
+      "alt": ""
+    },
+    "categories": [],
+    "tags": [],
+    "parentId": null,
+    "menuOrder": 4,
+    "template": "",
+    "acf": null,
+    "seo": {
+      "title": "Services - Yalla Together",
+      "description": "",
+      "canonical": "https://yallatogether.com/services/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "openGraph": {
+        "title": "Services",
+        "description": "What you will discover here: Curated gifts for her, him, kids, friends, coworkers, and those impossible to shop for people. Thoughtful picks for every budget: splurges, smart buys, and wallet-friendly favorites. Seasonal and last minute solutions. Fresh discoveries from emerging designers and makers. Handpicked treasures from small businesses and local markets. Thoughtful, woman-led brands across ... Read More about Services",
+        "image": [
+          {
+            "width": 1042,
+            "height": 1042,
+            "url": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png",
+            "type": "image/png"
+          }
+        ]
+      },
+      "twitter": {},
+      "raw": {
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Services - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/services/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Services\" />\n<meta property=\"og:description\" content=\"What you will discover here: Curated gifts for her, him, kids, friends, coworkers, and those impossible to shop for people. Thoughtful picks for every budget: splurges, smart buys, and wallet-friendly favorites. Seasonal and last minute solutions. Fresh discoveries from emerging designers and makers. Handpicked treasures from small businesses and local markets. Thoughtful, woman-led brands across ... Read More about Services\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/services/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta property=\"article:modified_time\" content=\"2026-05-19T20:16:17+00:00\" />\n<meta property=\"og:image\" content=\"https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png\" />\n\t<meta property=\"og:image:width\" content=\"1042\" />\n\t<meta property=\"og:image:height\" content=\"1042\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/services\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/services\\/\",\"name\":\"Services - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/yallatogether.com\\/services\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/services\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork2.png?fit=1042%2C1042&ssl=1\",\"datePublished\":\"2025-12-09T09:52:44+00:00\",\"dateModified\":\"2026-05-19T20:16:17+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/services\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/yallatogether.com\\/services\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/services\\/#primaryimage\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork2.png?fit=1042%2C1042&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork2.png?fit=1042%2C1042&ssl=1\",\"width\":1042,\"height\":1042},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/services\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+        "yoast_head_json": {
+          "title": "Services - Yalla Together",
+          "robots": {
+            "index": "index",
+            "follow": "follow",
+            "max-snippet": "max-snippet:-1",
+            "max-image-preview": "max-image-preview:large",
+            "max-video-preview": "max-video-preview:-1"
+          },
+          "canonical": "https://yallatogether.com/services/",
+          "og_locale": "en_US",
+          "og_type": "article",
+          "og_title": "Services",
+          "og_description": "What you will discover here: Curated gifts for her, him, kids, friends, coworkers, and those impossible to shop for people. Thoughtful picks for every budget: splurges, smart buys, and wallet-friendly favorites. Seasonal and last minute solutions. Fresh discoveries from emerging designers and makers. Handpicked treasures from small businesses and local markets. Thoughtful, woman-led brands across ... Read More about Services",
+          "og_url": "https://yallatogether.com/services/",
+          "og_site_name": "Yalla Together",
+          "article_modified_time": "2026-05-19T20:16:17+00:00",
+          "og_image": [
+            {
+              "width": 1042,
+              "height": 1042,
+              "url": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png",
+              "type": "image/png"
+            }
+          ],
+          "twitter_card": "summary_large_image",
+          "twitter_misc": {
+            "Est. reading time": "2 minutes"
+          },
+          "schema": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://yallatogether.com/services/",
+                "url": "https://yallatogether.com/services/",
+                "name": "Services - Yalla Together",
+                "isPartOf": {
+                  "@id": "https://yallatogether.com/#website"
+                },
+                "primaryImageOfPage": {
+                  "@id": "https://yallatogether.com/services/#primaryimage"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/services/#primaryimage"
+                },
+                "thumbnailUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png?fit=1042%2C1042&ssl=1",
+                "datePublished": "2025-12-09T09:52:44+00:00",
+                "dateModified": "2026-05-19T20:16:17+00:00",
+                "breadcrumb": {
+                  "@id": "https://yallatogether.com/services/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": [
+                      "https://yallatogether.com/services/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "https://yallatogether.com/services/#primaryimage",
+                "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png?fit=1042%2C1042&ssl=1",
+                "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork2.png?fit=1042%2C1042&ssl=1",
+                "width": 1042,
+                "height": 1042
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://yallatogether.com/services/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yallatogether.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://yallatogether.com/#website",
+                "url": "https://yallatogether.com/",
+                "name": "Yalla Together",
+                "description": "your go-to resource for gifts that do good and delight",
+                "publisher": {
+                  "@id": "https://yallatogether.com/#organization"
+                },
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://yallatogether.com/#organization",
+                "name": "Yalla Together",
+                "url": "https://yallatogether.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-US",
+                  "@id": "https://yallatogether.com/#/schema/logo/image/",
+                  "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "width": 1250,
+                  "height": 542,
+                  "caption": "Yalla Together"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/#/schema/logo/image/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "elementor": null,
+    "metadata": {
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "meta": {
+        "nf_dc_page": "",
+        "om_disable_all_campaigns": false,
+        "_genesis_hide_title": false,
+        "_genesis_hide_breadcrumbs": false,
+        "_genesis_hide_singular_image": false,
+        "_genesis_hide_footer_widgets": false,
+        "_genesis_custom_body_class": "",
+        "_genesis_custom_post_class": "",
+        "_genesis_layout": "",
+        "footnotes": ""
+      },
+      "class_list": [
+        "post-517",
+        "page",
+        "type-page",
+        "status-publish",
+        "has-post-thumbnail",
+        "entry"
+      ],
+      "jetpack_sharing_enabled": true,
+      "links": {
+        "self": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/517",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/comments?post=517"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 17,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/517/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 1167,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/517/revisions/1167"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/media/601"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=517"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "hierarchicalPath": "/services"
+  },
+  {
+    "wordpressId": 3,
+    "slug": "cookies-and-privacy-policy",
+    "status": "publish",
+    "type": "page",
+    "link": "https://yallatogether.com/cookies-and-privacy-policy/",
+    "title": "Cookies and Privacy Policy",
+    "excerpt": "<p>Last updated: 09 December 2025 Yalla Together (“we,” “our,” or “us”) is committed to protecting your privacy and ensuring a safe and transparent experience while visiting our website. This Privacy &amp; Cookies Policy explains how we collect, use, store and protect your personal information in accordance with applicable UAE data protection standards. 1. Information We &#8230; <a href=\"https://yallatogether.com/cookies-and-privacy-policy/\" class=\"more-link\">Read More <span class=\"screen-reader-text\">about  Cookies and Privacy Policy</span></a></p>\n",
+    "content": {
+      "rendered": "<p>Last updated: 09 December 2025<br />\nYalla Together (“we,” “our,” or “us”) is committed to protecting your privacy and ensuring a safe and transparent experience while visiting our website.</p>\n<p>This Privacy &amp; Cookies Policy explains how we collect, use, store and protect your personal information in accordance with applicable UAE data protection standards.</p>\n<p><strong>1. Information We Collect</strong></p>\n<p>We may collect the following types of information:</p>\n<p><em>1.1. Information You Provide Directly</em></p>\n<p>* Email address (e.g., when subscribing to our newsletter or contacting us)<br />\n* Name (optional, if you choose to share it)<br />\n* Any content you submit via forms, messages or comments</p>\n<p><em>1.2. Automatically Collected Data</em></p>\n<p>When you visit our website, certain information is automatically collected, such as:</p>\n<p>* IP address<br />\n* Browser type and version<br />\n* Device information<br />\n* Pages viewed and time spent on the site<br />\n* General location data (non-specific)</p>\n<p>This data is collected through cookies, analytics tools and server logs.</p>\n<p><strong>2. How We Use Your Information</strong></p>\n<p>We use your information to:</p>\n<p>* Improve our website and user experience<br />\n* Send newsletters or updates (only when you opt in)<br />\n* Respond to inquiries or comments<br />\n* Analyse traffic patterns and website performance<br />\n* Maintain website security and prevent misuse</p>\n<p>We do not sell, rent or trade your personal data.</p>\n<p><strong>3. Cookies &amp; Tracking Technologies</strong></p>\n<p>Cookies are small files stored on your device that help us understand how you use our website.</p>\n<p><em>3.1. Types of Cookies We Use</em></p>\n<p>* Essential Cookies – Required for basic site functionality.<br />\n* Analytics Cookies – Help us understand visitor trends through tools like Google Analytics.<br />\n* Preference Cookies – Remember your settings and improve browsing experience.</p>\n<p><em>3.2. Managing Cookies</em></p>\n<p>You can control or disable cookies through your browser settings. However, disabling certain cookies may affect the functionality of the website.</p>\n<p><strong>4. Third-Party Services</strong></p>\n<p>We may use trusted third-party services to enhance your experience, such as:</p>\n<p>* Email marketing platforms<br />\n* Analytics tools (e.g., Google Analytics)<br />\n* Social media embeds</p>\n<p>These providers have their own privacy practices, and we recommend reviewing their policies when interacting with embedded content.</p>\n<p><strong>5. Data Storage and Security</strong></p>\n<p>We take appropriate technical and organisational measures to keep your personal information safe, including:</p>\n<p>* Secure servers<br />\n* Limited access controls<br />\n* Regular website monitoring</p>\n<p>Despite our efforts, no digital transmission or storage method is 100% secure, and we cannot guarantee absolute security.</p>\n<p><strong>6. Your Rights</strong></p>\n<p>Subject to UAE data protection principles, you may:</p>\n<p>* Request access to the personal information we hold about you<br />\n* Request corrections or updates<br />\n* Request deletion of your personal data (where applicable)<br />\n* Withdraw consent for email communications at any time</p>\n<p>To exercise your rights, email us at: <a href=\"mailto:hello@yallatogether.com\" target=\"_blank\" rel=\"noopener\">hello@yallatogether.com</a>.</p>\n<p><strong>7. Data Retention</strong></p>\n<p>We retain personal data only for as long as necessary to fulfil the purposes outlined in this Policy or as required by law.</p>\n<p>Email newsletter data is retained until you unsubscribe. Analytics data is retained according to the policies of our analytics providers.</p>\n<p><strong>8. Links to External Websites</strong></p>\n<p>Yalla Together may include links to third-party websites.<br />\nWe are not responsible for the privacy practices or content of those sites. We encourage you to review their policies when visiting them.</p>\n<p><strong>9. Children’s Privacy</strong></p>\n<p>Yalla Together does not knowingly collect personal information from children under 13.<br />\nIf you believe such information has been provided, please contact us so we can remove it.</p>\n<p><strong>10. Policy Updates</strong></p>\n<p>We may update this Cookies and Privacy Policy from time to time.<br />\nAny changes will be posted on this page with an updated revision date.</p>\n<p><strong>11. Contact Us</strong></p>\n<p>If you have any questions about this Policy or how your data is handled, please contact us at:</p>\n<p>Email: <a href=\"mailto:hello@yallatogether.com\" target=\"_blank\" rel=\"noopener\">hello@yallatogether.com</a><br />\nWebsite: yallatogether.com</p>\n",
+      "raw": null,
+      "transformed": "<p>Last updated: 09 December 2025<br />\nYalla Together (“we,” “our,” or “us”) is committed to protecting your privacy and ensuring a safe and transparent experience while visiting our website.</p>\n<p>This Privacy &amp; Cookies Policy explains how we collect, use, store and protect your personal information in accordance with applicable UAE data protection standards.</p>\n<p><strong>1. Information We Collect</strong></p>\n<p>We may collect the following types of information:</p>\n<p><em>1.1. Information You Provide Directly</em></p>\n<p>* Email address (e.g., when subscribing to our newsletter or contacting us)<br />\n* Name (optional, if you choose to share it)<br />\n* Any content you submit via forms, messages or comments</p>\n<p><em>1.2. Automatically Collected Data</em></p>\n<p>When you visit our website, certain information is automatically collected, such as:</p>\n<p>* IP address<br />\n* Browser type and version<br />\n* Device information<br />\n* Pages viewed and time spent on the site<br />\n* General location data (non-specific)</p>\n<p>This data is collected through cookies, analytics tools and server logs.</p>\n<p><strong>2. How We Use Your Information</strong></p>\n<p>We use your information to:</p>\n<p>* Improve our website and user experience<br />\n* Send newsletters or updates (only when you opt in)<br />\n* Respond to inquiries or comments<br />\n* Analyse traffic patterns and website performance<br />\n* Maintain website security and prevent misuse</p>\n<p>We do not sell, rent or trade your personal data.</p>\n<p><strong>3. Cookies &amp; Tracking Technologies</strong></p>\n<p>Cookies are small files stored on your device that help us understand how you use our website.</p>\n<p><em>3.1. Types of Cookies We Use</em></p>\n<p>* Essential Cookies – Required for basic site functionality.<br />\n* Analytics Cookies – Help us understand visitor trends through tools like Google Analytics.<br />\n* Preference Cookies – Remember your settings and improve browsing experience.</p>\n<p><em>3.2. Managing Cookies</em></p>\n<p>You can control or disable cookies through your browser settings. However, disabling certain cookies may affect the functionality of the website.</p>\n<p><strong>4. Third-Party Services</strong></p>\n<p>We may use trusted third-party services to enhance your experience, such as:</p>\n<p>* Email marketing platforms<br />\n* Analytics tools (e.g., Google Analytics)<br />\n* Social media embeds</p>\n<p>These providers have their own privacy practices, and we recommend reviewing their policies when interacting with embedded content.</p>\n<p><strong>5. Data Storage and Security</strong></p>\n<p>We take appropriate technical and organisational measures to keep your personal information safe, including:</p>\n<p>* Secure servers<br />\n* Limited access controls<br />\n* Regular website monitoring</p>\n<p>Despite our efforts, no digital transmission or storage method is 100% secure, and we cannot guarantee absolute security.</p>\n<p><strong>6. Your Rights</strong></p>\n<p>Subject to UAE data protection principles, you may:</p>\n<p>* Request access to the personal information we hold about you<br />\n* Request corrections or updates<br />\n* Request deletion of your personal data (where applicable)<br />\n* Withdraw consent for email communications at any time</p>\n<p>To exercise your rights, email us at: <a href=\"mailto:hello@yallatogether.com\" target=\"_blank\" rel=\"noopener\">hello@yallatogether.com</a>.</p>\n<p><strong>7. Data Retention</strong></p>\n<p>We retain personal data only for as long as necessary to fulfil the purposes outlined in this Policy or as required by law.</p>\n<p>Email newsletter data is retained until you unsubscribe. Analytics data is retained according to the policies of our analytics providers.</p>\n<p><strong>8. Links to External Websites</strong></p>\n<p>Yalla Together may include links to third-party websites.<br />\nWe are not responsible for the privacy practices or content of those sites. We encourage you to review their policies when visiting them.</p>\n<p><strong>9. Children’s Privacy</strong></p>\n<p>Yalla Together does not knowingly collect personal information from children under 13.<br />\nIf you believe such information has been provided, please contact us so we can remove it.</p>\n<p><strong>10. Policy Updates</strong></p>\n<p>We may update this Cookies and Privacy Policy from time to time.<br />\nAny changes will be posted on this page with an updated revision date.</p>\n<p><strong>11. Contact Us</strong></p>\n<p>If you have any questions about this Policy or how your data is handled, please contact us at:</p>\n<p>Email: <a href=\"mailto:hello@yallatogether.com\" target=\"_blank\" rel=\"noopener\">hello@yallatogether.com</a><br />\nWebsite: yallatogether.com</p>\n"
+    },
+    "publishedAt": "2025-12-01T13:30:55",
+    "modifiedAt": "2025-12-14T17:39:44",
+    "authorId": 1,
+    "featuredMediaId": null,
+    "featuredImage": null,
+    "categories": [],
+    "tags": [],
+    "parentId": null,
+    "menuOrder": 20,
+    "template": "",
+    "acf": null,
+    "seo": {
+      "title": "Cookies and Privacy Policy - Yalla Together",
+      "description": "",
+      "canonical": "https://yallatogether.com/cookies-and-privacy-policy/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "openGraph": {
+        "title": "Cookies and Privacy Policy",
+        "description": "Last updated: 09 December 2025 Yalla Together (“we,” “our,” or “us”) is committed to protecting your privacy and ensuring a safe and transparent experience while visiting our website. This Privacy &amp; Cookies Policy explains how we collect, use, store and protect your personal information in accordance with applicable UAE data protection standards. 1. Information We ... Read More about Cookies and Privacy Policy",
+        "image": []
+      },
+      "twitter": {},
+      "raw": {
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Cookies and Privacy Policy - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/cookies-and-privacy-policy/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Cookies and Privacy Policy\" />\n<meta property=\"og:description\" content=\"Last updated: 09 December 2025 Yalla Together (“we,” “our,” or “us”) is committed to protecting your privacy and ensuring a safe and transparent experience while visiting our website. This Privacy &amp; Cookies Policy explains how we collect, use, store and protect your personal information in accordance with applicable UAE data protection standards. 1. Information We ... Read More about Cookies and Privacy Policy\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/cookies-and-privacy-policy/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta property=\"article:modified_time\" content=\"2025-12-14T17:39:44+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"3 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/cookies-and-privacy-policy\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/cookies-and-privacy-policy\\/\",\"name\":\"Cookies and Privacy Policy - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"datePublished\":\"2025-12-01T13:30:55+00:00\",\"dateModified\":\"2025-12-14T17:39:44+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/cookies-and-privacy-policy\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/yallatogether.com\\/cookies-and-privacy-policy\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/cookies-and-privacy-policy\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Cookies and Privacy Policy\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+        "yoast_head_json": {
+          "title": "Cookies and Privacy Policy - Yalla Together",
+          "robots": {
+            "index": "index",
+            "follow": "follow",
+            "max-snippet": "max-snippet:-1",
+            "max-image-preview": "max-image-preview:large",
+            "max-video-preview": "max-video-preview:-1"
+          },
+          "canonical": "https://yallatogether.com/cookies-and-privacy-policy/",
+          "og_locale": "en_US",
+          "og_type": "article",
+          "og_title": "Cookies and Privacy Policy",
+          "og_description": "Last updated: 09 December 2025 Yalla Together (“we,” “our,” or “us”) is committed to protecting your privacy and ensuring a safe and transparent experience while visiting our website. This Privacy &amp; Cookies Policy explains how we collect, use, store and protect your personal information in accordance with applicable UAE data protection standards. 1. Information We ... Read More about Cookies and Privacy Policy",
+          "og_url": "https://yallatogether.com/cookies-and-privacy-policy/",
+          "og_site_name": "Yalla Together",
+          "article_modified_time": "2025-12-14T17:39:44+00:00",
+          "twitter_card": "summary_large_image",
+          "twitter_misc": {
+            "Est. reading time": "3 minutes"
+          },
+          "schema": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://yallatogether.com/cookies-and-privacy-policy/",
+                "url": "https://yallatogether.com/cookies-and-privacy-policy/",
+                "name": "Cookies and Privacy Policy - Yalla Together",
+                "isPartOf": {
+                  "@id": "https://yallatogether.com/#website"
+                },
+                "datePublished": "2025-12-01T13:30:55+00:00",
+                "dateModified": "2025-12-14T17:39:44+00:00",
+                "breadcrumb": {
+                  "@id": "https://yallatogether.com/cookies-and-privacy-policy/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": [
+                      "https://yallatogether.com/cookies-and-privacy-policy/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://yallatogether.com/cookies-and-privacy-policy/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yallatogether.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Cookies and Privacy Policy"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://yallatogether.com/#website",
+                "url": "https://yallatogether.com/",
+                "name": "Yalla Together",
+                "description": "your go-to resource for gifts that do good and delight",
+                "publisher": {
+                  "@id": "https://yallatogether.com/#organization"
+                },
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://yallatogether.com/#organization",
+                "name": "Yalla Together",
+                "url": "https://yallatogether.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-US",
+                  "@id": "https://yallatogether.com/#/schema/logo/image/",
+                  "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "width": 1250,
+                  "height": 542,
+                  "caption": "Yalla Together"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/#/schema/logo/image/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "elementor": null,
+    "metadata": {
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "meta": {
+        "nf_dc_page": "",
+        "om_disable_all_campaigns": false,
+        "_genesis_hide_title": false,
+        "_genesis_hide_breadcrumbs": false,
+        "_genesis_hide_singular_image": false,
+        "_genesis_hide_footer_widgets": false,
+        "_genesis_custom_body_class": "",
+        "_genesis_custom_post_class": "",
+        "_genesis_layout": "",
+        "footnotes": ""
+      },
+      "class_list": [
+        "post-3",
+        "page",
+        "type-page",
+        "status-publish",
+        "entry"
+      ],
+      "jetpack_sharing_enabled": true,
+      "links": {
+        "self": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/3",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/comments?post=3"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 4,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/3/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 566,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/3/revisions/566"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=3"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "hierarchicalPath": "/cookies-and-privacy-policy"
+  },
+  {
+    "wordpressId": 78,
+    "slug": "about",
+    "status": "publish",
+    "type": "page",
+    "link": "https://yallatogether.com/about/",
+    "title": "About",
+    "excerpt": "<p>Yalla Together, is where thoughtful moments are transformed into beautifully curated experiences, to help celebrate connections with intention, creativity, and care. Our Promise To make gift-giving joyful, meaningful, and stress-free by building a community that values empathy and celebration. We are forever inspired by the talented artisans and small brands whose sole purpose is to &#8230; <a href=\"https://yallatogether.com/about/\" class=\"more-link\">Read More <span class=\"screen-reader-text\">about  About</span></a></p>\n",
+    "content": {
+      "rendered": "<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignnone size-large wp-image-639\" src=\"https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image0.jpeg?resize=1024%2C576&#038;ssl=1\" alt=\"Yalla Together | Dubai Gift Guide\" width=\"1024\" height=\"576\" srcset=\"https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image0.jpeg?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image0.jpeg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image0.jpeg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image0.jpeg?resize=18%2C10&amp;ssl=1 18w, https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image0.jpeg?w=1280&amp;ssl=1 1280w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></p>\n<p>Yalla Together, is where thoughtful moments are transformed into beautifully curated experiences, to help celebrate connections with intention, creativity, and care.</p>\n<p><strong>Our Promise</strong></p>\n<p>To make gift-giving joyful, meaningful, and stress-free by building a community that values empathy and celebration. We are forever inspired by the talented artisans and small brands whose sole purpose is to help fulfill the dreams and aspirations of this very community.</p>\n<p><strong>The Big Idea</strong></p>\n<p>To become the most trusted and inspiring gift guide, where everyone can find meaningful ideas always and forever.</p>\n<p><strong>The Heart of Giving</strong></p>\n<p><em>Thoughtfulness:</em> Every recommendation is chosen for its beauty, provenance, and ability to create memories.<br />\n<em>Simplicity:</em> Looking for the perfect present shouldn&#8217;t feel like a chore. It should be enjoyable.<br />\n<em>Inspiration:</em> We aim to spark creativity with every gift.<br />\n<em>Community: </em>Independent creators of unique and ethical products come together with people who care for each other and their planet.</p>\n<p><strong>Get involved:</strong></p>\n<p>Join our <a href=\"http://instagram.com/yallatogether/\" target=\"_blank\" rel=\"noopener\">Instagram community</a> as we share bi-weekly roundups and handpicked collections designed to make your next gift the best one yet.</p>\n<p>Are you a maker or small business owner? We love hearing from creators. <a href=\"https://yallatogether.com/contact/\">Tell us your story</a> and why it would make a great gift.</p>\n<p><a href=\"https://yallatogether.com/contact/\">Share with us</a> your best gift ideas to date and what it meant to others.</p>\n",
+      "raw": null,
+      "transformed": "<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignnone size-large wp-image-639\" src=\"/media/2026/01/image0.jpeg\" alt=\"Yalla Together | Dubai Gift Guide\" width=\"1024\" height=\"576\" srcset=\"/media/2026/01/image0.jpeg 1024w, /media/2026/01/image0.jpeg 300w, /media/2026/01/image0.jpeg 768w, /media/2026/01/image0.jpeg 18w, /media/2026/01/image0.jpeg 1280w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\" /></p>\n<p>Yalla Together, is where thoughtful moments are transformed into beautifully curated experiences, to help celebrate connections with intention, creativity, and care.</p>\n<p><strong>Our Promise</strong></p>\n<p>To make gift-giving joyful, meaningful, and stress-free by building a community that values empathy and celebration. We are forever inspired by the talented artisans and small brands whose sole purpose is to help fulfill the dreams and aspirations of this very community.</p>\n<p><strong>The Big Idea</strong></p>\n<p>To become the most trusted and inspiring gift guide, where everyone can find meaningful ideas always and forever.</p>\n<p><strong>The Heart of Giving</strong></p>\n<p><em>Thoughtfulness:</em> Every recommendation is chosen for its beauty, provenance, and ability to create memories.<br />\n<em>Simplicity:</em> Looking for the perfect present shouldn&#8217;t feel like a chore. It should be enjoyable.<br />\n<em>Inspiration:</em> We aim to spark creativity with every gift.<br />\n<em>Community: </em>Independent creators of unique and ethical products come together with people who care for each other and their planet.</p>\n<p><strong>Get involved:</strong></p>\n<p>Join our <a href=\"http://instagram.com/yallatogether/\" target=\"_blank\" rel=\"noopener\">Instagram community</a> as we share bi-weekly roundups and handpicked collections designed to make your next gift the best one yet.</p>\n<p>Are you a maker or small business owner? We love hearing from creators. <a href=\"https://yallatogether.com/contact/\">Tell us your story</a> and why it would make a great gift.</p>\n<p><a href=\"https://yallatogether.com/contact/\">Share with us</a> your best gift ideas to date and what it meant to others.</p>\n"
+    },
+    "publishedAt": "2015-12-07T17:41:24",
+    "modifiedAt": "2026-05-07T07:24:08",
+    "authorId": 1,
+    "featuredMediaId": 599,
+    "featuredImage": {
+      "id": 599,
+      "originalUrl": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png",
+      "localPath": "media/2026/01/Home-Featured-Page-Artwork.png",
+      "alt": ""
+    },
+    "categories": [],
+    "tags": [],
+    "parentId": null,
+    "menuOrder": 3,
+    "template": "",
+    "acf": null,
+    "seo": {
+      "title": "About - Yalla Together",
+      "description": "",
+      "canonical": "https://yallatogether.com/about/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "openGraph": {
+        "title": "About",
+        "description": "Yalla Together, is where thoughtful moments are transformed into beautifully curated experiences, to help celebrate connections with intention, creativity, and care. Our Promise To make gift-giving joyful, meaningful, and stress-free by building a community that values empathy and celebration. We are forever inspired by the talented artisans and small brands whose sole purpose is to ... Read More about About",
+        "image": [
+          {
+            "width": 1042,
+            "height": 1042,
+            "url": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png",
+            "type": "image/png"
+          }
+        ]
+      },
+      "twitter": {},
+      "raw": {
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>About - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/about/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"About\" />\n<meta property=\"og:description\" content=\"Yalla Together, is where thoughtful moments are transformed into beautifully curated experiences, to help celebrate connections with intention, creativity, and care. Our Promise To make gift-giving joyful, meaningful, and stress-free by building a community that values empathy and celebration. We are forever inspired by the talented artisans and small brands whose sole purpose is to ... Read More about About\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/about/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta property=\"article:modified_time\" content=\"2026-05-07T07:24:08+00:00\" />\n<meta property=\"og:image\" content=\"https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png\" />\n\t<meta property=\"og:image:width\" content=\"1042\" />\n\t<meta property=\"og:image:height\" content=\"1042\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/about\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/about\\/\",\"name\":\"About - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/yallatogether.com\\/about\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/about\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork.png?fit=1042%2C1042&ssl=1\",\"datePublished\":\"2015-12-07T17:41:24+00:00\",\"dateModified\":\"2026-05-07T07:24:08+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/about\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/yallatogether.com\\/about\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/about\\/#primaryimage\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork.png?fit=1042%2C1042&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork.png?fit=1042%2C1042&ssl=1\",\"width\":1042,\"height\":1042},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/about\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"About\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+        "yoast_head_json": {
+          "title": "About - Yalla Together",
+          "robots": {
+            "index": "index",
+            "follow": "follow",
+            "max-snippet": "max-snippet:-1",
+            "max-image-preview": "max-image-preview:large",
+            "max-video-preview": "max-video-preview:-1"
+          },
+          "canonical": "https://yallatogether.com/about/",
+          "og_locale": "en_US",
+          "og_type": "article",
+          "og_title": "About",
+          "og_description": "Yalla Together, is where thoughtful moments are transformed into beautifully curated experiences, to help celebrate connections with intention, creativity, and care. Our Promise To make gift-giving joyful, meaningful, and stress-free by building a community that values empathy and celebration. We are forever inspired by the talented artisans and small brands whose sole purpose is to ... Read More about About",
+          "og_url": "https://yallatogether.com/about/",
+          "og_site_name": "Yalla Together",
+          "article_modified_time": "2026-05-07T07:24:08+00:00",
+          "og_image": [
+            {
+              "width": 1042,
+              "height": 1042,
+              "url": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png",
+              "type": "image/png"
+            }
+          ],
+          "twitter_card": "summary_large_image",
+          "twitter_misc": {
+            "Est. reading time": "2 minutes"
+          },
+          "schema": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://yallatogether.com/about/",
+                "url": "https://yallatogether.com/about/",
+                "name": "About - Yalla Together",
+                "isPartOf": {
+                  "@id": "https://yallatogether.com/#website"
+                },
+                "primaryImageOfPage": {
+                  "@id": "https://yallatogether.com/about/#primaryimage"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/about/#primaryimage"
+                },
+                "thumbnailUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png?fit=1042%2C1042&ssl=1",
+                "datePublished": "2015-12-07T17:41:24+00:00",
+                "dateModified": "2026-05-07T07:24:08+00:00",
+                "breadcrumb": {
+                  "@id": "https://yallatogether.com/about/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": [
+                      "https://yallatogether.com/about/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "https://yallatogether.com/about/#primaryimage",
+                "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png?fit=1042%2C1042&ssl=1",
+                "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork.png?fit=1042%2C1042&ssl=1",
+                "width": 1042,
+                "height": 1042
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://yallatogether.com/about/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yallatogether.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://yallatogether.com/#website",
+                "url": "https://yallatogether.com/",
+                "name": "Yalla Together",
+                "description": "your go-to resource for gifts that do good and delight",
+                "publisher": {
+                  "@id": "https://yallatogether.com/#organization"
+                },
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://yallatogether.com/#organization",
+                "name": "Yalla Together",
+                "url": "https://yallatogether.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-US",
+                  "@id": "https://yallatogether.com/#/schema/logo/image/",
+                  "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "width": 1250,
+                  "height": 542,
+                  "caption": "Yalla Together"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/#/schema/logo/image/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "elementor": null,
+    "metadata": {
+      "comment_status": "closed",
+      "ping_status": "closed",
+      "meta": {
+        "nf_dc_page": "",
+        "om_disable_all_campaigns": false,
+        "_genesis_hide_title": false,
+        "_genesis_hide_breadcrumbs": false,
+        "_genesis_hide_singular_image": false,
+        "_genesis_hide_footer_widgets": false,
+        "_genesis_custom_body_class": "",
+        "_genesis_custom_post_class": "",
+        "_genesis_layout": "",
+        "footnotes": ""
+      },
+      "class_list": [
+        "post-78",
+        "page",
+        "type-page",
+        "status-publish",
+        "has-post-thumbnail",
+        "entry"
+      ],
+      "jetpack_sharing_enabled": true,
+      "links": {
+        "self": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/78",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/comments?post=78"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 11,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/78/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 1109,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/78/revisions/1109"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/media/599"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=78"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "hierarchicalPath": "/about"
+  },
+  {
+    "wordpressId": 83,
+    "slug": "contact",
+    "status": "publish",
+    "type": "page",
+    "link": "https://yallatogether.com/contact/",
+    "title": "Contact",
+    "excerpt": "<p>We love hearing from our community. Whether you’re a small business owner with a product you’d like to share, a reader with a thoughtful recommendation or someone interested in collaborating on future gift guides, we’d be delighted to connect. Please use the form below to get in touch &#8211; every message is read with care, &#8230; <a href=\"https://yallatogether.com/contact/\" class=\"more-link\">Read More <span class=\"screen-reader-text\">about  Contact</span></a></p>\n",
+    "content": {
+      "rendered": "<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignnone size-large wp-image-643\" src=\"https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/image1.jpeg?resize=1024%2C576&#038;ssl=1\" alt=\"Yalla Together | Dubai Gift Guide\" width=\"1024\" height=\"576\" /></p>\n<p>We love hearing from our community. Whether you’re a small business owner with a product you’d like to share, a reader with a thoughtful recommendation or someone interested in collaborating on future gift guides, we’d be delighted to connect.</p>\n<p>Please use the form below to get in touch &#8211; every message is read with care, and we look forward to discovering more beautiful local stories together.</p>\n\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f509-o1\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"509\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p> <ul></ul></div>\n<form action=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1#wpcf7-f509-o1\" method=\"post\" class=\"wpcf7-form init\" aria-label=\"Contact form\" novalidate=\"novalidate\" data-status=\"init\">\n<fieldset class=\"hidden-fields-container\"><input type=\"hidden\" name=\"_wpcf7\" value=\"509\" /><input type=\"hidden\" name=\"_wpcf7_version\" value=\"6.1.6\" /><input type=\"hidden\" name=\"_wpcf7_locale\" value=\"en_US\" /><input type=\"hidden\" name=\"_wpcf7_unit_tag\" value=\"wpcf7-f509-o1\" /><input type=\"hidden\" name=\"_wpcf7_container_post\" value=\"0\" /><input type=\"hidden\" name=\"_wpcf7_posted_data_hash\" value=\"\" />\n</fieldset>\n<p><label> Your name<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"text\" name=\"your-name\" /></span> </label>\n</p>\n<p><label> Your email<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"email\" name=\"your-email\" /></span> </label>\n</p>\n<p><label> Subject<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-subject\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"text\" name=\"your-subject\" /></span> </label>\n</p>\n<p><label> Your message (optional)<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" maxlength=\"2000\" class=\"wpcf7-form-control wpcf7-textarea\" aria-invalid=\"false\" name=\"your-message\"></textarea></span> </label>\n</p>\n<p><input class=\"wpcf7-form-control wpcf7-submit has-spinner\" type=\"submit\" value=\"Submit\" />\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n</form>\n</div>\n\n",
+      "raw": null,
+      "transformed": "<p><img data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" class=\"alignnone size-large wp-image-643\" src=\"/media/2026/01/image1.jpeg\" alt=\"Yalla Together | Dubai Gift Guide\" width=\"1024\" height=\"576\" /></p>\n<p>We love hearing from our community. Whether you’re a small business owner with a product you’d like to share, a reader with a thoughtful recommendation or someone interested in collaborating on future gift guides, we’d be delighted to connect.</p>\n<p>Please use the form below to get in touch &#8211; every message is read with care, and we look forward to discovering more beautiful local stories together.</p>\n\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f509-o1\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"509\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p> <ul></ul></div>\n<form action=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1#wpcf7-f509-o1\" method=\"post\" class=\"wpcf7-form init\" aria-label=\"Contact form\" novalidate=\"novalidate\" data-status=\"init\">\n<fieldset class=\"hidden-fields-container\"><input type=\"hidden\" name=\"_wpcf7\" value=\"509\" /><input type=\"hidden\" name=\"_wpcf7_version\" value=\"6.1.6\" /><input type=\"hidden\" name=\"_wpcf7_locale\" value=\"en_US\" /><input type=\"hidden\" name=\"_wpcf7_unit_tag\" value=\"wpcf7-f509-o1\" /><input type=\"hidden\" name=\"_wpcf7_container_post\" value=\"0\" /><input type=\"hidden\" name=\"_wpcf7_posted_data_hash\" value=\"\" />\n</fieldset>\n<p><label> Your name<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-name\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"text\" name=\"your-name\" /></span> </label>\n</p>\n<p><label> Your email<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"email\" name=\"your-email\" /></span> </label>\n</p>\n<p><label> Subject<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-subject\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" value=\"\" type=\"text\" name=\"your-subject\" /></span> </label>\n</p>\n<p><label> Your message (optional)<br />\n<span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" maxlength=\"2000\" class=\"wpcf7-form-control wpcf7-textarea\" aria-invalid=\"false\" name=\"your-message\"></textarea></span> </label>\n</p>\n<p><input class=\"wpcf7-form-control wpcf7-submit has-spinner\" type=\"submit\" value=\"Submit\" />\n</p><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n</form>\n</div>\n\n"
+    },
+    "publishedAt": "2010-08-15T19:13:33",
+    "modifiedAt": "2026-01-07T11:05:38",
+    "authorId": 1,
+    "featuredMediaId": 603,
+    "featuredImage": {
+      "id": 603,
+      "originalUrl": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png",
+      "localPath": "media/2026/01/Home-Featured-Page-Artwork3.png",
+      "alt": ""
+    },
+    "categories": [],
+    "tags": [],
+    "parentId": null,
+    "menuOrder": 5,
+    "template": "",
+    "acf": null,
+    "seo": {
+      "title": "Contact - Yalla Together",
+      "description": "",
+      "canonical": "https://yallatogether.com/contact/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "openGraph": {
+        "title": "Contact",
+        "description": "We love hearing from our community. Whether you’re a small business owner with a product you’d like to share, a reader with a thoughtful recommendation or someone interested in collaborating on future gift guides, we’d be delighted to connect. Please use the form below to get in touch &#8211; every message is read with care, ... Read More about Contact",
+        "image": [
+          {
+            "width": 1042,
+            "height": 1042,
+            "url": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png",
+            "type": "image/png"
+          }
+        ]
+      },
+      "twitter": {},
+      "raw": {
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Contact - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/contact/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Contact\" />\n<meta property=\"og:description\" content=\"We love hearing from our community. Whether you’re a small business owner with a product you’d like to share, a reader with a thoughtful recommendation or someone interested in collaborating on future gift guides, we’d be delighted to connect. Please use the form below to get in touch &#8211; every message is read with care, ... Read More about Contact\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/contact/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta property=\"article:modified_time\" content=\"2026-01-07T11:05:38+00:00\" />\n<meta property=\"og:image\" content=\"https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png\" />\n\t<meta property=\"og:image:width\" content=\"1042\" />\n\t<meta property=\"og:image:height\" content=\"1042\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"1 minute\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/contact\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/contact\\/\",\"name\":\"Contact - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/yallatogether.com\\/contact\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/contact\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork3.png?fit=1042%2C1042&ssl=1\",\"datePublished\":\"2010-08-15T19:13:33+00:00\",\"dateModified\":\"2026-01-07T11:05:38+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/contact\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/yallatogether.com\\/contact\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/contact\\/#primaryimage\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork3.png?fit=1042%2C1042&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2026\\/01\\/Home-Featured-Page-Artwork3.png?fit=1042%2C1042&ssl=1\",\"width\":1042,\"height\":1042},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/contact\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+        "yoast_head_json": {
+          "title": "Contact - Yalla Together",
+          "robots": {
+            "index": "index",
+            "follow": "follow",
+            "max-snippet": "max-snippet:-1",
+            "max-image-preview": "max-image-preview:large",
+            "max-video-preview": "max-video-preview:-1"
+          },
+          "canonical": "https://yallatogether.com/contact/",
+          "og_locale": "en_US",
+          "og_type": "article",
+          "og_title": "Contact",
+          "og_description": "We love hearing from our community. Whether you’re a small business owner with a product you’d like to share, a reader with a thoughtful recommendation or someone interested in collaborating on future gift guides, we’d be delighted to connect. Please use the form below to get in touch &#8211; every message is read with care, ... Read More about Contact",
+          "og_url": "https://yallatogether.com/contact/",
+          "og_site_name": "Yalla Together",
+          "article_modified_time": "2026-01-07T11:05:38+00:00",
+          "og_image": [
+            {
+              "width": 1042,
+              "height": 1042,
+              "url": "https://yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png",
+              "type": "image/png"
+            }
+          ],
+          "twitter_card": "summary_large_image",
+          "twitter_misc": {
+            "Est. reading time": "1 minute"
+          },
+          "schema": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://yallatogether.com/contact/",
+                "url": "https://yallatogether.com/contact/",
+                "name": "Contact - Yalla Together",
+                "isPartOf": {
+                  "@id": "https://yallatogether.com/#website"
+                },
+                "primaryImageOfPage": {
+                  "@id": "https://yallatogether.com/contact/#primaryimage"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/contact/#primaryimage"
+                },
+                "thumbnailUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png?fit=1042%2C1042&ssl=1",
+                "datePublished": "2010-08-15T19:13:33+00:00",
+                "dateModified": "2026-01-07T11:05:38+00:00",
+                "breadcrumb": {
+                  "@id": "https://yallatogether.com/contact/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": [
+                      "https://yallatogether.com/contact/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "https://yallatogether.com/contact/#primaryimage",
+                "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png?fit=1042%2C1042&ssl=1",
+                "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2026/01/Home-Featured-Page-Artwork3.png?fit=1042%2C1042&ssl=1",
+                "width": 1042,
+                "height": 1042
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://yallatogether.com/contact/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yallatogether.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Contact"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://yallatogether.com/#website",
+                "url": "https://yallatogether.com/",
+                "name": "Yalla Together",
+                "description": "your go-to resource for gifts that do good and delight",
+                "publisher": {
+                  "@id": "https://yallatogether.com/#organization"
+                },
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://yallatogether.com/#organization",
+                "name": "Yalla Together",
+                "url": "https://yallatogether.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-US",
+                  "@id": "https://yallatogether.com/#/schema/logo/image/",
+                  "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "width": 1250,
+                  "height": 542,
+                  "caption": "Yalla Together"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/#/schema/logo/image/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "elementor": null,
+    "metadata": {
+      "comment_status": "open",
+      "ping_status": "closed",
+      "meta": {
+        "nf_dc_page": "",
+        "om_disable_all_campaigns": false,
+        "_genesis_hide_title": false,
+        "_genesis_hide_breadcrumbs": false,
+        "_genesis_hide_singular_image": false,
+        "_genesis_hide_footer_widgets": false,
+        "_genesis_custom_body_class": "",
+        "_genesis_custom_post_class": "",
+        "_genesis_layout": "",
+        "footnotes": ""
+      },
+      "class_list": [
+        "post-83",
+        "page",
+        "type-page",
+        "status-publish",
+        "has-post-thumbnail",
+        "entry"
+      ],
+      "jetpack_sharing_enabled": true,
+      "links": {
+        "self": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/83",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/comments?post=83"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 5,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/83/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 650,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/83/revisions/650"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/media/603"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=83"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "hierarchicalPath": "/contact"
+  },
+  {
+    "wordpressId": 82,
+    "slug": "blog",
+    "status": "publish",
+    "type": "page",
+    "link": "https://yallatogether.com/blog/",
+    "title": "Blog",
+    "excerpt": "",
+    "content": {
+      "rendered": "",
+      "raw": null,
+      "transformed": ""
+    },
+    "publishedAt": "2010-08-15T19:12:43",
+    "modifiedAt": "2026-05-26T18:14:27",
+    "authorId": 1,
+    "featuredMediaId": null,
+    "featuredImage": null,
+    "categories": [],
+    "tags": [],
+    "parentId": null,
+    "menuOrder": 2,
+    "template": "page_blog.php",
+    "acf": null,
+    "seo": {
+      "title": "Blog - Yalla Together",
+      "description": "",
+      "canonical": "https://yallatogether.com/blog/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "openGraph": {
+        "title": "Blog",
+        "description": "",
+        "image": []
+      },
+      "twitter": {},
+      "raw": {
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Blog - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/blog/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Blog\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/blog/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta property=\"article:modified_time\" content=\"2026-05-26T18:14:27+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/blog\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/blog\\/\",\"name\":\"Blog - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"datePublished\":\"2010-08-15T19:12:43+00:00\",\"dateModified\":\"2026-05-26T18:14:27+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/blog\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/yallatogether.com\\/blog\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/blog\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+        "yoast_head_json": {
+          "title": "Blog - Yalla Together",
+          "robots": {
+            "index": "index",
+            "follow": "follow",
+            "max-snippet": "max-snippet:-1",
+            "max-image-preview": "max-image-preview:large",
+            "max-video-preview": "max-video-preview:-1"
+          },
+          "canonical": "https://yallatogether.com/blog/",
+          "og_locale": "en_US",
+          "og_type": "article",
+          "og_title": "Blog",
+          "og_url": "https://yallatogether.com/blog/",
+          "og_site_name": "Yalla Together",
+          "article_modified_time": "2026-05-26T18:14:27+00:00",
+          "twitter_card": "summary_large_image",
+          "schema": {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://yallatogether.com/blog/",
+                "url": "https://yallatogether.com/blog/",
+                "name": "Blog - Yalla Together",
+                "isPartOf": {
+                  "@id": "https://yallatogether.com/#website"
+                },
+                "datePublished": "2010-08-15T19:12:43+00:00",
+                "dateModified": "2026-05-26T18:14:27+00:00",
+                "breadcrumb": {
+                  "@id": "https://yallatogether.com/blog/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": [
+                      "https://yallatogether.com/blog/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://yallatogether.com/blog/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yallatogether.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://yallatogether.com/#website",
+                "url": "https://yallatogether.com/",
+                "name": "Yalla Together",
+                "description": "your go-to resource for gifts that do good and delight",
+                "publisher": {
+                  "@id": "https://yallatogether.com/#organization"
+                },
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://yallatogether.com/#organization",
+                "name": "Yalla Together",
+                "url": "https://yallatogether.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-US",
+                  "@id": "https://yallatogether.com/#/schema/logo/image/",
+                  "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+                  "width": 1250,
+                  "height": 542,
+                  "caption": "Yalla Together"
+                },
+                "image": {
+                  "@id": "https://yallatogether.com/#/schema/logo/image/"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "elementor": null,
+    "metadata": {
+      "comment_status": "open",
+      "ping_status": "closed",
+      "meta": {
+        "nf_dc_page": "",
+        "om_disable_all_campaigns": false,
+        "_genesis_hide_title": false,
+        "_genesis_hide_breadcrumbs": false,
+        "_genesis_hide_singular_image": false,
+        "_genesis_hide_footer_widgets": false,
+        "_genesis_custom_body_class": "",
+        "_genesis_custom_post_class": "",
+        "_genesis_layout": "",
+        "footnotes": ""
+      },
+      "class_list": [
+        "post-82",
+        "page",
+        "type-page",
+        "status-publish",
+        "entry"
+      ],
+      "jetpack_sharing_enabled": true,
+      "links": {
+        "self": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/82",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/types/page"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/users/1"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://yallatogether.com/wp-json/wp/v2/comments?post=82"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 5,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/82/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 1291,
+            "href": "https://yallatogether.com/wp-json/wp/v2/pages/82/revisions/1291"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://yallatogether.com/wp-json/wp/v2/media?parent=82"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "hierarchicalPath": "/blog"
+  }
+]

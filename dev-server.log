@@ -1,0 +1,45 @@
+
+> yalla-next-rebuild@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+- Environments: .env
+✓ Ready in 608ms
+✓ Running next.config.js took 27ms
+Creating turbopack project {
+  dir: 'C:\\Users\\User\\Desktop\\testwordpress\\yalla-next-rebuild',
+  testMode: true
+}
+
+ GET /admin 307 in 1126ms (next.js: 199ms, proxy.ts: 278ms, application-code: 649ms)
+ GET /gift-finder 200 in 291ms (next.js: 60ms, proxy.ts: 10ms, application-code: 220ms)
+ GET /tag/bride 404 in 225ms (next.js: 97ms, proxy.ts: 11ms, application-code: 117ms)
+ GET /gift-finder 200 in 286ms (next.js: 11ms, proxy.ts: 7ms, application-code: 268ms)
+ GET /tag/bride 404 in 204ms (next.js: 22ms, proxy.ts: 12ms, application-code: 170ms)
+ GET /blog 200 in 611ms (next.js: 85ms, proxy.ts: 23ms, application-code: 503ms)
+ POST /api/analytics 200 in 236ms (next.js: 168ms, proxy.ts: 20ms, application-code: 48ms)
+ POST /api/analytics 200 in 236ms (next.js: 192ms, proxy.ts: 20ms, application-code: 25ms)
+ GET /admin 200 in 530ms (next.js: 20ms, proxy.ts: 24ms, application-code: 486ms)
+✓ Compiled in 179ms
+ GET /admin 200 in 549ms (next.js: 63ms, proxy.ts: 9ms, application-code: 476ms)
+✓ Compiled in 171ms
+ GET /admin 200 in 472ms (next.js: 32ms, proxy.ts: 12ms, application-code: 428ms)
+✓ Compiled in 56ms
+ GET /admin 200 in 656ms (next.js: 29ms, proxy.ts: 10ms, application-code: 618ms)
+ GET / 200 in 593ms (next.js: 156ms, proxy.ts: 19ms, application-code: 418ms)
+ POST /api/analytics 200 in 100ms (next.js: 13ms, proxy.ts: 23ms, application-code: 64ms)
+ POST /api/analytics 200 in 103ms (next.js: 51ms, proxy.ts: 24ms, application-code: 28ms)
+ GET /gift-finder 200 in 407ms (next.js: 161ms, proxy.ts: 16ms, application-code: 230ms)
+ POST /api/analytics 200 in 54ms (next.js: 22ms, proxy.ts: 16ms, application-code: 15ms)
+ GET /gift-finder 200 in 343ms (next.js: 64ms, proxy.ts: 26ms, application-code: 253ms)
+ GET /admin 200 in 434ms (next.js: 27ms, proxy.ts: 11ms, application-code: 396ms)
+ POST /api/analytics 200 in 25ms (next.js: 6ms, proxy.ts: 8ms, application-code: 11ms)
+ GET /gift-finder 200 in 276ms (next.js: 53ms, proxy.ts: 40ms, application-code: 182ms)
+ GET /admin 200 in 358ms (next.js: 13ms, proxy.ts: 9ms, application-code: 336ms)
+ POST /api/analytics 200 in 36ms (next.js: 9ms, proxy.ts: 8ms, application-code: 19ms)
+✓ Compiled in 189ms
+ GET /gift-finder 200 in 457ms (next.js: 83ms, proxy.ts: 6ms, application-code: 368ms)
+ POST /api/analytics 200 in 47ms (next.js: 12ms, proxy.ts: 19ms, application-code: 16ms)
+ POST /api/analytics 200 in 47ms (next.js: 19ms, proxy.ts: 17ms, application-code: 11ms)

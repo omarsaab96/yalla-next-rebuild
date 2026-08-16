@@ -1,0 +1,570 @@
+[
+  {
+    "id": 165,
+    "count": 1,
+    "description": "",
+    "link": "https://yallatogether.com/by_budget/under-aed-100/",
+    "name": "Under AED 100",
+    "slug": "under-aed-100",
+    "taxonomy": "by_budget",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Under AED 100 Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_budget/under-aed-100/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Under AED 100 Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_budget/under-aed-100/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-100\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-100\\/\",\"name\":\"Under AED 100 Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-100\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-100\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Under AED 100\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Under AED 100 Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_budget/under-aed-100/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Under AED 100 Archives",
+      "og_url": "https://yallatogether.com/by_budget/under-aed-100/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_budget/under-aed-100/",
+            "url": "https://yallatogether.com/by_budget/under-aed-100/",
+            "name": "Under AED 100 Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_budget/under-aed-100/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_budget/under-aed-100/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Under AED 100"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget/165",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_budget"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_budget=165"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 166,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_budget/under-aed-200/",
+    "name": "Under AED 200",
+    "slug": "under-aed-200",
+    "taxonomy": "by_budget",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Under AED 200 Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_budget/under-aed-200/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Under AED 200 Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_budget/under-aed-200/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-200\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-200\\/\",\"name\":\"Under AED 200 Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-200\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/under-aed-200\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Under AED 200\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Under AED 200 Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_budget/under-aed-200/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Under AED 200 Archives",
+      "og_url": "https://yallatogether.com/by_budget/under-aed-200/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_budget/under-aed-200/",
+            "url": "https://yallatogether.com/by_budget/under-aed-200/",
+            "name": "Under AED 200 Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_budget/under-aed-200/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_budget/under-aed-200/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Under AED 200"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget/166",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_budget"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_budget=166"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 167,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_budget/little-luxuries/",
+    "name": "Little Luxuries",
+    "slug": "little-luxuries",
+    "taxonomy": "by_budget",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Little Luxuries Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_budget/little-luxuries/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Little Luxuries Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_budget/little-luxuries/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/little-luxuries\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_budget\\/little-luxuries\\/\",\"name\":\"Little Luxuries Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/little-luxuries\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/little-luxuries\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Little Luxuries\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Little Luxuries Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_budget/little-luxuries/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Little Luxuries Archives",
+      "og_url": "https://yallatogether.com/by_budget/little-luxuries/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_budget/little-luxuries/",
+            "url": "https://yallatogether.com/by_budget/little-luxuries/",
+            "name": "Little Luxuries Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_budget/little-luxuries/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_budget/little-luxuries/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Little Luxuries"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget/167",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_budget"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_budget=167"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 168,
+    "count": 0,
+    "description": "",
+    "link": "https://yallatogether.com/by_budget/premium-gifts/",
+    "name": "Premium Gifts",
+    "slug": "premium-gifts",
+    "taxonomy": "by_budget",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO Premium plugin v28.2 (Yoast SEO v28.2) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->\n<title>Premium Gifts Archives - Yalla Together</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://yallatogether.com/by_budget/premium-gifts/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Premium Gifts Archives\" />\n<meta property=\"og:url\" content=\"https://yallatogether.com/by_budget/premium-gifts/\" />\n<meta property=\"og:site_name\" content=\"Yalla Together\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/premium-gifts\\/\",\"url\":\"https:\\/\\/yallatogether.com\\/by_budget\\/premium-gifts\\/\",\"name\":\"Premium Gifts Archives - Yalla Together\",\"isPartOf\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/premium-gifts\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/yallatogether.com\\/by_budget\\/premium-gifts\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/yallatogether.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Premium Gifts\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/yallatogether.com\\/#website\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"name\":\"Yalla Together\",\"description\":\"your go-to resource for gifts that do good and delight\",\"publisher\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/yallatogether.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/yallatogether.com\\/#organization\",\"name\":\"Yalla Together\",\"url\":\"https:\\/\\/yallatogether.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"contentUrl\":\"https:\\/\\/i0.wp.com\\/yallatogether.com\\/wp-content\\/uploads\\/2025\\/12\\/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1\",\"width\":1250,\"height\":542,\"caption\":\"Yalla Together\"},\"image\":{\"@id\":\"https:\\/\\/yallatogether.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO Premium plugin. -->",
+    "yoast_head_json": {
+      "title": "Premium Gifts Archives - Yalla Together",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://yallatogether.com/by_budget/premium-gifts/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Premium Gifts Archives",
+      "og_url": "https://yallatogether.com/by_budget/premium-gifts/",
+      "og_site_name": "Yalla Together",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://yallatogether.com/by_budget/premium-gifts/",
+            "url": "https://yallatogether.com/by_budget/premium-gifts/",
+            "name": "Premium Gifts Archives - Yalla Together",
+            "isPartOf": {
+              "@id": "https://yallatogether.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://yallatogether.com/by_budget/premium-gifts/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yallatogether.com/by_budget/premium-gifts/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yallatogether.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Premium Gifts"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://yallatogether.com/#website",
+            "url": "https://yallatogether.com/",
+            "name": "Yalla Together",
+            "description": "your go-to resource for gifts that do good and delight",
+            "publisher": {
+              "@id": "https://yallatogether.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://yallatogether.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://yallatogether.com/#organization",
+            "name": "Yalla Together",
+            "url": "https://yallatogether.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://yallatogether.com/#/schema/logo/image/",
+              "url": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "contentUrl": "https://i0.wp.com/yallatogether.com/wp-content/uploads/2025/12/Yalla-Together-Logo-Header.jpg?fit=1250%2C542&ssl=1",
+              "width": 1250,
+              "height": 542,
+              "caption": "Yalla Together"
+            },
+            "image": {
+              "@id": "https://yallatogether.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget/168",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/by_budget"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/taxonomies/by_budget"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://yallatogether.com/wp-json/wp/v2/posts?by_budget=168"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
