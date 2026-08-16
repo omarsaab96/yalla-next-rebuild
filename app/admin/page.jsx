@@ -2,6 +2,7 @@ import { AdminEditor } from '@/components/AdminEditor';
 import { adminSerialize, getContentList, getMediaList, getSettings, getTerms } from '@/lib/cms';
 import { getAdminSession } from '@/lib/auth';
 import { getAnalyticsSummary } from '@/lib/analytics';
+import { getFormSubmissions } from '@/lib/formSubmissions';
 import { hasMongoConfig } from '@/lib/mongo';
 import { redirect } from 'next/navigation';
 
@@ -25,6 +26,7 @@ export default async function AdminPage() {
   const categories = await getTerms('category', { includeDisabled: true });
   const media = await getMediaList({ includeDisabled: true });
   const analytics = await getAnalyticsSummary();
+  const formSubmissions = await getFormSubmissions();
 
   return (
     <AdminEditor
@@ -36,7 +38,8 @@ export default async function AdminPage() {
         posts: parseSerialized(posts),
         categories: parseSerialized(categories),
         media: parseSerialized(media),
-        analytics: parseSerialized(analytics)
+        analytics: parseSerialized(analytics),
+        formSubmissions: parseSerialized(formSubmissions)
       }}
     />
   );

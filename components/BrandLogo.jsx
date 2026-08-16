@@ -1,10 +1,8 @@
-export function BrandLogo({ inverted = false, compact = false }) {
+export function BrandLogo({ inverted = false, compact = false, scrolled=false }) {
   return (
-    <span className={`brand-logo${inverted ? ' inverted' : ''}${compact ? ' compact' : ''}`}>
-      <span className="brand-logo-line">
-        Yalla<span className="brand-heart" aria-hidden="true">♥</span>
-      </span>
-      <span className="brand-logo-line brand-logo-together">together</span>
-    </span>
+    <img
+      className={`brand-logo${inverted ? ' inverted' : ''}${compact ? ' compact' : ''}`}
+      src={scrolled ? "/media/2025/12/Yalla-Together-Logo-Header-colored.png" : "/media/2025/12/Yalla-Together-Logo-Header.png"}
+      alt="Yalla together" />
   );
 }

@@ -1,3 +1,4 @@
+import { BlogPageTemplate } from './BlogPageTemplate';
 import { ContactPageTemplate } from './ContactPageTemplate';
 import { EditorialPageTemplate } from './EditorialPageTemplate';
 import { GiftFinderPageTemplate } from './GiftFinderPageTemplate';
@@ -11,6 +12,7 @@ export const pageTemplateComponents = {
   hero: HeroPageTemplate,
   editorial: EditorialPageTemplate,
   contact: ContactPageTemplate,
+  blog: BlogPageTemplate,
   'gift-finder': GiftFinderPageTemplate
 };
 

@@ -10,10 +10,9 @@ export async function CategoryTiles({ lang }) {
       <h2 id="categories-title">Find gifts by story, person, and moment</h2>
       <div className="category-grid">
         {tiles.map((tile) => (
-          <Link className="category-tile" href={tile.href} key={tile.title}>
+          <Link className={`category-tile${tile.image ? ' has-image' : ''}`} href={tile.href} key={tile.title}>
+            {tile.image && <img src={tile.image} alt={tile.imageAlt || tile.title} />}
             <span>{tile.title}</span>
-            <strong>{tile.count || 'Explore'}</strong>
-            <small>{tile.terms.join(' · ')}</small>
           </Link>
         ))}
       </div>

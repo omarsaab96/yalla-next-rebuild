@@ -62,16 +62,31 @@ function FinderCard({ post }) {
       <Link href={post.href} className="finder-card-image">
         <img src={image} alt={post.imageAlt || post.title} onError={() => setImage(fallbackImage)} />
       </Link>
-      <div>
-        <p>{post.date}</p>
-        <h2><Link href={post.href}>{post.title}</Link></h2>
-        {post.excerpt && <span>{post.excerpt}</span>}
+      <div className="finder-card-body">
+        <p className='eyebrow'>{post.date}</p>
+        <h4><Link href={post.href}>{post.title}</Link></h4>
+        <p>{post.excerpt && <span>{post.excerpt}</span>}</p>
+      </div>
+      <div className="finder-card-footer">
+        <Link className='post-card-readmore' href={post.href}>Read more</Link>
       </div>
     </article>
   );
 }
 
-export function GiftFinder({ heading, intro, posts, categories }) {
+export function GiftFinder({
+  kicker = 'gift finder',
+  heading,
+  intro,
+  image,
+  imageAlt,
+  body,
+  posts,
+  categories,
+  searchPlaceholder = 'Search gifts, people, occasions',
+  filterTitle = 'Categories',
+  emptyMessage = 'No gifts match these filters.'
+}) {
   const [query, setQuery] = useState('');
   const [selectedCategories, setSelectedCategories] = useState([]);
 
@@ -98,9 +113,10 @@ export function GiftFinder({ heading, intro, posts, categories }) {
 
   return (
     <main className="gift-finder-page">
-      <section className="finder-hero">
-        <p className="section-kicker">gift finder</p>
+      <section className="finder-hero single-header">
+        {/* <p className="section-kicker">{kicker}</p> */}
         <h1>{heading}</h1>
+        {image && <img className="finder-hero-image" src={image} alt={imageAlt || heading} />}
         {intro && <div className="content" dangerouslySetInnerHTML={{ __html: intro }} />}
       </section>
 
@@ -109,9 +125,9 @@ export function GiftFinder({ heading, intro, posts, categories }) {
           <div className="finder-sidebar-inner">
             <label className="finder-search">
               <span>Search</span>
-              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search gifts, people, occasions" />
+              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={searchPlaceholder} />
             </label>
-            <FilterGroup title="Categories" groups={categories} selected={selectedCategories} onChange={setSelectedCategories} />
+            <FilterGroup title={filterTitle} groups={categories} selected={selectedCategories} onChange={setSelectedCategories} />
             <button className="secondary-button" type="button" onClick={clearFilters}>Clear filters</button>
           </div>
         </aside>
@@ -123,9 +139,11 @@ export function GiftFinder({ heading, intro, posts, categories }) {
           <div className="finder-grid">
             {filteredPosts.map((post) => <FinderCard key={post.id} post={post} />)}
           </div>
-          {filteredPosts.length === 0 && <p className="finder-empty">No gifts match these filters.</p>}
+          {filteredPosts.length === 0 && <p className="finder-empty">{emptyMessage}</p>}
         </div>
       </section>
+
+      {body && <section className="content finder-body" dangerouslySetInnerHTML={{ __html: body }} />}
     </main>
   );
 }

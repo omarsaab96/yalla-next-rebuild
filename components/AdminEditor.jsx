@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BrandLogo } from '@/components/BrandLogo';
-import { getSchema } from '@/lib/templateSchemas';
+import { getSchema, PAGE_TEMPLATE_OPTIONS, POST_TEMPLATE_OPTIONS } from '@/lib/templateSchemas';
 import { resolveSeoTemplate } from '@/lib/seoVariables';
 
 const tabs = [
@@ -11,24 +11,12 @@ const tabs = [
   { key: 'pages', label: 'Pages' },
   { key: 'posts', label: 'Posts' },
   { key: 'categories', label: 'Categories' },
-  { key: 'media', label: 'Media' }
+  { key: 'media', label: 'Media' },
+  { key: 'formSubmissions', label: 'Contact form submissions' }
 ];
 
-const pageTemplates = [
-  { value: 'homepage', label: 'Homepage' },
-  { value: 'standard', label: 'Standard page' },
-  { value: 'hero', label: 'Hero page' },
-  { value: 'editorial', label: 'Editorial page' },
-  { value: 'contact', label: 'Contact page' },
-  { value: 'gift-finder', label: 'Gift Finder page' }
-];
-
-const postTemplates = [
-  { value: 'standard', label: 'Standard post' },
-  { value: 'feature', label: 'Feature story' },
-  { value: 'guide', label: 'Gift guide' },
-  { value: 'minimal', label: 'Minimal post' }
-];
+const pageTemplates = PAGE_TEMPLATE_OPTIONS;
+const postTemplates = POST_TEMPLATE_OPTIONS;
 
 function updateLocalized(target, field, lang, value) {
   return { ...target, [field]: { ...(target[field] || {}), [lang]: value } };
@@ -87,7 +75,7 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', template = 'stand
       <div className="rich-editor-head">
         <span>{label}</span>
         <div className="editor-tabs">
-          {['visual', 'preview', 'code'].map((tab) => (
+          {['visual', 'code'].map((tab) => (
             <button key={tab} className={mode === tab ? 'active' : ''} onClick={() => setMode(tab)} type="button">
               {tab}
             </button>
@@ -624,7 +612,7 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected }) {
   function getValue(field) {
     const value = item.fields?.[field.name];
     if (field.localized) {
-      if (value?.[lang]) return value[lang];
+      if (value && Object.prototype.hasOwnProperty.call(value, lang)) return value[lang];
       if (field.name === 'body') return item.content?.[lang] || item.content?.en || '';
       return '';
     }
@@ -771,7 +759,8 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
                 </select>
               </Field>
             )}
-            {selected.featuredImage !== undefined && !isHomepage && <MediaPicker value={selected.featuredImage || ''} media={media} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
+            {entity === 'category' && <MediaPicker label="Category image" value={selected.featuredImage || ''} media={media} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
+            {selected.featuredImage !== undefined && !isHomepage && entity !== 'category' && <MediaPicker value={selected.featuredImage || ''} media={media} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
             {selected.localPath !== undefined && <Field label="Local path"><input value={selected.localPath || ''} onChange={(e) => updateSelected({ ...selected, localPath: e.target.value })} /></Field>}
             {selected.sourceUrl !== undefined && <Field label="Source URL"><input value={selected.sourceUrl || ''} onChange={(e) => updateSelected({ ...selected, sourceUrl: e.target.value })} /></Field>}
             {selected.title && <Field label="Title EN"><input value={selected.title?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'en', e.target.value))} /></Field>}
@@ -803,6 +792,43 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
   );
 }
 
+function formatSubmissionFieldName(name) {
+  return name
+    .replace(/^your-/, '')
+    .replace(/[-_]+/g, ' ')
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function FormSubmissionsPanel({ submissions }) {
+  return (
+    <div className="admin-panel submissions-panel">
+      {submissions.length === 0 ? (
+        <p>No form submissions yet.</p>
+      ) : (
+        submissions.map((submission) => (
+          <article className="submission-card" key={submission._id || submission.createdAt}>
+            <header>
+              <div>
+                <h2>{submission.fields?.['your-subject'] || submission.fields?.subject || 'Contact form submission'}</h2>
+                <small>{submission.createdAt ? new Date(submission.createdAt).toLocaleString() : ''}</small>
+              </div>
+              <span>{submission.formName || 'contact'}</span>
+            </header>
+            <dl>
+              {Object.entries(submission.fields || {}).map(([name, value]) => (
+                <div key={name}>
+                  <dt>{formatSubmissionFieldName(name)}</dt>
+                  <dd>{Array.isArray(value) ? value.join(', ') : value}</dd>
+                </div>
+              ))}
+            </dl>
+          </article>
+        ))
+      )}
+    </div>
+  );
+}
+
 export function AdminEditor({ initialData, mongoEnabled, session }) {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [settings, setSettings] = useState(initialData.settings);
@@ -811,6 +837,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
   const [categories, setCategories] = useState(initialData.categories);
   const [media, setMedia] = useState(initialData.media);
   const [analytics] = useState(initialData.analytics);
+  const [formSubmissions] = useState(initialData.formSubmissions || []);
   const [selectedPageId, setSelectedPageId] = useState(initialData.pages[0]?._id || initialData.pages[0]?.slug || '');
   const [selectedPostId, setSelectedPostId] = useState(initialData.posts[0]?._id || initialData.posts[0]?.slug || '');
   const [selectedCategoryId, setSelectedCategoryId] = useState(initialData.categories[0]?._id || initialData.categories[0]?.slug || '');
@@ -961,6 +988,8 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
       enabled: true,
       name: { en: 'New category', ar: 'New category' },
       description: { en: '', ar: '' },
+      featuredImage: '',
+      featuredImageAlt: { en: '', ar: '' },
       parentId: 0,
       count: 0
     };
@@ -1011,7 +1040,8 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
     pages: { count: pages.length, addLabel: 'Add Page', onAdd: createPage },
     posts: { count: posts.length, addLabel: 'Add Post', onAdd: createPost },
     categories: { count: categories.length, addLabel: 'Add Category', onAdd: createCategory },
-    media: { count: media.length, addLabel: 'Add Media', onAdd: uploadMedia }
+    media: { count: media.length, addLabel: 'Add Media', onAdd: uploadMedia },
+    formSubmissions: { count: formSubmissions.length }
   };
 
   function saveActiveSection() {
@@ -1061,10 +1091,10 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
       <main className="admin-shell">
         <div className="admin-head">
           <div>
-            <p className="section-kicker">cms</p>
+            {/* <p className="section-kicker">cms</p> */}
             <h1>
               {tabs.find((tab) => tab.key === activeTab)?.label || 'Dashboard'}
-              {sectionMeta[activeTab] && <span className="admin-title-count">{sectionMeta[activeTab].count}</span>}
+              {sectionMeta[activeTab] && <span className="admin-title-count">({sectionMeta[activeTab].count})</span>}
             </h1>
           </div>
           {sectionMeta[activeTab]?.onAdd && (
@@ -1142,10 +1172,13 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
         <EntityEditor label="Post" items={posts} setItems={setPosts} selectedId={selectedPostId} setSelectedId={setSelectedPostId} onSave={saveActiveSection} onCreate={createPost} onDelete={deleteContent} saveStatus={saveStatus} typeOptions={['post']} richContent entity="post" categories={categories} media={media} />
       )}
       {activeTab === 'categories' && (
-        <EntityEditor label="Category" items={categories} setItems={setCategories} selectedId={selectedCategoryId} setSelectedId={setSelectedCategoryId} onSave={saveActiveSection} onCreate={createCategory} onDelete={deleteTaxonomy} saveStatus={saveStatus} typeOptions={['category']} entity="category" categories={categories} />
+        <EntityEditor label="Category" items={categories} setItems={setCategories} selectedId={selectedCategoryId} setSelectedId={setSelectedCategoryId} onSave={saveActiveSection} onCreate={createCategory} onDelete={deleteTaxonomy} saveStatus={saveStatus} typeOptions={['category']} entity="category" categories={categories} media={media} />
       )}
       {activeTab === 'media' && (
         <EntityEditor label="Media" items={media} setItems={setMedia} selectedId={selectedMediaId} setSelectedId={setSelectedMediaId} onSave={saveActiveSection} onUploadMedia={uploadMedia} saveStatus={saveStatus} />
+      )}
+      {activeTab === 'formSubmissions' && (
+        <FormSubmissionsPanel submissions={formSubmissions} />
       )}
 
       </main>

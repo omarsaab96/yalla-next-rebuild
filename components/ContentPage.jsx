@@ -15,6 +15,7 @@ export async function getContentPageMetadata(slug) {
 }
 
 export default async function ContentPage({ slug, searchParams }) {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
   const { settings, lang } = await getRequestContext(searchParams);
   if (settings.features.pages === false) notFound();
 
@@ -23,5 +24,5 @@ export default async function ContentPage({ slug, searchParams }) {
   const item = renderContentItem(page, lang);
   const Template = getPageTemplateComponent(item.template);
 
-  return <Template page={page} item={item} settings={settings} lang={lang} />;
+  return <Template page={page} item={item} settings={settings} lang={lang} searchParams={resolvedSearchParams} />;
 }

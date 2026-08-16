@@ -9,15 +9,15 @@ export function GiftFinderPageTemplate({ page, item }) {
   const showCategoryTiles = getTemplateField(page.fields, 'showCategoryTiles', item.lang, true);
 
   return (
-    <article className="single single-page page-template-gift-finder">
+    <article className="single-page page-template-gift-finder">
       <header className="single-header">
-        <p className="section-kicker">gift finder</p>
+        {/* <p className="section-kicker">gift finder</p> */}
         <h1>{heading}</h1>
         {image && <img src={image} alt={item.imageAlt || heading} />}
       </header>
       {intro && <div className="content" dangerouslySetInnerHTML={{ __html: intro }} />}
       {showCategoryTiles && <CategoryTiles lang={item.lang} />}
-      <div className="content" dangerouslySetInnerHTML={{ __html: body }} />
+      {body && <div className="content" dangerouslySetInnerHTML={{ __html: body }} />}
     </article>
   );
 }

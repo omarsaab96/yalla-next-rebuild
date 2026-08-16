@@ -26,8 +26,18 @@ export default async function CategoryPage({ params, searchParams }) {
 
   return (
     <section className="archive-page">
-      <p className="section-kicker">category</p>
-      <h1>{localize(category.name, lang)}</h1>
+      <header className="archive-header">
+        <div>
+          <p className="section-kicker">category</p>
+          <h1>{localize(category.name, lang)}</h1>
+        </div>
+        {category.featuredImage && (
+          <img
+            src={category.featuredImage}
+            alt={localize(category.featuredImageAlt, lang) || localize(category.name, lang)}
+          />
+        )}
+      </header>
       <div className="archive-grid">
         {posts.map((post) => <PostCard key={post._id?.toString() || post.wordpressId} post={post} lang={lang} />)}
       </div>

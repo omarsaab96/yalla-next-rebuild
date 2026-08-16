@@ -12,8 +12,11 @@ export function PostCard({ post, lang = 'en', large = false }) {
       </Link>
       <div className="post-card-body">
         <p className="eyebrow">{item.dateText}</p>
-        <h2><Link href={href}>{item.titleText}</Link></h2>
+        <h4><Link href={href}>{item.titleText}</Link></h4>
         <p>{item.excerptText.replace(/Read More.*/, '').slice(0, 170)}</p>
+      </div>
+      <div className="post-card-footer">
+        <Link href={href} className="post-card-readmore">Read more</Link>
       </div>
     </article>
   );

@@ -16,6 +16,9 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
   const introContent = getTemplateField(homepage?.fields, 'introContent', lang, item?.contentHtml || '');
   const showCategories = getTemplateField(homepage?.fields, 'showCategories', lang, true);
   const showLatestPosts = getTemplateField(homepage?.fields, 'showLatestPosts', lang, true);
+  const latestKicker = getTemplateField(homepage?.fields, 'latestKicker', lang, 'latest stories');
+  const latestPostCountValue = getTemplateField(homepage?.fields, 'latestPostCount', lang, 5);
+  const latestPostCount = Math.min(12, Math.max(1, Number.parseInt(latestPostCountValue, 10) || 5));
   const contactTitle = getTemplateField(homepage?.fields, 'contactTitle', lang, 'Need help?');
   const contactText = getTemplateField(homepage?.fields, 'contactText', lang, 'Tell us who you are shopping for and what the moment means. We will help you find the right story.');
   const contactCtaLabel = getTemplateField(homepage?.fields, 'contactCtaLabel', lang, 'Get in touch');
@@ -27,9 +30,9 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
         <section className="hero page-template-homepage">
           <img src={heroImage} alt={item?.imageAlt || heroPost?.imageAlt || settings.siteName} />
           <div className="hero-copy">
-            <p>{heroKicker}</p>
-            <h1>{heroTitle}</h1>
-            <span>{heroSubtitle}</span>
+            {/* <p>{heroKicker}</p> */}
+            <h2 className="hero-title">{heroTitle}</h2>
+            <span className="hero-subtitle">{heroSubtitle}</span>
             <div className="hero-actions">
               {settings.features.blog !== false && <Link href={localizedHref(primaryCtaHref, lang)}>{primaryCtaLabel}</Link>}
               <Link href={localizedHref(secondaryCtaHref, lang)}>{secondaryCtaLabel}</Link>
@@ -46,10 +49,12 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
 
       {showLatestPosts && settings.features.homepageLatest !== false && settings.features.blog !== false && posts.length > 0 && (
         <section className="latest-section">
-          <p className="section-kicker">latest stories</p>
+          <h2 className="hero-title">{latestKicker}</h2>
           <div className="post-grid">
-            <PostCard post={posts[0]} lang={lang} large />
-            {posts.slice(1, 5).map((post) => <PostCard key={post._id?.toString() || post.wordpressId} post={post} lang={lang} />)}
+            {/* <PostCard post={posts[0]} lang={lang} large /> */}
+            {posts.slice(0, latestPostCount).map(
+              (post) => <PostCard key={post._id?.toString() || post.wordpressId} post={post} lang={lang} />
+            )}
           </div>
         </section>
       )}

@@ -6,9 +6,9 @@ export function StandardPageTemplate({ page, item }) {
   const body = getTemplateField(page.fields, 'body', item.lang, item.contentHtml);
 
   return (
-    <article className="single single-page page-template-standard">
+    <article className="single-page page-template-standard">
       <header className="single-header">
-        <p className="section-kicker">page</p>
+        {/* <p className="section-kicker">page</p> */}
         <h1>{heading}</h1>
         {image && <img src={image} alt={item.imageAlt || heading} />}
       </header>
