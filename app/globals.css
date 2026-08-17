@@ -409,11 +409,15 @@ img {
 .instagram-tile span {
   bottom: 14px;
   color: white;
+  display: -webkit-box;
   font-family: var(--font-bold);
   font-size: .78rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   left: 14px;
   line-height: 1.2;
   opacity: 0;
+  overflow: hidden;
   overflow-wrap: anywhere;
   position: absolute;
   right: 14px;
