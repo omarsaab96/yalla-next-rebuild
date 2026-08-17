@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { CategoryTiles } from '@/components/CategoryTiles';
+import { HomepageCategoryTiles } from '@/components/CategoryTiles';
 import { PostCard } from '@/components/PostCard';
-import { localizedHref } from '@/lib/cms';
+import { localizedHref, renderContentItem } from '@/lib/cms';
 import { getTemplateField } from '@/lib/templateSchemas';
 
 export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPost }) {
@@ -19,6 +19,8 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
   const latestKicker = getTemplateField(homepage?.fields, 'latestKicker', lang, 'latest stories');
   const latestPostCountValue = getTemplateField(homepage?.fields, 'latestPostCount', lang, 5);
   const latestPostCount = Math.min(12, Math.max(1, Number.parseInt(latestPostCountValue, 10) || 5));
+  const instagramHref = 'https://www.instagram.com/yallatogether/';
+  const instagramItems = posts.filter((post) => post.featuredImage).slice(0, 6);
   const contactTitle = getTemplateField(homepage?.fields, 'contactTitle', lang, 'Need help?');
   const contactText = getTemplateField(homepage?.fields, 'contactText', lang, 'Tell us who you are shopping for and what the moment means. We will help you find the right story.');
   const contactCtaLabel = getTemplateField(homepage?.fields, 'contactCtaLabel', lang, 'Get in touch');
@@ -45,16 +47,46 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
         <section className="home-cms-content content" dangerouslySetInnerHTML={{ __html: introContent }} />
       )}
 
-      {showCategories && settings.features.homepageCategories !== false && settings.features.categories !== false && <CategoryTiles lang={lang} />}
+      {showCategories && settings.features.homepageCategories !== false && settings.features.categories !== false && <HomepageCategoryTiles lang={lang} />}
 
       {showLatestPosts && settings.features.homepageLatest !== false && settings.features.blog !== false && posts.length > 0 && (
         <section className="latest-section">
-          <h2 className="hero-title">{latestKicker}</h2>
+          <h2 className="">{latestKicker}</h2>
           <div className="post-grid">
             {/* <PostCard post={posts[0]} lang={lang} large /> */}
             {posts.slice(0, latestPostCount).map(
               (post) => <PostCard key={post._id?.toString() || post.wordpressId} post={post} lang={lang} />
             )}
+          </div>
+        </section>
+      )}
+
+      {showLatestPosts && settings.features.homepageLatest !== false && instagramItems.length > 0 && (
+        <section className="instagram-section" aria-labelledby="instagram-title">
+          <div className="instagram-header">
+            <div>
+              <p className="section-kicker">instagram</p>
+              <h2 id="instagram-title">Follow the gift trail</h2>
+            </div>
+            <a className="text-link" href={instagramHref} target="_blank" rel="noopener noreferrer">@yallatogether</a>
+          </div>
+          <div className="instagram-grid">
+            {instagramItems.map((post) => {
+              const postItem = renderContentItem(post, lang);
+              return (
+                <a
+                  className="instagram-tile"
+                  href={instagramHref}
+                  key={post._id?.toString() || post.wordpressId}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View Yalla Together on Instagram: ${postItem.titleText}`}
+                >
+                  <img src={post.featuredImage} alt={postItem.imageAlt || postItem.titleText} />
+                  <span>{postItem.titleText}</span>
+                </a>
+              );
+            })}
           </div>
         </section>
       )}
