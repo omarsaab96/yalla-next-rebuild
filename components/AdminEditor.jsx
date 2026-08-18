@@ -616,7 +616,7 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected }) {
       if (field.name === 'body') return item.content?.[lang] || item.content?.en || '';
       return '';
     }
-    if (field.type === 'boolean') return value !== false;
+    if (field.type === 'boolean') return value ?? field.defaultValue ?? true;
     return value || '';
   }
 

@@ -2,6 +2,7 @@ import './globals.css';
 import { Suspense } from 'react';
 import { headers } from 'next/headers';
 import { AnalyticsTracker } from '@/components/AnalyticsTracker';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
 import { getRequestContext } from '@/lib/request';
@@ -26,6 +27,11 @@ export default async function RootLayout({ children }) {
     <html lang={lang} dir={dir}>
       <body className={`${dir === 'rtl' ? 'rtl' : ''}${isAdmin ? ' admin-body' : ''}`}>
         {!isAdmin && <SiteHeader settings={settings} lang={lang} />}
+        {!isAdmin && (
+          <Suspense fallback={null}>
+            <ScrollToTop />
+          </Suspense>
+        )}
         <main>{children}</main>
         {!isAdmin && <SiteFooter settings={settings} lang={lang} />}
         {!isAdmin && (
