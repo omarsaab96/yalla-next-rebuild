@@ -632,6 +632,9 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected }) {
     <div className="template-fields">
       <h3>{lang === 'en' ? 'Template fields' : 'Arabic fields'}</h3>
       {visibleSchema.map((field) => {
+        if (field.type === 'section') {
+          return <h4 className="template-field-section" key={field.name}>{field.label}</h4>;
+        }
         const fieldLabel = field.localized ? `${field.label} ${lang.toUpperCase()}` : `${field.label} shared`;
         if (field.type === 'image') {
           return <MediaPicker key={`${field.name}-${lang}`} label={fieldLabel} value={getValue(field)} media={media} onSelect={(path) => setValue(field, path)} />;

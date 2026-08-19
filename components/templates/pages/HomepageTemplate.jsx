@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { HomepageCategoryTiles } from '@/components/HomepageCategoryTiles';
+import { InstagramFeed } from '@/components/InstagramFeed';
 import { PostCard } from '@/components/PostCard';
 import { localizedHref } from '@/lib/cms';
 import { getTemplateField } from '@/lib/templateSchemas';
@@ -17,6 +18,19 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
   const showCategories = getTemplateField(homepage?.fields, 'showCategories', lang, true);
   const showLatestPosts = getTemplateField(homepage?.fields, 'showLatestPosts', lang, true);
   const showInstagramFeed = getTemplateField(homepage?.fields, 'showInstagramFeed', lang, false);
+  const instagramFeedHeading = getTemplateField(homepage?.fields, 'instagramFeedHeading', lang, 'Follow the gift trail');
+  const instagramFeedIntro = getTemplateField(homepage?.fields, 'instagramFeedIntro', lang, '');
+  const instagramFeedCtaLabel = getTemplateField(homepage?.fields, 'instagramFeedCtaLabel', lang, 'Follow @yallatogether');
+  const instagramFeedCtaHref = getTemplateField(homepage?.fields, 'instagramFeedCtaHref', lang, 'https://www.instagram.com/yallatogether/');
+  const instagramFeedItems = Array.from({ length: 6 }, (_, index) => {
+    const position = index + 1;
+    return {
+      image: getTemplateField(homepage?.fields, `instagramFeedImage${position}`, lang, ''),
+      title: getTemplateField(homepage?.fields, `instagramFeedTitle${position}`, lang, ''),
+      caption: getTemplateField(homepage?.fields, `instagramFeedCaption${position}`, lang, ''),
+      href: getTemplateField(homepage?.fields, `instagramFeedHref${position}`, lang, '')
+    };
+  }).filter((post) => post.image);
   const latestKicker = getTemplateField(homepage?.fields, 'latestKicker', lang, 'latest stories');
   const latestPostCountValue = getTemplateField(homepage?.fields, 'latestPostCount', lang, 5);
   const latestPostCount = Math.min(12, Math.max(1, Number.parseInt(latestPostCountValue, 10) || 5));
@@ -63,16 +77,13 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
       )}
 
       {showInstagramFeed && (
-        <section className="instagram-embed-section">
-          <iframe
-            src="https://www.juicer.io/api/feeds/yallatogether/iframe"
-            frameBorder="0"
-            width="1000"
-            height="3140"
-            style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '1000px', height: '3140px' }}
-            title="yallatogether - Juicer social media feed"
-          />
-        </section>
+        <InstagramFeed
+          ctaHref={instagramFeedCtaHref}
+          ctaLabel={instagramFeedCtaLabel}
+          heading={instagramFeedHeading}
+          intro={instagramFeedIntro}
+          items={instagramFeedItems}
+        />
       )}
 
       {settings.features.contactCta !== false && (
