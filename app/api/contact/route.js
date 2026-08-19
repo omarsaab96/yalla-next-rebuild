@@ -1,4 +1,3 @@
-import { NextResponse } from 'next/server';
 import { formDataToFields, saveFormSubmission } from '@/lib/formSubmissions';
 
 function getField(fields, ...names) {
@@ -13,6 +12,15 @@ function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+function redirectToContact(status) {
+  return new Response(null, {
+    status: 303,
+    headers: {
+      Location: `/contact/?sent=${status}`
+    }
+  });
+}
+
 export async function POST(request) {
   const formData = await request.formData();
   const fields = formDataToFields(formData);
@@ -21,7 +29,7 @@ export async function POST(request) {
   const subject = getField(fields, 'your-subject', 'subject');
 
   if (!name || !email || !subject || !isValidEmail(email)) {
-    return NextResponse.redirect(new URL('/contact/?sent=invalid', request.url), 303);
+    return redirectToContact('invalid');
   }
 
   try {
@@ -34,8 +42,8 @@ export async function POST(request) {
       }
     });
 
-    return NextResponse.redirect(new URL('/contact/?sent=1', request.url), 303);
+    return redirectToContact('1');
   } catch {
-    return NextResponse.redirect(new URL('/contact/?sent=0', request.url), 303);
+    return redirectToContact('0');
   }
 }

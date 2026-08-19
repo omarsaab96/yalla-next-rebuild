@@ -1348,10 +1348,6 @@ img {
   color: var(--green);
   font-weight: 700;
 }
-.language-option:not(.active) {
-  cursor: not-allowed;
-  /* pointer-events: none; */
-}
 
 .language-check {
   color: var(--terracotta);
