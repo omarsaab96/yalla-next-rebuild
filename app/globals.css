@@ -30,9 +30,12 @@
   --cream: #f9d4bc;
   --green: #35676b;
   --teal-light: #98c2bd;
-  --pink: #f0a4d4;
-  --terracotta: #f97f5a;
+  /* --pink: #f0a4d4; */
+  --pink: #d49d20;
+  /* --terracotta: #f97f5a; */
+  --terracotta: #d49d20;
   --gold: #d49d20;
+  --background-accent: rgba(212, 157, 32, 0.2);
   --white: #fff;
   --font-serif: 'Roca One', Georgia, serif;
   --font-sans: 'Canva Sans', Arial, sans-serif;
@@ -393,7 +396,7 @@ img {
   color: var(--terracotta);
   font-family: var(--font-bold);
   text-transform: uppercase;
-  background: rgba(249, 127, 90, 0.2);
+  background: var(--background-accent);
   border-radius: 10px;
   padding: 8px 12px 8px 14px;
   font-size: .78rem;
@@ -469,7 +472,7 @@ img {
 
 .carousel-controls button {
   align-items: center;
-  background: rgba(249, 127, 90, 0.16);
+  background: var(--background-accent);
   border: none;
   border-radius: 999px;
   color: var(--terracotta);
@@ -517,9 +520,9 @@ img {
 
 .carousel-dots {
   display: flex;
-  gap: 8px;
+  gap: 5px;
   justify-content: center;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 
 .carousel-dots button {
@@ -527,15 +530,15 @@ img {
   border: none;
   border-radius: 999px;
   cursor: pointer;
-  height: 8px;
+  height: 6px;
   padding: 0;
   transition: background-color .2s, transform .2s, width .2s;
-  width: 8px;
+  width: 6px;
 }
 
 .carousel-dots button.active {
   background: var(--terracotta);
-  width: 24px;
+  width: 6px;
 }
 
 .carousel-dots button:hover {
@@ -745,6 +748,10 @@ img {
   line-height: 1.2;
   margin: 0;
   font-size: 14px;
+}
+
+.finder-card-image img {
+  width: 100%;
 }
 
 .gift-finder-page {
@@ -1032,6 +1039,63 @@ img {
   max-width: 1040px;
 }
 
+.post-template-standard .content,
+.post-template-standard .content p,
+.page-template-standard .content,
+.page-template-standard .content p,
+.page-template-standard .content,
+.page-template-standard .content p,
+.page-template-contact .content,
+.page-template-contact .content p {
+  font-size: 14px;
+  color: #888;
+  font-family: var(--font-sans);
+}
+
+.post-template-standard .content h1,
+.post-template-standard .content h1 *,
+.post-template-standard .content h2,
+.post-template-standard .content h2 *,
+.post-template-standard .content h3,
+.post-template-standard .content h3 *,
+.post-template-standard .content h4,
+.post-template-standard .content h4 *,
+.post-template-standard .content h5,
+.post-template-standard .content h5 *,
+.post-template-standard .content h6,
+.post-template-standard .content h6 *,
+.page-template-standard .content h1,
+.page-template-standard .content h1 *,
+.page-template-standard .content h2,
+.page-template-standard .content h2 *,
+.page-template-standard .content h3,
+.page-template-standard .content h3 *,
+.page-template-standard .content h4,
+.page-template-standard .content h4 *,
+.page-template-standard .content h5,
+.page-template-standard .content h5 *,
+.page-template-standard .content h6,
+.page-template-standard .content h6 *,
+.page-template-contact .content h1,
+.page-template-contact .content h1 *,
+.page-template-contact .content h2,
+.page-template-contact .content h2 *,
+.page-template-contact .content h3,
+.page-template-contact .content h3 *,
+.page-template-contact .content h4,
+.page-template-contact .content h4 *,
+.page-template-contact .content h5,
+.page-template-contact .content h5 *,
+.page-template-contact .content h6,
+.page-template-contact .content h6 * {
+  /* font-size: 14px; */
+  color: var(--gold);
+  font-family: var(--font-serif);
+  border: none;
+  margin-bottom: 0;
+  line-height: 1
+}
+
 .single-header,
 .archive-header,
 .finder-hero {
@@ -1195,21 +1259,48 @@ img {
   margin: 0 0 1.2em;
 }
 
+.content h1 {
+  font-size: 34px;
+}
+
 .content h2 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  font-weight: 400;
-  line-height: 1.05;
-  margin: 1.5em 0 .55em;
+  font-size: 30px;
+}
+
+.content h3 {
+  font-size: 26px;
+}
+
+.content h4 {
+  font-size: 22px;
+}
+
+.content h5 {
+  font-size: 18px;
+}
+
+.content h6 {
+  font-size: 14px;
 }
 
 .content a {
-  border-bottom: 1px solid var(--gold);
   color: var(--terracotta);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.content a:hover {
+  color: var(--green);
 }
 
 .content img {
+  display: block;
+  /* width: 100%; */
   height: auto;
   margin: 28px auto 8px;
+  /* max-height: 500px;
+  object-fit: cover; */
+  border-radius: 20px;
 }
 
 .wp-caption {
@@ -1338,7 +1429,7 @@ img {
 }
 
 .language-option:hover {
-  background: rgba(249, 127, 90, .12);
+  background: var(--background-accent);
   color: var(--terracotta);
   /* transform: translateX(-2px); */
 }
@@ -2744,47 +2835,158 @@ img {
   justify-content: center;
 }
 
-.instagram-posts {
-  /* display: flex; */
-  /* flex: 1; */
-  /* gap: 0; */
-  /* min-width: 0; */
+.instagram-phone {
+  margin: 0 auto;
+  min-width: 80px;
+  max-width:250px;
   position: relative;
-  padding-left: 50px;
+  z-index: 1;
+  flex:1
+}
 
+.iphone-frame {
+  /* background: #111; */
+  border:none;
+  border: 5px solid var(--terracotta);
+  border-radius: 40px;
+  box-shadow: -12px 14px 28px rgba(53, 103, 107, 0.28);
+  margin: 0 auto;
+  overflow: hidden;
+  /* padding: 5px; */
+  position: relative;
+  width: 100%;
+  /* padding-top:30px; */
+}
+
+.iphone-notch {
+  background:  var(--terracotta);
+  border-radius: 50px;
+  height: 20px;
+  left: 50%;
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 34%;
+  z-index: 3;
+}
+
+.iphone-screen {
+  aspect-ratio: 9 / 18.6;
+  background: #fff;
+  /* border-radius: 40px; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+}
+
+.instagram-app-header {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex: 0 0 58px;
+  gap: 14px;
+  justify-content: space-between;
+  padding: 40px 10px 10px;
+}
+
+.instagram-app-title img{
+  width:80px;
+  display:block;
+}
+
+.instagram-message-icon {
+  border: 2px solid #1d1d1f;
+  display: block;
+  flex: 0 0 auto;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.instagram-camera-icon{
+  /* border: 2px solid #1d1d1f; */
+  display: block;
+  flex: 0 0 auto;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.instagram-camera-icon::before {
+  background: #1d1d1f;
+  /* border-radius: 50%; */
+  content: '';
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+}
+.instagram-camera-icon:after {
+  background: #1d1d1f;
+  /* border-radius: 50%; */
+  content: '';
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+}
+
+.instagram-message-icon {
+  /* border-left-color: transparent; */
+  /* border-radius: 50%; */
+  /* transform: rotate(-24deg); */
+
+}
+
+.instagram-posts {
+  min-width: 0;
+  position: relative;
   z-index: 1;
 }
 
-.instarow {
-  display: flex;
+.instagram-carousel {
+  /* flex: 1; */
+  overflow: hidden;
+  padding: 0;
 }
 
-.instarow.row2 {
-  /* position: absolute;
-  top:-100px;
-  left:270px; */
-  /* border:1px solid red; */
-  padding-left: 150px;
-  margin-top: -200px;
+.instagram-carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform .65s ease;
+  will-change: transform;
+}
+
+.instagram-carousel-dots {
+  bottom: 30px;
+  inset-inline: 0;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
 }
 
 .instagram-post-card {
-  /* aspect-ratio: 1; */
-  background: var(--teal-light);
-  border-radius: 10px;
+  aspect-ratio: auto;
+  /* background: var(--teal-light); */
+  border-radius: 0;
   display: block;
-  /* flex: 0 0 260px; */
+  flex: 0 0 100%;
+  height: 100%;
   min-width: 0;
   overflow: hidden;
   position: relative;
-  box-shadow: -10px 9px 20px 0px rgba(53, 103, 107, 0.25);
-  transform: rotateZ(-15deg);
-  width: 260px;
+  width: 100%;
 }
 
 .instagram-post-card img {
-  height: 100%;
-  object-fit: cover;
+  /* height: 100%; */
+  /* object-fit: cover; */
   transition: transform .28s ease;
   width: 100%;
 }
@@ -2830,12 +3032,27 @@ img {
   opacity: 1;
 }
 
+.instagram-app-footer {
+  align-items: center;
+  /* border-top: 1px solid #eee; */
+  display: flex;
+  flex: 0 0 20px;
+  justify-content: space-around;
+  padding: 0 14px 8px;
+}
+
+.instagram-app-footer span {
+  background: var(--gold);
+  display: block;
+  height: 8px;
+  width: 50%;
+  border-radius: 50px;
+}
+
 .instagram-follow-panel {
   flex: 1;
   text-align: center;
   padding: 100px 0;
-  background-color: var(--green);
-  border-radius: 0 40px 40px 0;
   position: relative;
 }
 
@@ -2844,10 +3061,13 @@ img {
   display: block;
   position: absolute;
   top: 0;
-  right: 100%;
-  width: 100%;
+  right: 0;
+  width: 200%;
   height: 100%;
   background-color: var(--green);
+  /* background-color: var(--gold); */
+  border-radius: 40px;
+  z-index:-1;
 }
 
 .instagram-follow-panel h2 {
@@ -2867,7 +3087,7 @@ img {
 }
 
 .instagram-follow-panel a {
-  background: rgba(249, 127, 90, 0.2);
+  background: var(--background-accent);
   border-radius: 10px;
   color: var(--terracotta);
   display: inline-flex;
@@ -2885,18 +3105,22 @@ img {
 }
 
 @media (max-width: 1600px) {
-  .instagram-post-card {
-    width: 200px;
-  }
-
   .instagram-follow-panel {
     padding: 50px 0;
   }
-  h2{
-    font-size:40px!important;
+
+  h2 {
+    font-size: 40px !important;
   }
-  .finder-layout, .category-band, .latest-section, .instagram-feed-section, .archive-page, .intro-section, .single{
-    padding:clamp(48px, 8vw, 60px) clamp(18px, 5vw, 72px)
+
+  .finder-layout,
+  .category-band,
+  .latest-section,
+  .instagram-feed-section,
+  .archive-page,
+  .intro-section,
+  .single {
+    padding: clamp(48px, 8vw, 60px) clamp(18px, 5vw, 72px)
   }
 }
 
@@ -3124,13 +3348,14 @@ img {
     gap: 28px;
   }
 
-  .instagram-posts {
-    display: flex;
-    gap: 12px;
+  .instagram-phone {
+    flex: none;
+    min-width: 0;
+    width: min(100%, 390px);
   }
 
   .instagram-post-card {
-    border-radius: 14px;
+    border-radius: 0;
   }
 
   .instagram-post-overlay {
