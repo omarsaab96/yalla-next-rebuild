@@ -44,6 +44,7 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
   const latestKicker = getTemplateField(homepage?.fields, 'latestKicker', lang, 'latest stories');
   const latestPostCountValue = getTemplateField(homepage?.fields, 'latestPostCount', lang, 5);
   const latestPostCount = Math.min(12, Math.max(1, Number.parseInt(latestPostCountValue, 10) || 5));
+  const showContactCta = getTemplateField(homepage?.fields, 'showContactCta', lang, true);
   const contactTitle = getTemplateField(homepage?.fields, 'contactTitle', lang, 'Need help?');
   const contactText = getTemplateField(homepage?.fields, 'contactText', lang, 'Tell us who you are shopping for and what the moment means. We will help you find the right story.');
   const contactCtaLabel = getTemplateField(homepage?.fields, 'contactCtaLabel', lang, 'Get in touch');
@@ -103,7 +104,7 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
         />
       )}
 
-      {settings.features.contactCta !== false && (
+      {showContactCta && settings.features.contactCta !== false && (
         <section className="contact-cta">
           <h2>{contactTitle}</h2>
           <p>{contactText}</p>
