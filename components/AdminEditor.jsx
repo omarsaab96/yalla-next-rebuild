@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BrandLogo } from '@/components/BrandLogo';
-import { getSchema, PAGE_TEMPLATE_OPTIONS, POST_TEMPLATE_OPTIONS } from '@/lib/templateSchemas';
+import { getEffectivePageTemplate, getSchema, PAGE_TEMPLATE_OPTIONS, POST_TEMPLATE_OPTIONS } from '@/lib/templateSchemas';
 import { resolveSeoTemplate } from '@/lib/seoVariables';
 
 const tabs = [
@@ -679,7 +679,7 @@ function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured 
 }
 
 function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUploadMedia }) {
-  const schema = getSchema(entity === 'post' ? 'post' : 'page', item.template || 'standard');
+  const schema = getSchema(entity === 'post' ? 'post' : 'page', entity === 'page' ? getEffectivePageTemplate(item) : item.template || 'standard');
   const visibleSchema = schema.filter((field) => field.localized || lang === 'en');
 
   function getValue(field) {
@@ -837,7 +837,7 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
               )}
               {entity === 'page' && (
                 <Field label="Template">
-                  <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
+                  <select value={getEffectivePageTemplate(selected)} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
                     {pageTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
                   </select>
                 </Field>
