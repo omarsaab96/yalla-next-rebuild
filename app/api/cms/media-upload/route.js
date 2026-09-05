@@ -3,6 +3,7 @@ import { mkdir, writeFile } from 'fs/promises';
 import { NextResponse } from 'next/server';
 import { getAdminSession } from '@/lib/auth';
 import { getDb, hasMongoConfig } from '@/lib/mongo';
+import { getMediaUploadPath, getUploadPublicPath } from '@/lib/mediaStorage';
 
 export const runtime = 'nodejs';
 
@@ -45,7 +46,7 @@ export async function POST(request) {
   const now = new Date();
   const yyyy = String(now.getFullYear());
   const mm = String(now.getMonth() + 1).padStart(2, '0');
-  const uploadDir = path.join(process.cwd(), 'public', 'uploads', yyyy, mm);
+  const uploadDir = getMediaUploadPath(yyyy, mm);
   const db = await getDb();
   await mkdir(uploadDir, { recursive: true });
 
@@ -54,8 +55,8 @@ export async function POST(request) {
     const { base, ext } = slugifyFileName(file.name);
     const uniqueSuffix = `${Date.now()}-${index}`;
     const fileName = `${base}-${uniqueSuffix}${ext}`;
-    const diskPath = path.join(uploadDir, fileName);
-    const localPath = `/uploads/${yyyy}/${mm}/${fileName}`;
+    const diskPath = getMediaUploadPath(yyyy, mm, fileName);
+    const localPath = getUploadPublicPath(yyyy, mm, fileName);
     const title = path.basename(file.name, path.extname(file.name));
 
     const buffer = Buffer.from(await file.arrayBuffer());

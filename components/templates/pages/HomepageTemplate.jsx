@@ -16,6 +16,16 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
   const secondaryCtaHref = getTemplateField(homepage?.fields, 'secondaryCtaHref', lang, '/gift-finder/');
   const introContent = getTemplateField(homepage?.fields, 'introContent', lang, item?.contentHtml || '');
   const showCategories = getTemplateField(homepage?.fields, 'showCategories', lang, true);
+  const categoryKicker = getTemplateField(homepage?.fields, 'categoryKicker', lang, 'categories');
+  const categoryTitle = getTemplateField(homepage?.fields, 'categoryTitle', lang, 'Let the gift complete the story');
+  const categoryIntro = getTemplateField(
+    homepage?.fields,
+    'categoryIntro',
+    lang,
+    'Explore thoughtful gifts for every person, story, and special moment. From meaningful keepsakes to unforgettable surprises, find something made to be remembered.'
+  );
+  const categoryCtaLabel = getTemplateField(homepage?.fields, 'categoryCtaLabel', lang, 'Explore Gift Finder');
+  const categoryCtaHref = getTemplateField(homepage?.fields, 'categoryCtaHref', lang, '/gift-finder/');
   const showLatestPosts = getTemplateField(homepage?.fields, 'showLatestPosts', lang, true);
   const showInstagramFeed = getTemplateField(homepage?.fields, 'showInstagramFeed', lang, false);
   const instagramFeedHeading = getTemplateField(homepage?.fields, 'instagramFeedHeading', lang, 'Follow the gift trail');
@@ -61,7 +71,14 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
       )}
 
       {showCategories && settings.features.homepageCategories !== false && settings.features.categories !== false &&
-        <HomepageCategoryTiles lang={lang} />
+        <HomepageCategoryTiles
+          lang={lang}
+          kicker={categoryKicker}
+          title={categoryTitle}
+          intro={categoryIntro}
+          ctaLabel={categoryCtaLabel}
+          ctaHref={categoryCtaHref}
+        />
       }
 
       {showLatestPosts && settings.features.homepageLatest !== false && settings.features.blog !== false && posts.length > 0 && (
