@@ -611,6 +611,7 @@ img {
   width: 200px;
   height: 200px;
   transform: translateX(-50%);
+  object-fit: contain;
 }
 
 .category-tile:hover .category-illustration {
