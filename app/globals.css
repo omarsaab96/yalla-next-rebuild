@@ -3162,22 +3162,44 @@ img {
   margin: 0 0 28px;
 }
 
-.instagram-follow-panel a {
+.social-follow-links {
+  display: grid;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+.social-follow-links a {
+  align-items: center;
   background: var(--background-accent);
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, .42);
+  border-radius: 8px;
   color: var(--terracotta);
-  display: inline-flex;
+  display: flex;
   font-family: var(--font-bold);
-  font-size: .78rem;
-  padding: 8px 12px 8px 14px;
-  text-transform: uppercase;
+  gap: 14px;
+  justify-content: space-between;
+  padding: 12px 14px;
   transition: background-color .2s, color .2s, transform .2s;
 }
 
-.instagram-follow-panel a:hover {
+.social-follow-links a:hover {
   background: var(--terracotta);
   color: white;
   transform: translateY(-2px);
+}
+
+.social-follow-links span {
+  font-family: var(--font-sans);
+  font-size: .76rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.social-follow-links strong {
+  font-size: .84rem;
+  overflow-wrap: anywhere;
+  text-align: right;
 }
 
 @media (max-width: 1600px) {

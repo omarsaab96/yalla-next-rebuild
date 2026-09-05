@@ -30,7 +30,6 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
   const showInstagramFeed = getTemplateField(homepage?.fields, 'showInstagramFeed', lang, false);
   const instagramFeedHeading = getTemplateField(homepage?.fields, 'instagramFeedHeading', lang, 'Follow the gift trail');
   const instagramFeedIntro = getTemplateField(homepage?.fields, 'instagramFeedIntro', lang, '');
-  const instagramFeedCtaLabel = getTemplateField(homepage?.fields, 'instagramFeedCtaLabel', lang, 'Follow @yallatogether');
   const instagramFeedCtaHref = getTemplateField(homepage?.fields, 'instagramFeedCtaHref', lang, 'https://www.instagram.com/yallatogether/');
   const instagramFeedItems = Array.from({ length: 6 }, (_, index) => {
     const position = index + 1;
@@ -97,8 +96,10 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
       {showInstagramFeed && (
         <InstagramFeed
           ctaHref={instagramFeedCtaHref}
-          ctaLabel={instagramFeedCtaLabel}
+          email={settings.email}
+          facebookUrl={settings.facebookUrl}
           heading={instagramFeedHeading}
+          instagramUrl={settings.instagramUrl || instagramFeedCtaHref}
           intro={instagramFeedIntro}
           items={instagramFeedItems}
         />

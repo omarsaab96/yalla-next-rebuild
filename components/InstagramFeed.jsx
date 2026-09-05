@@ -4,8 +4,13 @@ import { useEffect, useState } from 'react';
 
 const AUTOPLAY_DELAY = 3500;
 
-export function InstagramFeed({ ctaHref, ctaLabel, heading, intro, items }) {
+export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramUrl, intro, items }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const followLinks = [
+    { label: 'Instagram', href: instagramUrl || ctaHref },
+    { label: 'Facebook', href: facebookUrl },
+    { label: 'Email', href: email ? `mailto:${email}` : '' }
+  ].filter((link) => link.href);
 
   useEffect(() => {
     if (items.length < 2) return undefined;
@@ -97,10 +102,20 @@ export function InstagramFeed({ ctaHref, ctaLabel, heading, intro, items }) {
           <p className="section-kicker">social feed</p>
           <h2 id="instagram-feed-title">{heading}</h2>
           {intro && <p>{intro}</p>}
-          {ctaHref && ctaLabel && (
-            <a href={ctaHref} target="_blank" rel="noopener noreferrer">
-              {ctaLabel}
-            </a>
+          {followLinks.length > 0 && (
+            <div className="social-follow-links" aria-label="Follow and contact links">
+              {followLinks.map((link) => (
+                <a
+                  href={link.href}
+                  key={link.label}
+                  target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                  rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                >
+                  <span>{link.label}</span>
+                  <strong>{link.label === 'Email' ? email : link.href.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</strong>
+                </a>
+              ))}
+            </div>
           )}
         </div>
       </div>

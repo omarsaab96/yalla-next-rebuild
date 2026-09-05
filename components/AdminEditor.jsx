@@ -1267,6 +1267,11 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
               <Field label="Description"><input value={settings.description || ''} onChange={(e) => updateSettings(['description'], e.target.value)} /></Field>
               <Field label="Email"><input value={settings.email || ''} onChange={(e) => updateSettings(['email'], e.target.value)} /></Field>
             </div>
+            <h3>Social links</h3>
+            <div className="form-grid">
+              <Field label="Instagram URL"><input value={settings.instagramUrl || ''} onChange={(e) => updateSettings(['instagramUrl'], e.target.value)} /></Field>
+              <Field label="Facebook URL"><input value={settings.facebookUrl || ''} onChange={(e) => updateSettings(['facebookUrl'], e.target.value)} /></Field>
+            </div>
             <h3>Languages</h3>
             <div className="toggle-grid">
               {Object.entries(settings.languages || {}).map(([code, config]) => (
