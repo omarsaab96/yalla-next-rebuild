@@ -3163,7 +3163,7 @@ img {
 }
 
 .social-follow-links {
-  display: grid;
+  display: flex;
   gap: 10px;
   margin: 0 auto;
   max-width: 360px;
@@ -3172,15 +3172,53 @@ img {
 .social-follow-links a {
   align-items: center;
   background: var(--background-accent);
-  border: 1px solid rgba(255, 255, 255, .42);
-  border-radius: 8px;
+  /* border: 1px solid rgba(255, 255, 255, .42); */
+  border-radius: 10px;
   color: var(--terracotta);
   display: flex;
   font-family: var(--font-bold);
   gap: 14px;
   justify-content: space-between;
-  padding: 12px 14px;
-  transition: background-color .2s, color .2s, transform .2s;
+  padding: 8px 12px 8px 14px;
+  transition: background-color .2s, border-color .2s, box-shadow .2s, transform .2s;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.social-follow-icon {
+  align-items: center;
+  background: var(--terracotta);
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  flex: 0 0 28px;
+  font-family: var(--font-bold);
+  font-size: .72rem;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  text-transform: none;
+  width: 28px;
+}
+
+.social-follow-icon svg {
+  height: 16px;
+  width: 16px;
+}
+
+.social-follow-icon-instagram svg,
+.social-follow-icon-email svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.social-follow-icon-facebook svg {
+  fill: currentColor;
+  height: 17px;
+  width: 17px;
 }
 
 .social-follow-links a:hover {
@@ -3189,7 +3227,12 @@ img {
   transform: translateY(-2px);
 }
 
-.social-follow-links span {
+.social-follow-links a:hover .social-follow-icon {
+  background: white;
+  color: var(--terracotta);
+}
+
+.social-follow-label {
   font-family: var(--font-sans);
   font-size: .76rem;
   letter-spacing: 0;
