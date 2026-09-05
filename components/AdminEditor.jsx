@@ -172,6 +172,17 @@ function stripAssessmentText(html) {
   return node.textContent || '';
 }
 
+async function parseApiResponse(response, fallbackMessage) {
+  const contentType = response.headers.get('content-type') || '';
+  if (contentType.includes('application/json')) return response.json();
+
+  const text = await response.text();
+  const plainText = text.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  return {
+    error: plainText || `${fallbackMessage} (${response.status})`
+  };
+}
+
 function scoreLabel(score) {
   if (score >= 70) return 'Good';
   if (score >= 40) return 'OK';
@@ -1118,7 +1129,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
       const formData = new FormData();
       fileList.forEach((file) => formData.append('files', file));
       const response = await fetch('/api/cms/media-upload', { method: 'POST', body: formData });
-      const result = await response.json();
+      const result = await parseApiResponse(response, 'Upload failed');
       if (!response.ok) throw new Error(result.error || 'Upload failed');
       const uploadedMedia = result.mediaItems || (result.media ? [result.media] : []);
       setMedia((current) => [...uploadedMedia, ...current]);
