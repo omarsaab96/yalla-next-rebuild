@@ -29,47 +29,64 @@ export async function POST(request) {
   }
 
   const formData = await request.formData();
-  const file = formData.get('file');
-  if (!file || typeof file === 'string') {
+  const files = formData.getAll('files').filter((file) => file && typeof file !== 'string');
+  const legacyFile = formData.get('file');
+  if (legacyFile && typeof legacyFile !== 'string') files.push(legacyFile);
+
+  if (files.length === 0) {
     return NextResponse.json({ error: 'No file uploaded.' }, { status: 400 });
   }
 
-  if (!allowedTypes.has(file.type)) {
+  const unsupportedFile = files.find((file) => !allowedTypes.has(file.type));
+  if (unsupportedFile) {
     return NextResponse.json({ error: 'Only image uploads are supported.' }, { status: 400 });
   }
 
   const now = new Date();
   const yyyy = String(now.getFullYear());
   const mm = String(now.getMonth() + 1).padStart(2, '0');
-  const { base, ext } = slugifyFileName(file.name);
-  const fileName = `${base}-${Date.now()}${ext}`;
   const uploadDir = path.join(process.cwd(), 'public', 'uploads', yyyy, mm);
-  const diskPath = path.join(uploadDir, fileName);
-  const localPath = `/uploads/${yyyy}/${mm}/${fileName}`;
-
-  await mkdir(uploadDir, { recursive: true });
-  const buffer = Buffer.from(await file.arrayBuffer());
-  await writeFile(diskPath, buffer);
-
-  const media = {
-    wordpressId: localPath,
-    slug: `${base}-${Date.now()}`,
-    enabled: true,
-    title: { en: path.basename(file.name, path.extname(file.name)), ar: path.basename(file.name, path.extname(file.name)) },
-    alt: { en: '', ar: '' },
-    localPath,
-    sourceUrl: '',
-    mimeType: file.type,
-    size: file.size,
-    uploadedAt: now,
-    updatedAt: now
-  };
-
   const db = await getDb();
-  const result = await db.collection('media').insertOne(media);
+  await mkdir(uploadDir, { recursive: true });
+
+  const mediaItems = [];
+  for (const [index, file] of files.entries()) {
+    const { base, ext } = slugifyFileName(file.name);
+    const uniqueSuffix = `${Date.now()}-${index}`;
+    const fileName = `${base}-${uniqueSuffix}${ext}`;
+    const diskPath = path.join(uploadDir, fileName);
+    const localPath = `/uploads/${yyyy}/${mm}/${fileName}`;
+    const title = path.basename(file.name, path.extname(file.name));
+
+    const buffer = Buffer.from(await file.arrayBuffer());
+    await writeFile(diskPath, buffer);
+
+    mediaItems.push({
+      wordpressId: localPath,
+      slug: `${base}-${uniqueSuffix}`,
+      enabled: true,
+      title: { en: title, ar: title },
+      alt: { en: '', ar: '' },
+      localPath,
+      sourceUrl: '',
+      mimeType: file.type,
+      size: file.size,
+      uploadedAt: now,
+      updatedAt: now
+    });
+  }
+
+  const result = await db.collection('media').insertMany(mediaItems);
+  const serializedMediaItems = mediaItems.map((media, index) => ({
+    ...media,
+    _id: result.insertedIds[index].toString(),
+    uploadedAt: now.toISOString(),
+    updatedAt: now.toISOString()
+  }));
 
   return NextResponse.json({
     ok: true,
-    media: { ...media, _id: result.insertedId.toString(), uploadedAt: now.toISOString(), updatedAt: now.toISOString() }
+    media: serializedMediaItems[0],
+    mediaItems: serializedMediaItems
   });
 }

@@ -7,12 +7,12 @@ import { resolveSeoTemplate } from '@/lib/seoVariables';
 
 const tabs = [
   { key: 'dashboard', label: 'Dashboard' },
-  { key: 'settings', label: 'Settings' },
   { key: 'pages', label: 'Pages' },
   { key: 'posts', label: 'Posts' },
   { key: 'categories', label: 'Categories' },
   { key: 'media', label: 'Media' },
-  { key: 'formSubmissions', label: 'Contact form submissions' }
+  { key: 'formSubmissions', label: 'Contact form submissions' },
+  { key: 'settings', label: 'Settings' }
 ];
 
 const pageTemplates = PAGE_TEMPLATE_OPTIONS;
@@ -236,7 +236,7 @@ function measureSeoTitleWidth(title) {
   return Math.round(context.measureText(title).width);
 }
 
-function SeoPanel({ post, updateSelected, media }) {
+function SeoPanel({ post, updateSelected, media, onUploadMedia }) {
   const [lang, setLang] = useState('en');
   const [activeSeoTab, setActiveSeoTab] = useState('SEO');
   const [analysis, setAnalysis] = useState({ loading: true, score: 0, results: [], readabilityScore: 0, readabilityResults: [], error: '' });
@@ -525,7 +525,7 @@ function SeoPanel({ post, updateSelected, media }) {
             </div>
           </div>
           <h4 className="yoast-subtitle">Social image</h4>
-          <MediaPicker label="Social image" value={post.seo?.socialImage || ''} media={media} onSelect={(path) => updateSelected({ ...post, seo: { ...(post.seo || {}), socialImage: path } })} />
+          <MediaPicker label="Social image" value={post.seo?.socialImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...post, seo: { ...(post.seo || {}), socialImage: path } })} />
           <Field label={`Social title ${lang.toUpperCase()}`}>
             <input dir={lang === 'ar' ? 'rtl' : 'ltr'} value={socialTitle} onChange={(event) => updateSeoField('socialTitle', event.target.value)} />
           </Field>
@@ -552,7 +552,56 @@ function SeoResultGroup({ title, tone, results }) {
   );
 }
 
-function MediaPicker({ value, media, onSelect, label = 'Featured image' }) {
+function MediaUploadDropzone({ onUpload, compact = false }) {
+  const [dragActive, setDragActive] = useState(false);
+  const inputRef = useRef(null);
+
+  async function uploadFiles(files) {
+    const fileList = Array.from(files || []);
+    if (fileList.length === 0 || !onUpload) return;
+    await onUpload(fileList);
+  }
+
+  return (
+    <div
+      className={`media-upload-dropzone${dragActive ? ' drag-active' : ''}${compact ? ' compact' : ''}`}
+      onDragEnter={(event) => {
+        event.preventDefault();
+        setDragActive(true);
+      }}
+      onDragOver={(event) => {
+        event.preventDefault();
+        setDragActive(true);
+      }}
+      onDragLeave={(event) => {
+        event.preventDefault();
+        if (event.relatedTarget && event.currentTarget.contains(event.relatedTarget)) return;
+        setDragActive(false);
+      }}
+      onDrop={async (event) => {
+        event.preventDefault();
+        setDragActive(false);
+        await uploadFiles(event.dataTransfer.files);
+      }}
+    >
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/*"
+        multiple
+        onChange={async (event) => {
+          await uploadFiles(event.target.files);
+          event.target.value = '';
+        }}
+      />
+      <strong>Drop images here</strong>
+      <span>Upload one or more images to the media library.</span>
+      <button type="button" className="secondary-button" onClick={() => inputRef.current?.click()}>Choose files</button>
+    </div>
+  );
+}
+
+function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured image' }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const filteredMedia = media
@@ -582,6 +631,19 @@ function MediaPicker({ value, media, onSelect, label = 'Featured image' }) {
               <button type="button" className="secondary-button" onClick={() => setOpen(false)}>Close</button>
             </div>
             <input className="media-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search media" />
+            {onUploadMedia && (
+              <MediaUploadDropzone
+                compact
+                onUpload={async (files) => {
+                  const uploaded = await onUploadMedia(files);
+                  const firstPath = uploaded?.[0]?.localPath;
+                  if (firstPath) {
+                    onSelect(firstPath);
+                    setOpen(false);
+                  }
+                }}
+              />
+            )}
             <div className="media-picker-grid">
               {filteredMedia.map((item) => (
                 <button
@@ -605,7 +667,7 @@ function MediaPicker({ value, media, onSelect, label = 'Featured image' }) {
   );
 }
 
-function TemplateFieldsEditor({ item, entity, lang, media, updateSelected }) {
+function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUploadMedia }) {
   const schema = getSchema(entity === 'post' ? 'post' : 'page', item.template || 'standard');
   const visibleSchema = schema.filter((field) => field.localized || lang === 'en');
 
@@ -637,7 +699,7 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected }) {
         }
         const fieldLabel = field.localized ? `${field.label} ${lang.toUpperCase()}` : `${field.label} shared`;
         if (field.type === 'image') {
-          return <MediaPicker key={`${field.name}-${lang}`} label={fieldLabel} value={getValue(field)} media={media} onSelect={(path) => setValue(field, path)} />;
+          return <MediaPicker key={`${field.name}-${lang}`} label={fieldLabel} value={getValue(field)} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => setValue(field, path)} />;
         }
         if (field.type === 'boolean') {
           return <Toggle key={`${field.name}-${lang}`} checked={getValue(field)} label={fieldLabel} onChange={(checked) => setValue(field, checked)} />;
@@ -676,11 +738,35 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
   const selected = useMemo(() => items.find((item) => (item._id || item.slug || item.wordpressId) === selectedId), [items, selectedId]);
   const isHomepage = entity === 'page' && selected?.template === 'homepage';
   const selectedTermId = selected?.wordpressId || selected?.id;
+  const listItems = useMemo(() => {
+    if (entity !== 'category') return items.map((item) => ({ item, children: [] }));
+
+    const nodes = items.map((item) => ({ item, children: [] }));
+    const byTermId = new Map();
+    nodes.forEach((node) => {
+      const termId = node.item.wordpressId || node.item.id;
+      if (termId) byTermId.set(String(termId), node);
+    });
+
+    const roots = [];
+    nodes.forEach((node) => {
+      const parentId = node.item.parentId || node.item.parent;
+      const parent = parentId ? byTermId.get(String(parentId)) : null;
+      if (parent && parent !== node) {
+        parent.children.push(node);
+      } else {
+        roots.push(node);
+      }
+    });
+
+    return roots;
+  }, [entity, items]);
   const saveButtonLabel = saveStatus.state === 'saving' ? 'Saving...' : saveStatus.state === 'saved' ? '✓ Saved' : 'Save';
 
   function getListMeta(item) {
     if (entity === 'page') return item.template === 'homepage' ? '/' : `/${item.slug || ''}`;
     if (entity === 'post') return `/${item.slug || ''}`;
+    if (entity === 'category') return '';
     return item.kind || item.type || item.mimeType || item.localPath || '';
   }
 
@@ -688,109 +774,131 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
     setItems((current) => current.map((item) => ((item._id || item.slug || item.wordpressId) === selectedId ? nextItem : item)));
   }
 
-  return (
-    <div className="admin-split">
-      <aside className="admin-list">
-        {items.map((item) => {
-          const id = item._id || item.slug || item.wordpressId;
-          return (
-            <button key={id} className={id === selectedId ? 'active' : ''} onClick={() => setSelectedId(id)} type="button">
-              <span>{item.title?.en || item.name?.en || item.slug || item.localPath}</span>
-              <small>{getListMeta(item)}</small>
-            </button>
-          );
-        })}
-      </aside>
+  function renderListItem(node, depth = 0) {
+    const item = node.item;
+    const id = item._id || item.slug || item.wordpressId;
+    return (
+      <div className="admin-list-node" key={id}>
+        <button
+          className={`${id === selectedId ? 'active' : ''}${entity === 'category' ? ' category-list-item' : ''}${depth > 0 ? ' category-list-child' : ''}`}
+          onClick={() => setSelectedId(id)}
+          style={entity === 'category' ? { '--category-indent': `${depth * 18}px` } : undefined}
+          type="button"
+        >
+          <span>{item.title?.en || getLocalizedValue(item.name, 'en') || item.slug || item.localPath}</span>
+          {getListMeta(item) && <small>{getListMeta(item)}</small>}
+        </button>
+        {node.children.map((child) => renderListItem(child, depth + 1))}
+      </div>
+    );
+  }
 
-      {selected && (
-        <div className="admin-panel">
-          <div className="editor-title-row">
-            <h2>{label}: {selected.title?.en || selected.name?.en || selected.slug}</h2>
-            <div className="editor-title-actions">
-              {(entity === 'page' || entity === 'post')
-                ? <PublishToggle item={selected} onChange={updateSelected} />
-                : selected.enabled !== undefined && <Toggle checked={selected.enabled} label="Enabled" onChange={(checked) => updateSelected({ ...selected, enabled: checked })} />}
-              {saveStatus.state === 'error' && <span className="inline-save-status">{saveStatus.message}</span>}
-              <button className="primary-button" type="button" onClick={onSave} disabled={saveStatus.state === 'saving'}>{saveButtonLabel}</button>
-              {onDelete && <button className="danger-button" onClick={() => onDelete(selected)} type="button">Delete</button>}
+  return (
+    <div className="admin-wrapper">
+      <div className="admin-split">
+        <aside className="admin-list">
+          {listItems.map((item) => renderListItem(item))}
+        </aside>
+
+        {selected && (
+          <div className="admin-panel">
+            <div className="editor-title-row">
+              <h2>{label}: {selected.title?.en || selected.name?.en || selected.slug}</h2>
+              <div className="editor-title-actions">
+                {(entity === 'page' || entity === 'post')
+                  ? <PublishToggle item={selected} onChange={updateSelected} />
+                  : selected.enabled !== undefined && <Toggle checked={selected.enabled} label="Enabled" onChange={(checked) => updateSelected({ ...selected, enabled: checked })} />}
+                {saveStatus.state === 'error' && <span className="inline-save-status">{saveStatus.message}</span>}
+                <button className="primary-button" type="button" onClick={onSave} disabled={saveStatus.state === 'saving'}>{saveButtonLabel}</button>
+                {onDelete && <button className="danger-button" onClick={() => onDelete(selected)} type="button">Delete</button>}
+              </div>
             </div>
-          </div>
-          {selected.localPath && <img className="media-preview" src={selected.localPath} alt={selected.alt?.en || ''} />}
-          <div className="form-grid">
-            {selected.slug !== undefined && <Field label="Slug"><input value={selected.slug || ''} onChange={(e) => updateSelected({ ...selected, slug: e.target.value })} /></Field>}
-            {typeOptions && entity !== 'page' && entity !== 'post' && (
-              <Field label="Type">
-                <select value={selected.kind || selected.type} onChange={(e) => updateSelected({ ...selected, [selected.kind ? 'kind' : 'type']: e.target.value })}>
-                  {typeOptions.map((option) => <option value={option} key={option}>{option}</option>)}
-                </select>
-              </Field>
-            )}
-            {entity === 'page' && (
-              <Field label="Template">
-                <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
-                  {pageTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
-                </select>
-              </Field>
+
+            {selected.localPath && <img className="media-preview" src={selected.localPath} alt={selected.alt?.en || ''} />}
+            <div className="form-grid">
+              {selected.slug !== undefined && <Field label="Slug"><input value={selected.slug || ''} onChange={(e) => updateSelected({ ...selected, slug: e.target.value })} /></Field>}
+              {typeOptions && entity !== 'page' && entity !== 'post' && (
+                <Field label="Type">
+                  <select value={selected.kind || selected.type} onChange={(e) => updateSelected({ ...selected, [selected.kind ? 'kind' : 'type']: e.target.value })}>
+                    {typeOptions.map((option) => <option value={option} key={option}>{option}</option>)}
+                  </select>
+                </Field>
+              )}
+              {entity === 'page' && (
+                <Field label="Template">
+                  <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
+                    {pageTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
+                  </select>
+                </Field>
+              )}
+              {entity === 'post' && (
+                <Field label="Template">
+                  <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
+                    {postTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
+                  </select>
+                </Field>
+              )}
+              {entity === 'category' && (
+                <Field label="Parent category">
+                  <select
+                    value={selected.parentId || 0}
+                    onChange={(e) => {
+                      const rawValue = e.target.value;
+                      const parentId = rawValue === '0' ? 0 : Number.isNaN(Number(rawValue)) ? rawValue : Number(rawValue);
+                      updateSelected({ ...selected, parentId });
+                    }}
+                  >
+                    <option value="0">None</option>
+                    {categories
+                      .filter((category) => {
+                        const id = category.wordpressId || category.id;
+                        return id && id !== selectedTermId;
+                      })
+                      .map((category) => {
+                        const id = category.wordpressId || category.id;
+                        return <option key={category._id || category.slug} value={id}>{category.name?.en || category.slug}</option>;
+                      })}
+                  </select>
+                </Field>
+              )}
+              {entity === 'category' && <MediaPicker label="Category image" value={selected.featuredImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
+              {selected.featuredImage !== undefined && !isHomepage && entity !== 'category' && <MediaPicker value={selected.featuredImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
+              {selected.localPath !== undefined && <Field label="Local path"><input value={selected.localPath || ''} onChange={(e) => updateSelected({ ...selected, localPath: e.target.value })} /></Field>}
+              {selected.sourceUrl !== undefined && <Field label="Source URL"><input value={selected.sourceUrl || ''} onChange={(e) => updateSelected({ ...selected, sourceUrl: e.target.value })} /></Field>}
+              {selected.title && <Field label="Title EN"><input value={selected.title?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'en', e.target.value))} /></Field>}
+              {selected.title && <Field label="Title AR"><input dir="rtl" value={selected.title?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'ar', e.target.value))} /></Field>}
+              {selected.name && <Field label="Name EN"><input value={selected.name?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'en', e.target.value))} /></Field>}
+              {selected.name && <Field label="Name AR"><input dir="rtl" value={selected.name?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'ar', e.target.value))} /></Field>}
+              {selected.alt && <Field label="Alt EN"><input value={selected.alt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'en', e.target.value))} /></Field>}
+              {selected.alt && <Field label="Alt AR"><input dir="rtl" value={selected.alt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'ar', e.target.value))} /></Field>}
+              {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt EN"><textarea value={selected.excerpt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'en', e.target.value))} /></Field>}
+              {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt AR"><textarea dir="rtl" value={selected.excerpt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'ar', e.target.value))} /></Field>}
+              {entity === 'post' && (
+                <>
+                  <div></div>
+                  <div className="assignment-grid">
+                    <TermPicker label="Categories" terms={categories} selectedIds={selected.categories || []} onChange={(ids) => updateSelected({ ...selected, categories: ids })} />
+                  </div>
+                </>
+              )}
+            </div>
+            {richContent && selected.content && (
+              <>
+                <TemplateFieldsEditor item={selected} entity={entity} lang="en" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
+                <TemplateFieldsEditor item={selected} entity={entity} lang="ar" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
+              </>
             )}
             {entity === 'post' && (
-              <Field label="Template">
-                <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
-                  {postTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
-                </select>
-              </Field>
+              <>
+                <SeoPanel post={selected} updateSelected={updateSelected} media={media} onUploadMedia={onUploadMedia} />
+                <div className="assignment-grid">
+                  <TermPicker label="Categories" terms={categories} selectedIds={selected.categories || []} onChange={(ids) => updateSelected({ ...selected, categories: ids })} />
+                </div>
+              </>
             )}
-            {entity === 'category' && (
-              <Field label="Parent category">
-                <select
-                  value={selected.parentId || 0}
-                  onChange={(e) => {
-                    const rawValue = e.target.value;
-                    const parentId = rawValue === '0' ? 0 : Number.isNaN(Number(rawValue)) ? rawValue : Number(rawValue);
-                    updateSelected({ ...selected, parentId });
-                  }}
-                >
-                  <option value="0">None</option>
-                  {categories
-                    .filter((category) => {
-                      const id = category.wordpressId || category.id;
-                      return id && id !== selectedTermId;
-                    })
-                    .map((category) => {
-                      const id = category.wordpressId || category.id;
-                      return <option key={category._id || category.slug} value={id}>{category.name?.en || category.slug}</option>;
-                    })}
-                </select>
-              </Field>
-            )}
-            {entity === 'category' && <MediaPicker label="Category image" value={selected.featuredImage || ''} media={media} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
-            {selected.featuredImage !== undefined && !isHomepage && entity !== 'category' && <MediaPicker value={selected.featuredImage || ''} media={media} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
-            {selected.localPath !== undefined && <Field label="Local path"><input value={selected.localPath || ''} onChange={(e) => updateSelected({ ...selected, localPath: e.target.value })} /></Field>}
-            {selected.sourceUrl !== undefined && <Field label="Source URL"><input value={selected.sourceUrl || ''} onChange={(e) => updateSelected({ ...selected, sourceUrl: e.target.value })} /></Field>}
-            {selected.title && <Field label="Title EN"><input value={selected.title?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'en', e.target.value))} /></Field>}
-            {selected.title && <Field label="Title AR"><input dir="rtl" value={selected.title?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'ar', e.target.value))} /></Field>}
-            {selected.name && <Field label="Name EN"><input value={selected.name?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'en', e.target.value))} /></Field>}
-            {selected.name && <Field label="Name AR"><input dir="rtl" value={selected.name?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'ar', e.target.value))} /></Field>}
-            {selected.alt && <Field label="Alt EN"><input value={selected.alt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'en', e.target.value))} /></Field>}
-            {selected.alt && <Field label="Alt AR"><input dir="rtl" value={selected.alt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'ar', e.target.value))} /></Field>}
-            {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt EN"><textarea value={selected.excerpt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'en', e.target.value))} /></Field>}
-            {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt AR"><textarea dir="rtl" value={selected.excerpt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'ar', e.target.value))} /></Field>}
           </div>
-          {richContent && selected.content && (
-            <>
-              <TemplateFieldsEditor item={selected} entity={entity} lang="en" media={media} updateSelected={updateSelected} />
-              <TemplateFieldsEditor item={selected} entity={entity} lang="ar" media={media} updateSelected={updateSelected} />
-            </>
-          )}
-          {entity === 'post' && (
-            <>
-              <SeoPanel post={selected} updateSelected={updateSelected} media={media} />
-              <div className="assignment-grid">
-                <TermPicker label="Categories" terms={categories} selectedIds={selected.categories || []} onChange={(ids) => updateSelected({ ...selected, categories: ids })} />
-              </div>
-            </>
-          )}
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
@@ -845,6 +953,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
   const [selectedPostId, setSelectedPostId] = useState(initialData.posts[0]?._id || initialData.posts[0]?.slug || '');
   const [selectedCategoryId, setSelectedCategoryId] = useState(initialData.categories[0]?._id || initialData.categories[0]?.slug || '');
   const [selectedMediaId, setSelectedMediaId] = useState(initialData.media[0]?._id || initialData.media[0]?.wordpressId || '');
+  const [showMediaUpload, setShowMediaUpload] = useState(false);
   const [saveStatus, setSaveStatus] = useState({ state: 'idle', message: '' });
   const saveStatusTimer = useRef(null);
 
@@ -1000,31 +1109,29 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
     setSelectedCategoryId(category.slug);
   }
 
-  async function uploadMedia() {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = 'image/*';
-    input.onchange = async () => {
-      const file = input.files?.[0];
-      if (!file) return;
-      setSaveStatus({ state: 'saving', message: 'Uploading...' });
-      try {
-        const formData = new FormData();
-        formData.append('file', file);
-        const response = await fetch('/api/cms/media-upload', { method: 'POST', body: formData });
-        const result = await response.json();
-        if (!response.ok) throw new Error(result.error || 'Upload failed');
-        setMedia((current) => [result.media, ...current]);
-        setSelectedMediaId(result.media._id || result.media.localPath);
-        setSaveStatus({ state: 'saved', message: 'Uploaded.' });
-        saveStatusTimer.current = window.setTimeout(() => {
-          setSaveStatus({ state: 'idle', message: '' });
-        }, 2000);
-      } catch (error) {
-        setSaveStatus({ state: 'error', message: error.message });
-      }
-    };
-    input.click();
+  async function uploadMedia(files) {
+    const fileList = Array.from(files || []);
+    if (fileList.length === 0) return [];
+    if (saveStatusTimer.current) window.clearTimeout(saveStatusTimer.current);
+    setSaveStatus({ state: 'saving', message: fileList.length > 1 ? `Uploading ${fileList.length} files...` : 'Uploading...' });
+    try {
+      const formData = new FormData();
+      fileList.forEach((file) => formData.append('files', file));
+      const response = await fetch('/api/cms/media-upload', { method: 'POST', body: formData });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Upload failed');
+      const uploadedMedia = result.mediaItems || (result.media ? [result.media] : []);
+      setMedia((current) => [...uploadedMedia, ...current]);
+      if (uploadedMedia[0]) setSelectedMediaId(uploadedMedia[0]._id || uploadedMedia[0].localPath);
+      setSaveStatus({ state: 'saved', message: uploadedMedia.length > 1 ? 'Uploaded files.' : 'Uploaded.' });
+      saveStatusTimer.current = window.setTimeout(() => {
+        setSaveStatus({ state: 'idle', message: '' });
+      }, 2000);
+      return uploadedMedia;
+    } catch (error) {
+      setSaveStatus({ state: 'error', message: error.message });
+      return [];
+    }
   }
 
   function updateSettings(path, value) {
@@ -1043,7 +1150,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
     pages: { count: pages.length, addLabel: 'Add Page', onAdd: createPage },
     posts: { count: posts.length, addLabel: 'Add Post', onAdd: createPost },
     categories: { count: categories.length, addLabel: 'Add Category', onAdd: createCategory },
-    media: { count: media.length, addLabel: 'Add Media', onAdd: uploadMedia },
+    media: { count: media.length, addLabel: 'Add Media', onAdd: () => setShowMediaUpload(true) },
     formSubmissions: { count: formSubmissions.length }
   };
 
@@ -1109,80 +1216,98 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
 
         {!mongoEnabled && <p className="admin-warning">Mongo is not configured. CMS saves are unavailable.</p>}
 
-      {activeTab === 'dashboard' && (
-        <div className="dashboard-grid">
-          <div className="metric-card"><span>Total views</span><strong>{analytics.totalViews}</strong></div>
-          <div className="metric-card"><span>Today</span><strong>{analytics.todayViews}</strong></div>
-          <div className="metric-card"><span>Pages</span><strong>{pages.length}</strong></div>
-          <div className="metric-card"><span>Posts</span><strong>{posts.length}</strong></div>
-          <div className="metric-card"><span>Categories</span><strong>{categories.length}</strong></div>
-          <div className="metric-card"><span>Media</span><strong>{media.length}</strong></div>
-          <div className="admin-panel wide">
-            <h2>Top pages</h2>
-            {analytics.topPages.length ? analytics.topPages.map((page) => (
-              <div className="analytics-row" key={page.path}><span>{page.path}</span><strong>{page.views}</strong></div>
-            )) : <p>No page views yet.</p>}
+        {activeTab === 'dashboard' && (
+          <div className="dashboard-grid">
+            <div className="metric-card"><span>Total views</span><strong>{analytics.totalViews}</strong></div>
+            <div className="metric-card"><span>Today</span><strong>{analytics.todayViews}</strong></div>
+            <div className="metric-card"><span>Pages</span><strong>{pages.length}</strong></div>
+            <div className="metric-card"><span>Posts</span><strong>{posts.length}</strong></div>
+            <div className="metric-card"><span>Categories</span><strong>{categories.length}</strong></div>
+            <div className="metric-card"><span>Media</span><strong>{media.length}</strong></div>
+            <div className="admin-panel wide">
+              <h2>Top pages</h2>
+              {analytics.topPages.length ? analytics.topPages.map((page) => (
+                <div className="analytics-row" key={page.path}><span>{page.path}</span><strong>{page.views}</strong></div>
+              )) : <p>No page views yet.</p>}
+            </div>
+            <div className="admin-panel">
+              <h2>Languages</h2>
+              {analytics.languages.length ? analytics.languages.map((item) => (
+                <div className="analytics-row" key={item.lang}><span>{item.lang}</span><strong>{item.views}</strong></div>
+              )) : <p>No language data yet.</p>}
+            </div>
+            <div className="admin-panel wide">
+              <h2>Recent views</h2>
+              {analytics.recentViews.map((view) => (
+                <div className="analytics-row" key={`${view.path}-${view.createdAt}`}>
+                  <span>{view.path}</span>
+                  <small>{view.lang} · {view.createdAt}</small>
+                </div>
+              ))}
+            </div>
           </div>
+        )}
+
+        {activeTab === 'settings' && (
           <div className="admin-panel">
-            <h2>Languages</h2>
-            {analytics.languages.length ? analytics.languages.map((item) => (
-              <div className="analytics-row" key={item.lang}><span>{item.lang}</span><strong>{item.views}</strong></div>
-            )) : <p>No language data yet.</p>}
+            <h2>Website settings</h2>
+            <div className="form-grid">
+              <Field label="Site name"><input value={settings.siteName || ''} onChange={(e) => updateSettings(['siteName'], e.target.value)} /></Field>
+              <Field label="Description"><input value={settings.description || ''} onChange={(e) => updateSettings(['description'], e.target.value)} /></Field>
+              <Field label="Email"><input value={settings.email || ''} onChange={(e) => updateSettings(['email'], e.target.value)} /></Field>
+            </div>
+            <h3>Languages</h3>
+            <div className="toggle-grid">
+              {Object.entries(settings.languages || {}).map(([code, config]) => (
+                <Toggle key={code} checked={config.enabled} label={`${config.label} enabled`} onChange={(checked) => updateSettings(['languages', code, 'enabled'], checked)} />
+              ))}
+            </div>
+            <h3>Feature toggles</h3>
+            <div className="toggle-grid">
+              {Object.entries(settings.features || {}).map(([key, value]) => (
+                <Toggle key={key} checked={value} label={key} onChange={(checked) => updateSettings(['features', key], checked)} />
+              ))}
+            </div>
+            {saveStatus.state === 'error' && <p className="admin-status">{saveStatus.message}</p>}
+            <button className="primary-button" disabled={!mongoEnabled || saveStatus.state === 'saving'} onClick={saveActiveSection} type="button">
+              {saveStatus.state === 'saving' ? 'Saving...' : saveStatus.state === 'saved' ? '✓ Saved' : 'Save'}
+            </button>
           </div>
-          <div className="admin-panel wide">
-            <h2>Recent views</h2>
-            {analytics.recentViews.map((view) => (
-              <div className="analytics-row" key={`${view.path}-${view.createdAt}`}>
-                <span>{view.path}</span>
-                <small>{view.lang} · {view.createdAt}</small>
+        )}
+
+        {activeTab === 'pages' && (
+          <EntityEditor label="Page" items={pages} setItems={setPages} selectedId={selectedPageId} setSelectedId={setSelectedPageId} onSave={saveActiveSection} onCreate={createPage} onDelete={deleteContent} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['page']} richContent entity="page" media={media} />
+        )}
+        {activeTab === 'posts' && (
+          <EntityEditor label="Post" items={posts} setItems={setPosts} selectedId={selectedPostId} setSelectedId={setSelectedPostId} onSave={saveActiveSection} onCreate={createPost} onDelete={deleteContent} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['post']} richContent entity="post" categories={categories} media={media} />
+        )}
+        {activeTab === 'categories' && (
+          <EntityEditor label="Category" items={categories} setItems={setCategories} selectedId={selectedCategoryId} setSelectedId={setSelectedCategoryId} onSave={saveActiveSection} onCreate={createCategory} onDelete={deleteTaxonomy} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['category']} entity="category" categories={categories} media={media} />
+        )}
+        {activeTab === 'media' && (
+          <>
+            <EntityEditor label="Media" items={media} setItems={setMedia} selectedId={selectedMediaId} setSelectedId={setSelectedMediaId} onSave={saveActiveSection} onUploadMedia={uploadMedia} saveStatus={saveStatus} />
+            {showMediaUpload && (
+              <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Upload media">
+                <div className="media-modal media-upload-modal">
+                  <div className="media-modal-head">
+                    <h2>Add media</h2>
+                    <button type="button" className="secondary-button" onClick={() => setShowMediaUpload(false)}>Close</button>
+                  </div>
+                  <MediaUploadDropzone
+                    onUpload={async (files) => {
+                      const uploaded = await uploadMedia(files);
+                      if (uploaded.length > 0) setShowMediaUpload(false);
+                    }}
+                  />
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {activeTab === 'settings' && (
-        <div className="admin-panel">
-          <h2>Website settings</h2>
-          <div className="form-grid">
-            <Field label="Site name"><input value={settings.siteName || ''} onChange={(e) => updateSettings(['siteName'], e.target.value)} /></Field>
-            <Field label="Description"><input value={settings.description || ''} onChange={(e) => updateSettings(['description'], e.target.value)} /></Field>
-            <Field label="Email"><input value={settings.email || ''} onChange={(e) => updateSettings(['email'], e.target.value)} /></Field>
-          </div>
-          <h3>Languages</h3>
-          <div className="toggle-grid">
-            {Object.entries(settings.languages || {}).map(([code, config]) => (
-              <Toggle key={code} checked={config.enabled} label={`${config.label} enabled`} onChange={(checked) => updateSettings(['languages', code, 'enabled'], checked)} />
-            ))}
-          </div>
-          <h3>Feature toggles</h3>
-          <div className="toggle-grid">
-            {Object.entries(settings.features || {}).map(([key, value]) => (
-              <Toggle key={key} checked={value} label={key} onChange={(checked) => updateSettings(['features', key], checked)} />
-            ))}
-          </div>
-          {saveStatus.state === 'error' && <p className="admin-status">{saveStatus.message}</p>}
-          <button className="primary-button" disabled={!mongoEnabled || saveStatus.state === 'saving'} onClick={saveActiveSection} type="button">
-            {saveStatus.state === 'saving' ? 'Saving...' : saveStatus.state === 'saved' ? '✓ Saved' : 'Save'}
-          </button>
-        </div>
-      )}
-
-      {activeTab === 'pages' && (
-        <EntityEditor label="Page" items={pages} setItems={setPages} selectedId={selectedPageId} setSelectedId={setSelectedPageId} onSave={saveActiveSection} onCreate={createPage} onDelete={deleteContent} saveStatus={saveStatus} typeOptions={['page']} richContent entity="page" media={media} />
-      )}
-      {activeTab === 'posts' && (
-        <EntityEditor label="Post" items={posts} setItems={setPosts} selectedId={selectedPostId} setSelectedId={setSelectedPostId} onSave={saveActiveSection} onCreate={createPost} onDelete={deleteContent} saveStatus={saveStatus} typeOptions={['post']} richContent entity="post" categories={categories} media={media} />
-      )}
-      {activeTab === 'categories' && (
-        <EntityEditor label="Category" items={categories} setItems={setCategories} selectedId={selectedCategoryId} setSelectedId={setSelectedCategoryId} onSave={saveActiveSection} onCreate={createCategory} onDelete={deleteTaxonomy} saveStatus={saveStatus} typeOptions={['category']} entity="category" categories={categories} media={media} />
-      )}
-      {activeTab === 'media' && (
-        <EntityEditor label="Media" items={media} setItems={setMedia} selectedId={selectedMediaId} setSelectedId={setSelectedMediaId} onSave={saveActiveSection} onUploadMedia={uploadMedia} saveStatus={saveStatus} />
-      )}
-      {activeTab === 'formSubmissions' && (
-        <FormSubmissionsPanel submissions={formSubmissions} />
-      )}
+            )}
+          </>
+        )}
+        {activeTab === 'formSubmissions' && (
+          <FormSubmissionsPanel submissions={formSubmissions} />
+        )}
 
       </main>
     </section>

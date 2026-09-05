@@ -1498,9 +1498,20 @@ img {
   text-transform: uppercase;
 }
 
+.admin-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-height: calc(100vh - 129px);
+  min-height: 0;
+  overflow: hidden;
+}
+
 .admin-shell {
-  min-width: 0;
-  padding: 42px 32px 72px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
 }
 
 .admin-head {
@@ -1766,6 +1777,13 @@ img {
   padding: 18px;
 }
 
+.admin-panel {
+  flex: 1;
+  /* border:3px solid green; */
+  height: 100%;
+  overflow-y: auto;
+}
+
 .metric-card span {
   color: var(--muted);
   display: block;
@@ -1836,15 +1854,19 @@ img {
 }
 
 .admin-split {
-  display: grid;
+  display: flex;
   gap: 18px;
-  grid-template-columns: 300px 1fr;
+  /* grid-template-columns: 300px 1fr; */
+  flex: 1;
+  min-height: 0;
 }
 
 .admin-list {
   border: 1px solid var(--line);
-  max-height: 72vh;
-  overflow: auto;
+  flex: 0 0 300px;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .admin-list button {
@@ -1861,6 +1883,20 @@ img {
 
 .admin-list button.active {
   background: #f6efe6;
+}
+
+.admin-list button.category-list-item {
+  padding-left: calc(12px + var(--category-indent, 0px));
+}
+
+.admin-list .admin-list-node>.admin-list-node:last-child {
+  /* border-top:1px solid red; */
+  border-bottom: 1px solid var(--line);
+}
+
+.admin-list button.category-list-child {
+  /* box-shadow: inset 3px 0 0 #eadfd1; */
+  border: none;
 }
 
 .admin-list small {
@@ -1924,7 +1960,9 @@ img {
   background: white;
   min-height: 280px;
   outline: 0;
-  padding: 18px;
+  padding: 0;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .code-editor {
@@ -2676,6 +2714,42 @@ img {
   overflow-wrap: anywhere;
 }
 
+.media-upload-dropzone {
+  align-items: center;
+  background: #fbf8f3;
+  border: 1px dashed var(--muted);
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  margin-bottom: 18px;
+  padding: 24px;
+  text-align: center;
+}
+
+.media-upload-dropzone.drag-active {
+  background: #f6efe6;
+  border-color: var(--ink);
+}
+
+.media-upload-dropzone.compact {
+  margin-bottom: 14px;
+  padding: 16px;
+}
+
+.media-upload-dropzone input {
+  display: none;
+}
+
+.media-upload-dropzone strong {
+  font-family: var(--font-sans);
+}
+
+.media-upload-dropzone span {
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: .84rem;
+}
+
 .modal-backdrop {
   align-items: center;
   background: rgba(31, 33, 29, .58);
@@ -2838,15 +2912,15 @@ img {
 .instagram-phone {
   margin: 0 auto;
   min-width: 80px;
-  max-width:250px;
+  max-width: 250px;
   position: relative;
   z-index: 1;
-  flex:1
+  flex: 1
 }
 
 .iphone-frame {
   /* background: #111; */
-  border:none;
+  border: none;
   border: 5px solid var(--terracotta);
   border-radius: 40px;
   box-shadow: -12px 14px 28px rgba(53, 103, 107, 0.28);
@@ -2859,7 +2933,7 @@ img {
 }
 
 .iphone-notch {
-  background:  var(--terracotta);
+  background: var(--terracotta);
   border-radius: 50px;
   height: 20px;
   left: 50%;
@@ -2891,9 +2965,9 @@ img {
   padding: 40px 10px 10px;
 }
 
-.instagram-app-title img{
-  width:80px;
-  display:block;
+.instagram-app-title img {
+  width: 80px;
+  display: block;
 }
 
 .instagram-message-icon {
@@ -2905,7 +2979,7 @@ img {
   width: 10px;
 }
 
-.instagram-camera-icon{
+.instagram-camera-icon {
   /* border: 2px solid #1d1d1f; */
   display: block;
   flex: 0 0 auto;
@@ -2925,6 +2999,7 @@ img {
   transform: translateY(-50%);
   height: 2px;
 }
+
 .instagram-camera-icon:after {
   background: #1d1d1f;
   /* border-radius: 50%; */
@@ -3067,7 +3142,7 @@ img {
   background-color: var(--green);
   /* background-color: var(--gold); */
   border-radius: 40px;
-  z-index:-1;
+  z-index: -1;
 }
 
 .instagram-follow-panel h2 {
