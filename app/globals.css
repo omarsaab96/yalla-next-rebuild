@@ -1107,6 +1107,33 @@ img {
   line-height: 1
 }
 
+.post-template-standard .content h1,
+.post-template-standard .content h1 *,
+.post-template-standard .content h2,
+.post-template-standard .content h2 *,
+.post-template-standard .content h3,
+.post-template-standard .content h3 *,
+.post-template-standard .content h4,
+.post-template-standard .content h4 *,
+.post-template-standard .content h5,
+.post-template-standard .content h5 *,
+.post-template-standard .content h6,
+.post-template-standard .content h6 *,
+.page-template-standard .content h1,
+.page-template-standard .content h1 *,
+.page-template-standard .content h2,
+.page-template-standard .content h2 *,
+.page-template-standard .content h3,
+.page-template-standard .content h3 *,
+.page-template-standard .content h4,
+.page-template-standard .content h4 *,
+.page-template-standard .content h5,
+.page-template-standard .content h5 *,
+.page-template-standard .content h6,
+.page-template-standard .content h6 *{
+  /* text-align:center; */
+}
+
 .single-header,
 .archive-header,
 .finder-hero {
@@ -1308,10 +1335,10 @@ img {
 }
 
 .content img {
-  display: block;
+  /* display: block; */
   /* width: 100%; */
   height: auto;
-  margin: 28px auto 8px;
+  margin: 10px 0;
   /* max-height: 500px;
   object-fit: cover; */
   border-radius: 20px;
