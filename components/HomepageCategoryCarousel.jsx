@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 export function HomepageCategoryCarousel({ tiles }) {
   const trackRef = useRef(null);
+  const pageOffsetsRef = useRef([]);
+  const [pageCount, setPageCount] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
@@ -16,9 +18,8 @@ export function HomepageCategoryCarousel({ tiles }) {
     setCanScrollPrev(track.scrollLeft > 4);
     setCanScrollNext(track.scrollLeft + track.clientWidth < track.scrollWidth - 4);
 
-    const slides = Array.from(track.children);
-    const closest = slides.reduce((current, slide, index) => {
-      const distance = Math.abs(slide.offsetLeft - track.scrollLeft);
+    const closest = pageOffsetsRef.current.reduce((current, offset, index) => {
+      const distance = Math.abs(offset - track.scrollLeft);
       return distance < current.distance ? { index, distance } : current;
     }, { index: 0, distance: Number.POSITIVE_INFINITY });
     setActiveIndex(closest.index);
@@ -28,19 +29,16 @@ export function HomepageCategoryCarousel({ tiles }) {
     const track = trackRef.current;
     if (!track) return;
 
-    track.scrollBy({
-      left: direction * Math.max(track.clientWidth * 0.78, 260),
-      behavior: 'smooth'
-    });
+    scrollToIndex(Math.max(0, Math.min(pageCount - 1, activeIndex + direction)));
   }
 
   function scrollToIndex(index) {
     const track = trackRef.current;
-    const slide = track?.children[index];
-    if (!track || !slide) return;
+    const offset = pageOffsetsRef.current[index];
+    if (!track || offset === undefined) return;
 
     track.scrollTo({
-      left: slide.offsetLeft,
+      left: offset,
       behavior: 'smooth'
     });
   }
@@ -49,12 +47,34 @@ export function HomepageCategoryCarousel({ tiles }) {
     const track = trackRef.current;
     if (!track) return undefined;
 
-    updateScrollState();
+    function updatePages() {
+      const slides = Array.from(track.children);
+      const styles = window.getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap) || 0;
+      const availableWidth = track.clientWidth - (parseFloat(styles.paddingLeft) || 0) - (parseFloat(styles.paddingRight) || 0);
+      const slideWidth = slides[0]?.getBoundingClientRect().width || 1;
+      const itemsPerPage = Math.max(1, Math.floor((availableWidth + gap) / (slideWidth + gap)));
+      const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+      const offsets = [];
+
+      for (let index = 0; index < slides.length; index += itemsPerPage) {
+        const offset = Math.min(maxScroll, slides[index].offsetLeft - slides[0].offsetLeft);
+        if (!offsets.length || offset > offsets[offsets.length - 1]) offsets.push(offset);
+      }
+
+      pageOffsetsRef.current = offsets;
+      setPageCount(offsets.length);
+      updateScrollState();
+    }
+
+    updatePages();
+    const observer = new ResizeObserver(updatePages);
+    observer.observe(track);
+    Array.from(track.children).forEach((slide) => observer.observe(slide));
     track.addEventListener('scroll', updateScrollState, { passive: true });
-    window.addEventListener('resize', updateScrollState);
     return () => {
+      observer.disconnect();
       track.removeEventListener('scroll', updateScrollState);
-      window.removeEventListener('resize', updateScrollState);
     };
   }, [tiles]);
 
@@ -77,12 +97,12 @@ export function HomepageCategoryCarousel({ tiles }) {
         ))}
       </div>
       <div className="carousel-dots" aria-label="Category carousel pagination">
-        {tiles.map((tile, index) => (
+        {Array.from({ length: pageCount }, (_, index) => (
           <button
             type="button"
             className={index === activeIndex ? 'active carouselDot' : 'carouselDot'}
-            key={tile.title}
-            aria-label={`Go to ${tile.title}`}
+            key={index}
+            aria-label={`Go to category page ${index + 1}`}
             aria-current={index === activeIndex ? 'true' : undefined}
             onClick={() => scrollToIndex(index)}
           />

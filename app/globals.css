@@ -554,7 +554,7 @@ img {
 }
 
 .category-tile {
-  aspect-ratio: 4/3;
+  /* aspect-ratio: 4/3; */
   /* background: var(--teal-light); */
   /* border: 1px solid var(--line); */
   color: var(--green);
@@ -571,7 +571,7 @@ img {
   flex: 0 0 calc(25% - 50%);
   border-radius: 20px;
   /* padding-right:100px; */
-  padding-top: 220px;
+  /* padding-top: 220px; */
 }
 
 .category-tile:hover {
@@ -579,7 +579,7 @@ img {
   transform: translateY(-3px);
 }
 
-.category-tile::before {
+/* .category-tile::before {
   content: '';
   display: block;
   position: absolute;
@@ -588,10 +588,10 @@ img {
   width: calc(100% - 0px);
   height: calc(100% - 80px);
   background-color: var(--teal-light);
-  /* background: linear-gradient(45deg, #35676bc7, #f9d4bc5c); */
+  background: linear-gradient(45deg, #35676bc7, #f9d4bc5c);
   border-radius: 20px;
   opacity: 0.6;
-}
+} */
 
 .category-tile:hover::before {
   background: var(--pink);
@@ -605,17 +605,17 @@ img {
   object-fit: contain;
   width: min(78%, 180px); */
   transition: transform .2s ease;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 50%;
+  left: 50%; */
   width: 200px;
   height: 200px;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   object-fit: contain;
 }
 
 .category-tile:hover .category-illustration {
-  transform: translateX(-50%) scale(1.06);
+  transform: scale(1.06);
 }
 
 .category-tile span {
