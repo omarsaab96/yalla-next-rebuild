@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { t } from '@/lib/i18n';
 
-export function HomepageCategoryCarousel({ tiles }) {
+export function HomepageCategoryCarousel({ tiles, lang = 'en' }) {
   const trackRef = useRef(null);
   const pageOffsetsRef = useRef([]);
   const [pageCount, setPageCount] = useState(0);
@@ -15,11 +16,12 @@ export function HomepageCategoryCarousel({ tiles }) {
     const track = trackRef.current;
     if (!track) return;
 
-    setCanScrollPrev(track.scrollLeft > 4);
-    setCanScrollNext(track.scrollLeft + track.clientWidth < track.scrollWidth - 4);
+    const scrollPosition = Math.abs(track.scrollLeft);
+    setCanScrollPrev(scrollPosition > 4);
+    setCanScrollNext(scrollPosition + track.clientWidth < track.scrollWidth - 4);
 
     const closest = pageOffsetsRef.current.reduce((current, offset, index) => {
-      const distance = Math.abs(offset - track.scrollLeft);
+      const distance = Math.abs(offset - scrollPosition);
       return distance < current.distance ? { index, distance } : current;
     }, { index: 0, distance: Number.POSITIVE_INFINITY });
     setActiveIndex(closest.index);
@@ -38,7 +40,7 @@ export function HomepageCategoryCarousel({ tiles }) {
     if (!track || offset === undefined) return;
 
     track.scrollTo({
-      left: offset,
+      left: lang === 'ar' ? -offset : offset,
       behavior: 'smooth'
     });
   }
@@ -58,7 +60,7 @@ export function HomepageCategoryCarousel({ tiles }) {
       const offsets = [];
 
       for (let index = 0; index < slides.length; index += itemsPerPage) {
-        const offset = Math.min(maxScroll, slides[index].offsetLeft - slides[0].offsetLeft);
+        const offset = Math.min(maxScroll, Math.abs(slides[index].offsetLeft - slides[0].offsetLeft));
         if (!offsets.length || offset > offsets[offsets.length - 1]) offsets.push(offset);
       }
 
@@ -76,15 +78,15 @@ export function HomepageCategoryCarousel({ tiles }) {
       observer.disconnect();
       track.removeEventListener('scroll', updateScrollState);
     };
-  }, [tiles]);
+  }, [tiles, lang]);
 
   return (
     <div className="homepage-category-carousel">
-      <div className="carousel-controls" aria-label="Category carousel controls">
-        <button type="button" aria-label="Previous categories" disabled={!canScrollPrev} onClick={() => scrollByPage(-1)}>
+      <div className="carousel-controls" aria-label={t('Category carousel controls', lang)}>
+        <button type="button" aria-label={t('Previous categories', lang)} disabled={!canScrollPrev} onClick={() => scrollByPage(-1)}>
           <span className="carousel-arrow-icon prev" aria-hidden="true" />
         </button>
-        <button type="button" aria-label="Next categories" disabled={!canScrollNext} onClick={() => scrollByPage(1)}>
+        <button type="button" aria-label={t('Next categories', lang)} disabled={!canScrollNext} onClick={() => scrollByPage(1)}>
           <span className="carousel-arrow-icon next" aria-hidden="true" />
         </button>
       </div>
@@ -96,13 +98,13 @@ export function HomepageCategoryCarousel({ tiles }) {
           </Link>
         ))}
       </div>
-      <div className="carousel-dots" aria-label="Category carousel pagination">
+      <div className="carousel-dots" aria-label={t('Category carousel pagination', lang)}>
         {Array.from({ length: pageCount }, (_, index) => (
           <button
             type="button"
             className={index === activeIndex ? 'active carouselDot' : 'carouselDot'}
             key={index}
-            aria-label={`Go to category page ${index + 1}`}
+            aria-label={lang === 'ar' ? `انتقل إلى صفحة الفئات ${index + 1}` : `Go to category page ${index + 1}`}
             aria-current={index === activeIndex ? 'true' : undefined}
             onClick={() => scrollToIndex(index)}
           />

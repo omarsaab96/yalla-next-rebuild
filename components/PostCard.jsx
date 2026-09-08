@@ -1,3 +1,4 @@
+import { t } from '@/lib/i18n';
 import Link from 'next/link';
 import { localizedHref, renderContentItem } from '@/lib/cms';
 
@@ -16,7 +17,7 @@ export function PostCard({ post, lang = 'en', large = false }) {
         <p>{item.excerptText.replace(/Read More.*/, '').slice(0, 170)}</p>
       </div>
       <div className="post-card-footer">
-        <Link href={href} className="post-card-readmore">Read more</Link>
+        <Link href={href} className="post-card-readmore">{t('Read more', lang)}</Link>
       </div>
     </article>
   );

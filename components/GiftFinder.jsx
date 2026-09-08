@@ -1,5 +1,7 @@
 'use client';
 
+import { t } from '@/lib/i18n';
+
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 
@@ -54,7 +56,7 @@ function FilterGroup({ title, groups, selected, onChange }) {
   );
 }
 
-function FinderCard({ post }) {
+function FinderCard({ post, lang }) {
   const [image, setImage] = useState(post.image || fallbackImage);
 
   return (
@@ -68,13 +70,14 @@ function FinderCard({ post }) {
         <p>{post.excerpt && <span>{post.excerpt}</span>}</p>
       </div>
       <div className="finder-card-footer">
-        <Link className='post-card-readmore' href={post.href}>Read more</Link>
+        <Link className='post-card-readmore' href={post.href}>{t('Read more', lang)}</Link>
       </div>
     </article>
   );
 }
 
 export function GiftFinder({
+  lang = 'en',
   kicker = 'gift finder',
   heading,
   intro,
@@ -124,22 +127,22 @@ export function GiftFinder({
         <aside className="finder-sidebar">
           <div className="finder-sidebar-inner">
             <label className="finder-search">
-              <span>Search</span>
-              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={searchPlaceholder} />
+              <span>{t('Search', lang)}</span>
+              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t(searchPlaceholder, lang)} />
             </label>
-            <FilterGroup title={filterTitle} groups={categories} selected={selectedCategories} onChange={setSelectedCategories} />
-            <button className="secondary-button" type="button" onClick={clearFilters}>Clear filters</button>
+            <FilterGroup title={t(filterTitle, lang)} groups={categories} selected={selectedCategories} onChange={setSelectedCategories} />
+            <button className="secondary-button" type="button" onClick={clearFilters}>{t('Clear filters', lang)}</button>
           </div>
         </aside>
 
         <div className="finder-results">
           <div className="finder-results-head">
-            <p>{filteredPosts.length} result{filteredPosts.length === 1 ? '' : 's'}</p>
+            <p>{lang === 'ar' ? `${filteredPosts.length.toLocaleString('ar')} نتيجة` : `${filteredPosts.length} result${filteredPosts.length === 1 ? '' : 's'}`}</p>
           </div>
           <div className="finder-grid">
-            {filteredPosts.map((post) => <FinderCard key={post.id} post={post} />)}
+            {filteredPosts.map((post) => <FinderCard key={post.id} post={post} lang={lang} />)}
           </div>
-          {filteredPosts.length === 0 && <p className="finder-empty">{emptyMessage}</p>}
+          {filteredPosts.length === 0 && <p className="finder-empty">{t(emptyMessage, lang)}</p>}
         </div>
       </section>
 

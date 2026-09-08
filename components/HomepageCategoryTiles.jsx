@@ -1,3 +1,4 @@
+import { t } from '@/lib/i18n';
 import Link from 'next/link';
 import { HomepageCategoryCarousel } from '@/components/HomepageCategoryCarousel';
 import { getTaxonomyTiles, localizedHref } from '@/lib/cms';
@@ -16,12 +17,12 @@ export async function HomepageCategoryTiles({
     <section className="category-band homepage-category-band" aria-labelledby="homepage-categories-title">
       <div className="doubleCol">
         <div className="leftCol">
-          {kicker && <p className="section-kicker">{kicker}</p>}
-          <h2 id="homepage-categories-title">{title}</h2>
-          {intro && <p>{intro}</p>}
-          {ctaLabel && <Link href={localizedHref(ctaHref, lang)} className="post-card-readmore">{ctaLabel}</Link>}
+          {kicker && <p className="section-kicker">{t(kicker, lang)}</p>}
+          <h2 id="homepage-categories-title">{t(title, lang)}</h2>
+          {intro && <p>{t(intro, lang)}</p>}
+          {ctaLabel && <Link href={localizedHref(ctaHref, lang)} className="post-card-readmore">{t(ctaLabel, lang)}</Link>}
         </div>
-        <HomepageCategoryCarousel tiles={tiles} />
+        <HomepageCategoryCarousel tiles={tiles} lang={lang} />
       </div>
     </section>
   );

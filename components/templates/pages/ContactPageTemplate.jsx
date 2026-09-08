@@ -1,3 +1,4 @@
+import { t } from '@/lib/i18n';
 import { getTemplateField } from '@/lib/templateSchemas';
 
 function rewriteContactForms(html = '') {
@@ -25,15 +26,15 @@ export function ContactPageTemplate({ page, item, searchParams }) {
   return (
     <article className="single-page page-template-contact">
       <header className="single-header">
-        <p className="section-kicker">contact</p>
+        {/* <p className="section-kicker">{t('contact', item.lang)}</p> */}
         <h1>{heading}</h1>
         {image && <img src={image} alt={item.imageAlt || heading} />}
       </header>
       <div className="content">
         <div dangerouslySetInnerHTML={{ __html: intro }} />
-        {submitted && <p className="form-success">Thanks, your message has been received.</p>}
-        {failed && <p className="form-error">Sorry, your message could not be saved. Please try again.</p>}
-        {invalid && <p className="form-error">Please fill in your name, email, and subject with a valid email address.</p>}
+        {submitted && <p className="form-success">{t('Thanks, your message has been received.', item.lang)}</p>}
+        {failed && <p className="form-error">{t('Sorry, your message could not be saved. Please try again.', item.lang)}</p>}
+        {invalid && <p className="form-error">{t('Please fill in your name, email, and subject with a valid email address.', item.lang)}</p>}
         {email && <p><a href={`mailto:${email}`}>{email}</a></p>}
       </div>
     </article>

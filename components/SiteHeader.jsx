@@ -10,7 +10,7 @@ export function SiteHeader({ settings, lang }) {
       Object.entries(settings.languages || {}).map(([code, config]) => [
         code,
         {
-          label: config.label || code,
+          label: code === 'ar' ? 'العربية' : config.label || code,
           enabled: Boolean(config.enabled),
           direction: config.direction || 'ltr'
         }

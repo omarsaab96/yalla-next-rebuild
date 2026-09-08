@@ -6,11 +6,12 @@ import { getPostTemplateComponent } from '@/components/templates/posts/registry'
 
 export const dynamic = 'force-dynamic';
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params, searchParams }) {
+  const { lang } = await getRequestContext(searchParams);
   const { slug } = await params;
   const entry = await getAnyContentBySlug(slug);
   if (!entry) return {};
-  const item = renderContentItem(entry, 'en');
+  const item = renderContentItem(entry, lang);
 
   return {
     title: item.seoTitle || item.titleText,

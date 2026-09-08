@@ -1,7 +1,8 @@
+import { t } from '@/lib/i18n';
 import { getTemplateField } from '@/lib/templateSchemas';
 
 export function GuidePostTemplate({ post, item }) {
-  const kicker = getTemplateField(post.fields, 'kicker', item.lang, `gift guide · ${item.dateText}`);
+  const kicker = getTemplateField(post.fields, 'kicker', item.lang, `${t('gift guide', item.lang)} · ${item.dateText}`);
   const headline = getTemplateField(post.fields, 'headline', item.lang, item.titleText);
   const intro = getTemplateField(post.fields, 'intro', item.lang, '');
   const image = getTemplateField(post.fields, 'heroImage', item.lang, post.featuredImage);

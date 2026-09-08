@@ -1,5 +1,7 @@
 'use client';
 
+import { t } from '@/lib/i18n';
+
 import { useEffect, useState } from 'react';
 
 const AUTOPLAY_DELAY = 3500;
@@ -31,7 +33,7 @@ function SocialIcon({ type }) {
   );
 }
 
-export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramUrl, intro, items }) {
+export function InstagramFeed({ lang = 'en', ctaHref, email, facebookUrl, heading, instagramUrl, intro, items }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const followLinks = [
     { type: 'instagram', label: 'Instagram', href: instagramUrl || ctaHref },
@@ -63,7 +65,7 @@ export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramU
         key={`${post.image}-${post.title || index}`}
         {...wrapperProps}
       >
-        <img src={post.image} alt={post.title || post.caption || 'Social feed image'} />
+        <img src={post.image} alt={post.title || post.caption || t('Social feed image', lang)} />
         {(post.title || post.caption) && (
           <span className="instagram-post-overlay">
             {post.title && <strong>{post.title}</strong>}
@@ -78,7 +80,7 @@ export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramU
     <section className="instagram-feed-section" aria-labelledby="instagram-feed-title">
       <div className="instagram-feed-grid">
         <div style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <div className="instagram-phone" aria-label="Instagram app preview">
+          <div className="instagram-phone" aria-label={t('Instagram app preview', lang)}>
             <div className="iphone-frame">
               <div className="iphone-notch" aria-hidden="true" />
               <div className="iphone-screen">
@@ -86,29 +88,29 @@ export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramU
                   <div className="instagram-app-header" aria-hidden="true">
                     <span className="instagram-camera-icon" />
                     <span className="instagram-app-title">
-                      <img src="/media/insta-logo.png" alt={'Social feed image'} />
+                      <img src="/media/insta-logo.png" alt={t('Social feed image', lang)} />
                     </span>
-                    <img width="12" src="/media/heart.png" alt={'Social feed image'} />
+                    <img width="12" src="/media/heart.png" alt={t('Social feed image', lang)} />
                   </div>
 
-                  <img src="/media/insta-head.jpg" alt={'Social feed image'} />
-                  <div className="instagram-posts instagram-carousel" aria-label="Social feed media">
+                  <img src="/media/insta-head.jpg" alt={t('Social feed image', lang)} />
+                  <div className="instagram-posts instagram-carousel" aria-label={t('Social feed media', lang)}>
                     <div
                       className="instagram-carousel-track"
-                      style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+                      style={{ transform: `translateX(${lang === 'ar' ? '' : '-'}${activeIndex * 100}%)` }}
                     >
                       {items.map(renderPost)}
                     </div>
                   </div>
-                  <img style={{marginTop:15}}src="/media/insta-foot.jpg" alt={'Social feed image'} />
+                  <img style={{marginTop:15}}src="/media/insta-foot.jpg" alt={t('Social feed image', lang)} />
                   {items.length > 1 && (
-                    <div className="carousel-dots instagram-carousel-dots" aria-label="Instagram feed pagination">
+                    <div className="carousel-dots instagram-carousel-dots" aria-label={t('Instagram feed pagination', lang)}>
                       {items.map((post, index) => (
                         <button
                           type="button"
                           className={index === activeIndex ? 'active carouselDot' : 'carouselDot'}
                           key={`${post.image}-${index}`}
-                          aria-label={`Go to social feed image ${index + 1}`}
+                            aria-label={lang === 'ar' ? `انتقل إلى المنشور ${index + 1}` : `Go to social feed image ${index + 1}`}
                           aria-current={index === activeIndex ? 'true' : undefined}
                           onClick={() => setActiveIndex(index)}
                         />
@@ -126,11 +128,11 @@ export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramU
         </div>
 
         <div className="instagram-follow-panel">
-          <p className="section-kicker">social feed</p>
+          <p className="section-kicker">{t('social feed', lang)}</p>
           <h2 id="instagram-feed-title">{heading}</h2>
           {intro && <p>{intro}</p>}
           {followLinks.length > 0 && (
-            <div className="social-follow-links" aria-label="Follow and contact links">
+            <div className="social-follow-links" aria-label={t('Follow and contact links', lang)}>
               {followLinks.map((link) => (
                 <a
                   href={link.href}
@@ -141,7 +143,7 @@ export function InstagramFeed({ ctaHref, email, facebookUrl, heading, instagramU
                   <span className={`social-follow-icon social-follow-icon-${link.label.toLowerCase()}`} aria-hidden="true">
                     <SocialIcon type={link.type} />
                   </span>
-                  <span className="social-follow-label">{link.label}</span>
+                  <span className="social-follow-label">{t(link.label, lang)}</span>
                   {/* <strong>{link.label === 'Email' ? email : link.href.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</strong> */}
                 </a>
               ))}

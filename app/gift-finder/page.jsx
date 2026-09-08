@@ -1,12 +1,14 @@
+import { t } from '@/lib/i18n';
 import { CategoryTiles } from '@/components/CategoryTiles';
 import { getPageTemplateComponent } from '@/components/templates/pages/registry';
 import { getContentBySlug, renderContentItem } from '@/lib/cms';
 import { getRequestContext } from '@/lib/request';
 
-export async function generateMetadata() {
+export async function generateMetadata({ searchParams }) {
+  const { lang } = await getRequestContext(searchParams);
   const page = await getContentBySlug('page', 'gift-finder');
-  if (!page) return { title: 'Gift Finder' };
-  const item = renderContentItem(page, 'en');
+  if (!page) return { title: t('Gift Finder', lang) };
+  const item = renderContentItem(page, lang);
   return {
     title: item.seoTitle || item.titleText,
     description: item.seoDescription || item.excerptText
@@ -22,8 +24,8 @@ export default async function GiftFinderPage({ searchParams }) {
     return (
       <main className="gift-finder-page">
         <section className="finder-hero">
-          <p className="section-kicker">gift finder</p>
-          <h1>Gift Finder</h1>
+          <p className="section-kicker">{t('gift finder', lang)}</p>
+          <h1>{t('Gift Finder', lang)}</h1>
         </section>
         {settings.features.categories !== false && <CategoryTiles lang={lang} />}
       </main>

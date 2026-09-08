@@ -1,3 +1,4 @@
+import { t } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
 import { PostCard } from '@/components/PostCard';
 import { getPostsByCategoryTree, getTermBySlug, localize, localizedHref } from '@/lib/cms';
@@ -6,13 +7,14 @@ import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params, searchParams }) {
+  const { lang } = await getRequestContext(searchParams);
   const { slug } = await params;
   const category = await getTermBySlug('category', slug);
   if (!category) return {};
   return {
-    title: localize(category.name, 'en'),
-    description: localize(category.description, 'en') || `Yalla Together posts in ${localize(category.name, 'en')}`
+    title: localize(category.name, lang),
+    description: localize(category.description, lang) || `Yalla Together posts in ${localize(category.name, lang)}`
   };
 }
 
@@ -59,7 +61,7 @@ export default async function CategoryPage({ params, searchParams }) {
                 href={localizedHref("/gift-finder/", lang)}
                 className="section-kicker"
               >
-                All categories
+                {t('All categories', lang)}
               </Link>
             </div>
             {/* <p className="section-kicker">category</p> */}

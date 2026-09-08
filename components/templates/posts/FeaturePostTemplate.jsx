@@ -1,7 +1,8 @@
+import { t } from '@/lib/i18n';
 import { getTemplateField } from '@/lib/templateSchemas';
 
 export function FeaturePostTemplate({ post, item }) {
-  const kicker = getTemplateField(post.fields, 'kicker', item.lang, `feature story · ${item.dateText}`);
+  const kicker = getTemplateField(post.fields, 'kicker', item.lang, `${t('feature story', item.lang)} · ${item.dateText}`);
   const headline = getTemplateField(post.fields, 'headline', item.lang, item.titleText);
   const deck = getTemplateField(post.fields, 'deck', item.lang, item.excerptText);
   const image = getTemplateField(post.fields, 'heroImage', item.lang, post.featuredImage);

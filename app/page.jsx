@@ -4,6 +4,16 @@ import { getRequestContext } from '@/lib/request';
 
 export const dynamic = 'force-dynamic';
 
+export async function generateMetadata({ searchParams }) {
+  const { settings, lang } = await getRequestContext(searchParams);
+  const homepage = await getHomepage();
+  const item = homepage ? renderContentItem(homepage, lang) : null;
+  return {
+    title: { absolute: item?.seoTitle || item?.titleText || settings.siteName },
+    description: item?.seoDescription || item?.excerptText || settings.description
+  };
+}
+
 export default async function HomePage({ searchParams }) {
   const { settings, lang } = await getRequestContext(searchParams);
   const homepage = await getHomepage();

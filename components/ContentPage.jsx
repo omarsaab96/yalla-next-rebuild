@@ -3,10 +3,11 @@ import { getContentBySlug, renderContentItem } from '@/lib/cms';
 import { getRequestContext } from '@/lib/request';
 import { getPageTemplateComponent } from '@/components/templates/pages/registry';
 
-export async function getContentPageMetadata(slug) {
+export async function getContentPageMetadata(slug, searchParams) {
+  const { lang } = await getRequestContext(searchParams);
   const page = await getContentBySlug('page', slug);
   if (!page) return {};
-  const item = renderContentItem(page, 'en');
+  const item = renderContentItem(page, lang);
 
   return {
     title: item.seoTitle || item.titleText,

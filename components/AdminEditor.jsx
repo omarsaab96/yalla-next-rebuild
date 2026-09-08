@@ -686,7 +686,7 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUpl
     const value = item.fields?.[field.name];
     if (field.localized) {
       if (value && Object.prototype.hasOwnProperty.call(value, lang)) return value[lang];
-      if (field.name === 'body') return item.content?.[lang] || item.content?.en || '';
+      if (field.name === 'body' || (field.name === 'intro' && getEffectivePageTemplate(item) === 'contact')) return item.content?.[lang] || item.content?.en || '';
       return '';
     }
     if (field.type === 'boolean') return value ?? field.defaultValue ?? true;
@@ -1265,6 +1265,8 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
             <div className="form-grid">
               <Field label="Site name"><input value={settings.siteName || ''} onChange={(e) => updateSettings(['siteName'], e.target.value)} /></Field>
               <Field label="Description"><input value={settings.description || ''} onChange={(e) => updateSettings(['description'], e.target.value)} /></Field>
+              <Field label="Site name AR"><input dir="rtl" value={settings.siteNameAr || ''} onChange={(e) => updateSettings(['siteNameAr'], e.target.value)} /></Field>
+              <Field label="Description AR"><input dir="rtl" value={settings.descriptionAr || ''} onChange={(e) => updateSettings(['descriptionAr'], e.target.value)} /></Field>
               <Field label="Email"><input value={settings.email || ''} onChange={(e) => updateSettings(['email'], e.target.value)} /></Field>
             </div>
             <h3>Social links</h3>

@@ -1,5 +1,7 @@
 'use client';
 
+import { t } from '@/lib/i18n';
+
 import { useEffect, useId, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -87,14 +89,14 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
   }, [isLanguageOpen]);
 
   return (
-    <header className={`site-header${isScrolled ? ' scrolled' : ''}`}>
+    <header className={`site-header${currentPath !== normalizePath(homeHref) ? ' subpage' : ''}${isScrolled ? ' scrolled' : ''}`}>
       <div className="topline">
         <Link href={homeHref} className="brand" aria-label={`${settings.siteName} home`} scroll>
           <BrandLogo scrolled={isScrolled || currentPath === normalizePath(homeHref)} />
         </Link>
         <nav
           className={`main-nav${isScrolled ? ' scrolled' : ''}${activeIndicator.visible ? ' has-active' : ''}`}
-          aria-label="Main navigation"
+          aria-label={t('Main navigation', lang)}
           ref={navRef}
           style={{
             '--active-link-left': `${activeIndicator.left}px`,
@@ -125,7 +127,7 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
               aria-controls={languageMenuId}
               onClick={() => setIsLanguageOpen((open) => !open)}
             >
-              <span>{currentLanguage?.label || lang}</span>
+              <span lang={lang}>{currentLanguage?.label || lang}</span>
               <svg className="language-chevron" aria-hidden="true" viewBox="0 0 20 20" focusable="false">
                 <path d="M5 7.5L10 12.5L15 7.5" />
               </svg>
@@ -135,10 +137,16 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
                 <Link
                   key={code}
                   className={code === lang ? 'language-option active' : 'language-option'}
-                  href={`/?lang=${code}`}
-                  onClick={() => setIsLanguageOpen(false)}
+                  href={`${currentPath}?lang=${code}`}
+                  prefetch={false}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    const url = new URL(window.location.href);
+                    url.searchParams.set('lang', code);
+                    window.location.assign(url.href);
+                  }}
                 >
-                  <span>{config.label}</span>
+                  <span lang={code}>{config.label}</span>
                   {code === lang && <span className="language-check" aria-hidden="true">✓</span>}
                 </Link>
               ))}

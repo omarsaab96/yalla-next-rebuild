@@ -1,7 +1,7 @@
 import ContentPage, { getContentPageMetadata } from '@/components/ContentPage';
 
-export async function generateMetadata() {
-  return getContentPageMetadata('cookies-and-privacy-policy');
+export async function generateMetadata({ searchParams }) {
+  return getContentPageMetadata('cookies-and-privacy-policy', searchParams);
 }
 
 export default function CookiesAndPrivacyPolicyPage({ searchParams }) {

@@ -1,11 +1,18 @@
 import './globals.css';
 import { Suspense } from 'react';
 import { headers } from 'next/headers';
+import { Noto_Kufi_Arabic } from 'next/font/google';
 import { AnalyticsTracker } from '@/components/AnalyticsTracker';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
 import { getRequestContext } from '@/lib/request';
+
+const notoKufiArabic = Noto_Kufi_Arabic({
+  subsets: ['arabic'],
+  display: 'swap',
+  variable: '--font-arabic'
+});
 
 export const metadata = {
   metadataBase: new URL('https://yallatogether.com'),
@@ -20,11 +27,12 @@ export default async function RootLayout({ children }) {
   const { settings, lang } = await getRequestContext();
   const headerStore = await headers();
   const currentPath = headerStore.get('x-current-path') || '';
-  const isAdmin = currentPath.startsWith('/admin');
-  const dir = settings.languages?.[lang]?.direction || 'ltr';
+  const isAdmin = currentPath === '/admin' || currentPath.startsWith('/admin/');
+  const documentLang = isAdmin ? 'en' : lang;
+  const dir = isAdmin ? 'ltr' : settings.languages?.[lang]?.direction || 'ltr';
 
   return (
-    <html lang={lang} dir={dir}>
+    <html lang={documentLang} dir={dir} className={notoKufiArabic.variable}>
       <body className={`${dir === 'rtl' ? 'rtl' : ''}${isAdmin ? ' admin-body' : ''}`}>
         {!isAdmin && <SiteHeader settings={settings} lang={lang} />}
         {!isAdmin && (

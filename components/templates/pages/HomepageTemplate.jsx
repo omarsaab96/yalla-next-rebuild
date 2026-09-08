@@ -95,6 +95,7 @@ export function HomepageTemplate({ homepage, item, settings, lang, posts, heroPo
 
       {showInstagramFeed && (
         <InstagramFeed
+          lang={lang}
           ctaHref={instagramFeedCtaHref}
           email={settings.email}
           facebookUrl={settings.facebookUrl}

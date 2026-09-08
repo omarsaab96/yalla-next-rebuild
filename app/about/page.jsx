@@ -1,7 +1,7 @@
 import ContentPage, { getContentPageMetadata } from '@/components/ContentPage';
 
-export async function generateMetadata() {
-  return getContentPageMetadata('about');
+export async function generateMetadata({ searchParams }) {
+  return getContentPageMetadata('about', searchParams);
 }
 
 export default function AboutPage({ searchParams }) {
