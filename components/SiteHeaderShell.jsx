@@ -90,7 +90,7 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
     <header className={`site-header${isScrolled ? ' scrolled' : ''}`}>
       <div className="topline">
         <Link href={homeHref} className="brand" aria-label={`${settings.siteName} home`} scroll>
-          <BrandLogo scrolled={isScrolled} />
+          <BrandLogo scrolled={isScrolled || currentPath === normalizePath(homeHref)} />
         </Link>
         <nav
           className={`main-nav${isScrolled ? ' scrolled' : ''}${activeIndicator.visible ? ' has-active' : ''}`}
