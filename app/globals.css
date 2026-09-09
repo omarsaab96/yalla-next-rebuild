@@ -3071,7 +3071,7 @@ figcaption{
 }
 
 .page-template-standard .content {
-  min-height: calc(100vh - 420px - 228px);
+  min-height: calc(100vh - 630px);
 }
 
 .instagram-feed-section {

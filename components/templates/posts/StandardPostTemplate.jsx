@@ -38,7 +38,7 @@ export function StandardPostTemplate({ post, item }) {
           </Link>
         </div>
         
-        <h1>{headline}</h1>
+        <h1>{t('Blog', lang)}</h1><br></br>
         <p className="section-kicker">{kicker}</p>
         {/* {image && <img src={image} alt={item.imageAlt || headline} />} */}
       </header>
