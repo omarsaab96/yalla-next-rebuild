@@ -1339,6 +1339,11 @@ figcaption{
   /* aspect-ratio: 1; */
 }
 
+.rtl .categoryPattern{
+  left: 20vw;
+  right: auto;
+}
+
 .headerContent {
   display: flex;
   flex-direction: column;
