@@ -32,7 +32,7 @@ function FilterGroup({ title, groups, selected, onChange }) {
                 onChange={(event) => toggle(group, event.target.checked)}
               />
               <span>{group.name}</span>
-              <small>{group.count}</small>
+              {/* <small>{group.count}</small> */}
             </label>
             {group.children.length > 0 && (
               <div className="finder-category-children">
@@ -44,7 +44,7 @@ function FilterGroup({ title, groups, selected, onChange }) {
                       onChange={(event) => toggle(child, event.target.checked)}
                     />
                     <span>{child.name}</span>
-                    <small>{child.count}</small>
+                    {/* <small>{child.count}</small> */}
                   </label>
                 ))}
               </div>

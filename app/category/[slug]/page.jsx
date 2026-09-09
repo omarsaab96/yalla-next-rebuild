@@ -30,45 +30,48 @@ export default async function CategoryPage({ params, searchParams }) {
   return (
     <>
       <header className="archive-header">
-
         <div className='headerContent'>
           {category.featuredImage && (
             <img
-              className='categoryImage'
+              className='categoryImage categoryPattern'
               src={category.featuredImage}
               alt={localize(category.featuredImageAlt, lang) || localize(category.name, lang)}
             />
           )}
-          <div>
-            <div className="backbtn">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M15 18L9 12L15 6"
-                  stroke="#d49d20"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
 
-              <Link
-                href={localizedHref("/gift-finder/", lang)}
-                className="section-kicker"
-              >
-                {t('All categories', lang)}
-              </Link>
-            </div>
+          <div className="backbtn">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="#d49d20"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+
+            <Link
+              href={localizedHref("/gift-finder/", lang)}
+              className="section-kicker"
+            >
+              {t('All categories', lang)}
+            </Link>
+          </div>
+
+          <div>
             {/* <p className="section-kicker">category</p> */}
             <h1>{localize(category.name, lang)}</h1>
           </div>
         </div>
+
         <div></div>
+
       </header>
 
       <section className="archive-page">
