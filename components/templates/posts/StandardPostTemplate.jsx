@@ -12,35 +12,39 @@ export function StandardPostTemplate({ post, item }) {
 
   return (
     <article className="single-post post-template-standard">
-      <header className="single-header">
-        <div className="backbtn">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path
-              d="M15 18L9 12L15 6"
-              stroke="#d49d20"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+      <header className="blogHeader">
+        <div className="blogHead">
+          <div className="container">
+            <div className="backbtn">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="#d49d20"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
 
-          <Link
-            href={localizedHref("/blog/", lang)}
-            className="backbtnText"
-          >
-            {t('All posts', lang)}
-          </Link>
+              <Link
+                href={localizedHref("/blog/", lang)}
+                className="backbtnText"
+              >
+                {t('All posts', lang)}
+              </Link>
+            </div>
+
+            <h1>{headline}</h1><br></br>
+            <p className="section-kicker">{kicker}</p>
+            {/* {image && <img src={image} alt={item.imageAlt || headline} />} */}
+          </div>
         </div>
-        
-        <h1>{t('Blog', lang)}</h1><br></br>
-        <p className="section-kicker">{kicker}</p>
-        {/* {image && <img src={image} alt={item.imageAlt || headline} />} */}
       </header>
       <div className="content" dangerouslySetInnerHTML={{ __html: body }} />
     </article>
