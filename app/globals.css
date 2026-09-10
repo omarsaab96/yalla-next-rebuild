@@ -1200,6 +1200,10 @@ figcaption {
   /* text-align:center; */
 }
 
+.post-template-standard .content h1{
+  font-size: 1.5em;
+}
+
 .single-header,
 .archive-header,
 .finder-hero {
