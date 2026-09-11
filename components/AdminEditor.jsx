@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { BrandLogo } from '@/components/BrandLogo';
 import { getEffectivePageTemplate, getSchema, PAGE_TEMPLATE_OPTIONS, POST_TEMPLATE_OPTIONS } from '@/lib/templateSchemas';
 import { resolveSeoTemplate } from '@/lib/seoVariables';
+import { categoryKey, categoryParent, compareCategories, reorderCategory } from '@/lib/categoryOrder';
 
 const tabs = [
   { key: 'dashboard', label: 'Dashboard' },
@@ -746,13 +747,19 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUpl
 }
 
 function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveStatus = {}, onSave, onCreate, onDelete, onUploadMedia, typeOptions, richContent = false, entity = '', categories = [], media = [] }) {
+  const [draggedCategory, setDraggedCategory] = useState(null);
+  const [categoryDrop, setCategoryDrop] = useState(null);
+  const [orderMessage, setOrderMessage] = useState('');
+  useEffect(() => {
+    if (saveStatus.state === 'saved') setOrderMessage('');
+  }, [saveStatus.state]);
   const selected = useMemo(() => items.find((item) => (item._id || item.slug || item.wordpressId) === selectedId), [items, selectedId]);
   const isHomepage = entity === 'page' && selected?.template === 'homepage';
   const selectedTermId = selected?.wordpressId || selected?.id;
   const listItems = useMemo(() => {
     if (entity !== 'category') return items.map((item) => ({ item, children: [] }));
 
-    const nodes = items.map((item) => ({ item, children: [] }));
+    const nodes = [...items].sort(compareCategories).map((item) => ({ item, children: [] }));
     const byTermId = new Map();
     nodes.forEach((node) => {
       const termId = node.item.wordpressId || node.item.id;
@@ -761,7 +768,7 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
 
     const roots = [];
     nodes.forEach((node) => {
-      const parentId = node.item.parentId || node.item.parent;
+      const parentId = node.item.parentId ?? node.item.parent;
       const parent = parentId ? byTermId.get(String(parentId)) : null;
       if (parent && parent !== node) {
         parent.children.push(node);
@@ -792,11 +799,53 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
       <div className="admin-list-node" key={id}>
         <button
           className={`${id === selectedId ? 'active' : ''}${entity === 'category' ? ' category-list-item' : ''}${depth > 0 ? ' category-list-child' : ''}`}
+          draggable={entity === 'category' && saveStatus.state !== 'saving'}
+          data-drop-position={categoryDrop?.key === categoryKey(item) ? categoryDrop.position : undefined}
+          onDragStart={entity === 'category' ? (event) => {
+            setDraggedCategory(categoryKey(item));
+            event.dataTransfer.effectAllowed = 'move';
+            event.dataTransfer.setData('text/plain', categoryKey(item));
+          } : undefined}
+          onDragOver={entity === 'category' ? (event) => {
+            const source = items.find((candidate) => categoryKey(candidate) === draggedCategory);
+            if (!source || source === item || categoryParent(source) !== categoryParent(item)) {
+              setCategoryDrop(null);
+              return;
+            }
+            event.preventDefault();
+            event.dataTransfer.dropEffect = 'move';
+            const rect = event.currentTarget.getBoundingClientRect();
+            setCategoryDrop({ key: categoryKey(item), position: event.clientY > rect.top + rect.height / 2 ? 'after' : 'before' });
+          } : undefined}
+          onDragLeave={() => setCategoryDrop(null)}
+          onDragEnd={() => { setDraggedCategory(null); setCategoryDrop(null); }}
+          onDrop={entity === 'category' ? (event) => {
+            event.preventDefault();
+            const rect = event.currentTarget.getBoundingClientRect();
+            const next = reorderCategory(items, draggedCategory, categoryKey(item), event.clientY > rect.top + rect.height / 2);
+            if (next !== items) {
+              setItems(next);
+              setOrderMessage('Order changed. Click Save to publish it.');
+            }
+            setDraggedCategory(null);
+            setCategoryDrop(null);
+          } : undefined}
+          onKeyDown={entity === 'category' ? (event) => {
+            if (!event.altKey || !['ArrowUp', 'ArrowDown'].includes(event.key) || saveStatus.state === 'saving') return;
+            event.preventDefault();
+            const siblings = items.filter((candidate) => categoryParent(candidate) === categoryParent(item)).sort(compareCategories);
+            const index = siblings.findIndex((candidate) => categoryKey(candidate) === categoryKey(item));
+            const target = siblings[index + (event.key === 'ArrowUp' ? -1 : 1)];
+            if (target) {
+              setItems(reorderCategory(items, categoryKey(item), categoryKey(target), event.key === 'ArrowDown'));
+              setOrderMessage('Order changed. Click Save to publish it.');
+            }
+          } : undefined}
           onClick={() => setSelectedId(id)}
           style={entity === 'category' ? { '--category-indent': `${depth * 18}px` } : undefined}
           type="button"
         >
-          <span>{item.title?.en || getLocalizedValue(item.name, 'en') || item.slug || item.localPath}</span>
+          <span>{entity === 'category' && <span className="category-drag-handle" aria-hidden="true">⠿ </span>}{item.title?.en || getLocalizedValue(item.name, 'en') || item.slug || item.localPath}</span>
           {getListMeta(item) && <small>{getListMeta(item)}</small>}
         </button>
         {node.children.map((child) => renderListItem(child, depth + 1))}
@@ -808,6 +857,11 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
     <div className="admin-wrapper">
       <div className="admin-split">
         <aside className="admin-list">
+          {/* {entity === 'category' && <div className="category-order-help">
+            <p>Drag categories to reorder within the same parent. Click Save to publish.</p>
+            <p>Keyboard: focus a category and press Alt + ↑ or ↓.</p>
+            <span role="status">{orderMessage || (saveStatus.state === 'saved' ? 'Categories saved.' : '')}</span>
+          </div>} */}
           {listItems.map((item) => renderListItem(item))}
         </aside>
 
