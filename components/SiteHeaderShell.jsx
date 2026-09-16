@@ -16,9 +16,13 @@ function normalizePath(path = '/') {
 export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [activeIndicator, setActiveIndicator] = useState({ left: 0, width: 0, visible: false });
   const pathname = usePathname();
   const languageMenuId = useId();
+  const navigationId = useId();
+  const menuButtonRef = useRef(null);
+  const headerRef = useRef(null);
   const navRef = useRef(null);
   const languageSelectorRef = useRef(null);
   const enabledLanguages = Object.entries(settings.languages || {}).filter(([, config]) => config.enabled);
@@ -30,6 +34,38 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
     if (hrefPath === '/') return currentPath === '/';
     return currentPath === hrefPath || currentPath.startsWith(`${hrefPath}/`);
   }
+
+  useEffect(() => {
+    setIsNavOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    const desktop = window.matchMedia('(min-width: 901px)');
+    const closeOnDesktop = () => {
+      if (desktop.matches) setIsNavOpen(false);
+    };
+    desktop.addEventListener('change', closeOnDesktop);
+    return () => desktop.removeEventListener('change', closeOnDesktop);
+  }, []);
+
+  useEffect(() => {
+    if (!isNavOpen) return undefined;
+    const handlePointerDown = (event) => {
+      if (!headerRef.current?.contains(event.target)) setIsNavOpen(false);
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsNavOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isNavOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,35 +125,12 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
   }, [isLanguageOpen]);
 
   return (
-    <header className={`site-header${currentPath !== normalizePath(homeHref) ? ' subpage' : ''}${isScrolled ? ' scrolled' : ''}`}>
+    <header ref={headerRef} className={`site-header${currentPath !== normalizePath(homeHref) ? ' subpage' : ''}${isScrolled ? ' scrolled' : ''}`}>
       <div className="topline">
         <Link href={homeHref} className="brand" aria-label={`${settings.siteName} home`} scroll>
-          <BrandLogo scrolled={isScrolled || currentPath === normalizePath(homeHref)} />
+          <BrandLogo responsiveWhite scrolled={isScrolled || currentPath === normalizePath(homeHref)} />
         </Link>
-        <nav
-          className={`main-nav${isScrolled ? ' scrolled' : ''}${activeIndicator.visible ? ' has-active' : ''}`}
-          aria-label={t('Main navigation', lang)}
-          ref={navRef}
-          style={{
-            '--active-link-left': `${activeIndicator.left}px`,
-            '--active-link-width': `${activeIndicator.width}px`
-          }}
-        >
-          {menu.map((item) => {
-            const active = isActiveHref(item.href);
 
-            return (
-              <Link
-                key={item.href}
-                className={`main-nav-link${active ? ' active' : ''}`}
-                href={item.href}
-                aria-current={active ? 'page' : undefined}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
         <div className="header-actions langs">
           <div className={`language-selector${isLanguageOpen ? ' open' : ''}`} ref={languageSelectorRef}>
             <button
@@ -125,7 +138,10 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
               className="language-trigger"
               aria-expanded={isLanguageOpen}
               aria-controls={languageMenuId}
-              onClick={() => setIsLanguageOpen((open) => !open)}
+              onClick={() => {
+                setIsLanguageOpen((open) => !open);
+                setIsNavOpen(false);
+              }}
             >
               <span lang={lang}>{currentLanguage?.label || lang}</span>
               <svg className="language-chevron" aria-hidden="true" viewBox="0 0 20 20" focusable="false">
@@ -152,8 +168,50 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
               ))}
             </div>
           </div>
+          <button
+            ref={menuButtonRef}
+            type="button"
+            className="nav-toggle"
+            aria-expanded={isNavOpen}
+            aria-controls={navigationId}
+            aria-label={lang === 'ar' ? (isNavOpen ? 'إغلاق القائمة' : 'فتح القائمة') : (isNavOpen ? 'Close menu' : 'Open menu')}
+            onClick={() => {
+              setIsNavOpen((open) => !open);
+              setIsLanguageOpen(false);
+            }}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d={isNavOpen ? 'M6 6l12 12M6 18L18 6' : 'M4 6h16M4 12h16M4 18h16'} />
+            </svg>
+          </button>
           {/* <a className="email-link" href={`mailto:${settings.email}`}>Email</a> */}
         </div>
+        <nav
+          id={navigationId}
+          className={`main-nav${isNavOpen ? ' is-open' : ''}${isScrolled ? ' scrolled' : ''}${activeIndicator.visible ? ' has-active' : ''}`}
+          aria-label={t('Main navigation', lang)}
+          ref={navRef}
+          style={{
+            '--active-link-left': `${activeIndicator.left}px`,
+            '--active-link-width': `${activeIndicator.width}px`
+          }}
+        >
+          {menu.map((item) => {
+            const active = isActiveHref(item.href);
+
+            return (
+              <Link
+                key={item.href}
+                className={`main-nav-link${active ? ' active' : ''}`}
+                href={item.href}
+                onClick={() => setIsNavOpen(false)}
+                aria-current={active ? 'page' : undefined}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
       </div>
       {/* <p className="tagline">{settings.description}</p> */}
     </header>

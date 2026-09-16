@@ -70,7 +70,7 @@ export default async function CategoryPage({ params, searchParams }) {
           </div>
         </div>
 
-        <div></div>
+        {/* <div></div> */}
 
       </header>
 
