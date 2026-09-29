@@ -1209,7 +1209,6 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
     });
   }
 
-  const allContent = [...pages.map((item) => ({ ...item, kind: 'page' })), ...posts.map((item) => ({ ...item, kind: 'post' }))];
   const allTaxonomies = categories.map((item) => ({ ...item, type: 'category' }));
   const sectionMeta = {
     pages: { count: pages.length, addLabel: 'Add Page', onAdd: createPage },
@@ -1221,7 +1220,13 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
 
   function saveActiveSection() {
     if (activeTab === 'settings') return save('settings', settings);
-    if (activeTab === 'pages' || activeTab === 'posts') return save('content', allContent);
+    if (activeTab === 'pages' || activeTab === 'posts') {
+      const items = activeTab === 'pages' ? pages : posts;
+      const selectedId = activeTab === 'pages' ? selectedPageId : selectedPostId;
+      const selected = items.find((item) => (item._id || item.slug || item.wordpressId) === selectedId);
+      if (!selected) return null;
+      return save('content', [{ ...selected, kind: activeTab === 'pages' ? 'page' : 'post' }]);
+    }
     if (activeTab === 'categories') return save('taxonomies', allTaxonomies);
     if (activeTab === 'media') return save('media', media);
     return null;
@@ -1237,7 +1242,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeTab, settings, allContent, allTaxonomies, media]);
+  }, [activeTab, settings, pages, posts, selectedPageId, selectedPostId, allTaxonomies, media]);
 
   return (
     <section className="admin-app-shell">
