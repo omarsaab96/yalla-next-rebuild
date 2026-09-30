@@ -10,6 +10,11 @@ export function proxy(request) {
       headers: requestHeaders
     }
   });
+  if (request.nextUrl.pathname.startsWith('/preview/')) {
+    response.headers.set('Cache-Control', 'private, no-store, max-age=0');
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
+    response.headers.set('Referrer-Policy', 'no-referrer');
+  }
 
   if (lang === 'en' || lang === 'ar') {
     response.cookies.set('lang', lang, {

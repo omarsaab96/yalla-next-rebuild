@@ -27,6 +27,22 @@ function Field({ label, children }) {
   return <label className="cms-field"><span>{label}</span>{children}</label>;
 }
 
+function SaveToast({ status }) {
+  const visible = !status.message && ['saving', 'saved'].includes(status.state);
+  return (
+    <div role="status" aria-live="polite" aria-atomic="true" style={{ display: 'contents' }}>
+      {visible && <div className={`cms-save-toast cms-save-toast-${status.state}`}>
+        {status.state === 'saving'
+          ? <span className="cms-save-spinner" aria-hidden="true" />
+          : <svg className="cms-save-check" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m5 12 4 4L19 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>}
+        <span>{status.state === 'saving' ? 'Saving...' : 'All changes saved'}</span>
+      </div>}
+    </div>
+  );
+}
+
 function Toggle({ checked, onChange, label }) {
   return (
     <label className="cms-toggle">
@@ -39,17 +55,79 @@ function Toggle({ checked, onChange, label }) {
 function PublishToggle({ item, onChange }) {
   const published = item.enabled !== false && item.status !== 'draft';
   return (
-    <Toggle
-      checked={published}
-      label={published ? 'Published' : 'Draft'}
-      onChange={(checked) => onChange({
-        ...item,
-        enabled: checked,
-        status: checked ? 'publish' : 'draft',
-        modifiedAt: new Date().toISOString()
-      })}
-    />
+    <label className="cms-toggle cms-publish-toggle editorToggle">
+      <span>Published</span>
+      <input
+        type="checkbox"
+        role="switch"
+        aria-label="Published"
+        checked={published}
+        onChange={(event) => onChange({
+          ...item,
+          enabled: event.target.checked,
+          status: event.target.checked ? 'publish' : 'draft',
+          modifiedAt: new Date().toISOString()
+        })}
+      />
+      <span className="cms-publish-track" aria-hidden="true" />
+      {/* <span className="cms-publish-state" aria-hidden="true">{published ? 'On' : 'Off'}</span> */}
+    </label>
   );
+}
+
+function PostPreview({ post, onSaved, saving, saveLock }) {
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState('');
+  const [origin, setOrigin] = useState('');
+  useEffect(() => setOrigin(window.location.origin), []);
+  const unpublished = post.enabled === false || post.status === 'draft';
+  const url = unpublished && post.previewToken && origin ? `${origin}/preview/${post.previewToken}/` : '';
+
+  async function preview() {
+    if (saveLock?.current) return;
+    if (saveLock) saveLock.current = true;
+    setBusy(true);
+    setMessage('');
+    try {
+      const response = await fetch('/api/cms/preview', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ post })
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Could not create preview.');
+      onSaved(result.item);
+      setMessage('Draft saved. Preview is ready to share.');
+    } catch (error) {
+      setMessage(error.message);
+    } finally {
+      if (saveLock) saveLock.current = false;
+      setBusy(false);
+    }
+  }
+
+  if (!unpublished) return null;
+  return <div className="post-preview-controls">
+
+    {url ? <>
+      <input aria-label="Shareable preview link" readOnly value={url} onFocus={(event) => event.target.select()} />
+      <a href={url} className="primary-button editorActionLink" target="_blank" rel="noopener noreferrer">Open preview</a>
+      <button type="button" className="primary-button editorAction" onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(url);
+          setMessage('Preview link copied.');
+        } catch {
+          setMessage('Select the link and copy it manually.');
+        }
+      }}>Copy link</button>
+    </> :
+      <button className="primary-button editorAction" type="button" onClick={preview} disabled={busy || saving}>
+        {busy ? 'Preparing preview...' : 'Preview'}
+      </button>
+    }
+    <small>Preview saves this draft. Anyone with the link can view it until publication. Save or preview again to include later edits.</small>
+    <span role="status">{message}</span>
+  </div>;
 }
 
 function RichHtmlEditor({ label, value, onChange, dir = 'ltr', template = 'standard', title = '' }) {
@@ -746,7 +824,7 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUpl
   );
 }
 
-function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveStatus = {}, onSave, onCreate, onDelete, onUploadMedia, typeOptions, richContent = false, entity = '', categories = [], media = [] }) {
+function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveStatus = {}, saveLock, onSave, onCreate, onDelete, onUploadMedia, typeOptions, richContent = false, entity = '', categories = [], media = [] }) {
   const [draggedCategory, setDraggedCategory] = useState(null);
   const [categoryDrop, setCategoryDrop] = useState(null);
   const [orderMessage, setOrderMessage] = useState('');
@@ -790,6 +868,7 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
 
   function updateSelected(nextItem) {
     setItems((current) => current.map((item) => ((item._id || item.slug || item.wordpressId) === selectedId ? nextItem : item)));
+    setSelectedId(nextItem._id || nextItem.slug || nextItem.wordpressId);
   }
 
   function renderListItem(node, depth = 0) {
@@ -866,101 +945,115 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
         </aside>
 
         {selected && (
-          <div className="admin-panel">
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
             <div className="editor-title-row">
-              <h2>{label}: {selected.title?.en || selected.name?.en || selected.slug}</h2>
-              <div className="editor-title-actions">
+              <h2 style={{ flex: 1, margin: 0 }}>
+                {selected.title?.en || selected.name?.en || selected.slug}
+              </h2>
+              <div style={{ flex: 1 }} className="editor-title-actions">
                 {(entity === 'page' || entity === 'post')
                   ? <PublishToggle item={selected} onChange={updateSelected} />
                   : selected.enabled !== undefined && <Toggle checked={selected.enabled} label="Enabled" onChange={(checked) => updateSelected({ ...selected, enabled: checked })} />}
+                <button className="primary-button editorAction" type="button" onClick={onSave} disabled={saveStatus.state === 'saving'}>{saveButtonLabel}</button>
+                {onDelete && <button className="danger-button editorAction" onClick={() => onDelete(selected)} type="button">Delete</button>}
                 {saveStatus.state === 'error' && <span className="inline-save-status">{saveStatus.message}</span>}
-                <button className="primary-button" type="button" onClick={onSave} disabled={saveStatus.state === 'saving'}>{saveButtonLabel}</button>
-                {onDelete && <button className="danger-button" onClick={() => onDelete(selected)} type="button">Delete</button>}
               </div>
             </div>
 
-            {selected.localPath && <img className="media-preview" src={selected.localPath} alt={selected.alt?.en || ''} />}
-            <div className="form-grid">
-              {selected.slug !== undefined && <Field label="Slug"><input value={selected.slug || ''} onChange={(e) => updateSelected({ ...selected, slug: e.target.value })} /></Field>}
-              {typeOptions && entity !== 'page' && entity !== 'post' && (
-                <Field label="Type">
-                  <select value={selected.kind || selected.type} onChange={(e) => updateSelected({ ...selected, [selected.kind ? 'kind' : 'type']: e.target.value })}>
-                    {typeOptions.map((option) => <option value={option} key={option}>{option}</option>)}
-                  </select>
-                </Field>
-              )}
-              {entity === 'page' && (
-                <Field label="Template">
-                  <select value={getEffectivePageTemplate(selected)} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
-                    {pageTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
-                  </select>
-                </Field>
-              )}
-              {entity === 'post' && (
-                <Field label="Template">
-                  <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
-                    {postTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
-                  </select>
-                </Field>
-              )}
-              {entity === 'category' && (
-                <Field label="Parent category">
-                  <select
-                    value={selected.parentId || 0}
-                    onChange={(e) => {
-                      const rawValue = e.target.value;
-                      const parentId = rawValue === '0' ? 0 : Number.isNaN(Number(rawValue)) ? rawValue : Number(rawValue);
-                      updateSelected({ ...selected, parentId });
-                    }}
-                  >
-                    <option value="0">None</option>
-                    {categories
-                      .filter((category) => {
-                        const id = category.wordpressId || category.id;
-                        return id && id !== selectedTermId;
-                      })
-                      .map((category) => {
-                        const id = category.wordpressId || category.id;
-                        return <option key={category._id || category.slug} value={id}>{category.name?.en || category.slug}</option>;
-                      })}
-                  </select>
-                </Field>
-              )}
-              {entity === 'category' && <MediaPicker label="Category image" value={selected.featuredImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
-              {selected.featuredImage !== undefined && !isHomepage && entity !== 'category' && <MediaPicker value={selected.featuredImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
-              {selected.localPath !== undefined && <Field label="Local path"><input value={selected.localPath || ''} onChange={(e) => updateSelected({ ...selected, localPath: e.target.value })} /></Field>}
-              {selected.sourceUrl !== undefined && <Field label="Source URL"><input value={selected.sourceUrl || ''} onChange={(e) => updateSelected({ ...selected, sourceUrl: e.target.value })} /></Field>}
-              {selected.title && <Field label="Title EN"><input value={selected.title?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'en', e.target.value))} /></Field>}
-              {selected.title && <Field label="Title AR"><input dir="rtl" value={selected.title?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'ar', e.target.value))} /></Field>}
-              {selected.name && <Field label="Name EN"><input value={selected.name?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'en', e.target.value))} /></Field>}
-              {selected.name && <Field label="Name AR"><input dir="rtl" value={selected.name?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'ar', e.target.value))} /></Field>}
-              {selected.alt && <Field label="Alt EN"><input value={selected.alt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'en', e.target.value))} /></Field>}
-              {selected.alt && <Field label="Alt AR"><input dir="rtl" value={selected.alt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'ar', e.target.value))} /></Field>}
-              {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt EN"><textarea value={selected.excerpt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'en', e.target.value))} /></Field>}
-              {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt AR"><textarea dir="rtl" value={selected.excerpt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'ar', e.target.value))} /></Field>}
-              {entity === 'post' && (
-                <>
-                  <div></div>
-                  <div className="assignment-grid">
+            <div className="admin-panel">
+              {entity === 'post' && <PostPreview
+                key={selectedId}
+                post={selected}
+                saving={saveStatus.state === 'saving'}
+                saveLock={saveLock}
+                onSaved={(item) => {
+                  updateSelected(item);
+                  setSelectedId(item._id);
+                }}
+              />}
+              {selected.localPath && <img className="media-preview" src={selected.localPath} alt={selected.alt?.en || ''} />}
+              <div className="form-grid">
+                {selected.slug !== undefined && <Field label="Slug"><input value={selected.slug || ''} onChange={(e) => updateSelected({ ...selected, slug: e.target.value })} /></Field>}
+                {typeOptions && entity !== 'page' && entity !== 'post' && (
+                  <Field label="Type">
+                    <select value={selected.kind || selected.type} onChange={(e) => updateSelected({ ...selected, [selected.kind ? 'kind' : 'type']: e.target.value })}>
+                      {typeOptions.map((option) => <option value={option} key={option}>{option}</option>)}
+                    </select>
+                  </Field>
+                )}
+                {entity === 'page' && (
+                  <Field label="Template">
+                    <select value={getEffectivePageTemplate(selected)} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
+                      {pageTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
+                    </select>
+                  </Field>
+                )}
+                {entity === 'post' && (
+                  <Field label="Template">
+                    <select value={selected.template || 'standard'} onChange={(e) => updateSelected({ ...selected, template: e.target.value })}>
+                      {postTemplates.map((template) => <option key={template.value} value={template.value}>{template.label}</option>)}
+                    </select>
+                  </Field>
+                )}
+                {entity === 'category' && (
+                  <Field label="Parent category">
+                    <select
+                      value={selected.parentId || 0}
+                      onChange={(e) => {
+                        const rawValue = e.target.value;
+                        const parentId = rawValue === '0' ? 0 : Number.isNaN(Number(rawValue)) ? rawValue : Number(rawValue);
+                        updateSelected({ ...selected, parentId });
+                      }}
+                    >
+                      <option value="0">None</option>
+                      {categories
+                        .filter((category) => {
+                          const id = category.wordpressId || category.id;
+                          return id && id !== selectedTermId;
+                        })
+                        .map((category) => {
+                          const id = category.wordpressId || category.id;
+                          return <option key={category._id || category.slug} value={id}>{category.name?.en || category.slug}</option>;
+                        })}
+                    </select>
+                  </Field>
+                )}
+                {entity === 'category' && <MediaPicker label="Category image" value={selected.featuredImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
+                {selected.featuredImage !== undefined && !isHomepage && entity !== 'category' && <MediaPicker value={selected.featuredImage || ''} media={media} onUploadMedia={onUploadMedia} onSelect={(path) => updateSelected({ ...selected, featuredImage: path })} />}
+                {selected.localPath !== undefined && <Field label="Local path"><input value={selected.localPath || ''} onChange={(e) => updateSelected({ ...selected, localPath: e.target.value })} /></Field>}
+                {selected.sourceUrl !== undefined && <Field label="Source URL"><input value={selected.sourceUrl || ''} onChange={(e) => updateSelected({ ...selected, sourceUrl: e.target.value })} /></Field>}
+                {selected.title && <Field label="Title EN"><input value={selected.title?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'en', e.target.value))} /></Field>}
+                {selected.title && <Field label="Title AR"><input dir="rtl" value={selected.title?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'title', 'ar', e.target.value))} /></Field>}
+                {selected.name && <Field label="Name EN"><input value={selected.name?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'en', e.target.value))} /></Field>}
+                {selected.name && <Field label="Name AR"><input dir="rtl" value={selected.name?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'name', 'ar', e.target.value))} /></Field>}
+                {selected.alt && <Field label="Alt EN"><input value={selected.alt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'en', e.target.value))} /></Field>}
+                {selected.alt && <Field label="Alt AR"><input dir="rtl" value={selected.alt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'alt', 'ar', e.target.value))} /></Field>}
+                {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt EN"><textarea value={selected.excerpt?.en || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'en', e.target.value))} /></Field>}
+                {selected.excerpt && selected.template !== 'homepage' && <Field label="Excerpt AR"><textarea dir="rtl" value={selected.excerpt?.ar || ''} onChange={(e) => updateSelected(updateLocalized(selected, 'excerpt', 'ar', e.target.value))} /></Field>}
+                {entity === 'post' && (
+                  <>
+                    <div></div>
+                    {/* <div className="assignment-grid"> */}
                     <TermPicker label="Categories" terms={categories} selectedIds={selected.categories || []} onChange={(ids) => updateSelected({ ...selected, categories: ids })} />
-                  </div>
+                    {/* </div> */}
+                  </>
+                )}
+              </div>
+              {richContent && selected.content && (
+                <>
+                  <TemplateFieldsEditor item={selected} entity={entity} lang="en" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
+                  <TemplateFieldsEditor item={selected} entity={entity} lang="ar" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
                 </>
               )}
-            </div>
-            {richContent && selected.content && (
-              <>
-                <TemplateFieldsEditor item={selected} entity={entity} lang="en" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
-                <TemplateFieldsEditor item={selected} entity={entity} lang="ar" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
-              </>
-            )}
-            {entity === 'post' && (
+              {/* {entity === 'post' && (
               <>
                 <SeoPanel post={selected} updateSelected={updateSelected} media={media} onUploadMedia={onUploadMedia} />
                 <div className="assignment-grid">
                   <TermPicker label="Categories" terms={categories} selectedIds={selected.categories || []} onChange={(ids) => updateSelected({ ...selected, categories: ids })} />
                 </div>
               </>
-            )}
+            )} */}
+            </div>
           </div>
         )}
       </div>
@@ -1005,6 +1098,11 @@ function FormSubmissionsPanel({ submissions }) {
   );
 }
 
+function postSaveFingerprint(post) {
+  const { _id, previewToken, updatedAt, createdAt, ...content } = post;
+  return JSON.stringify(content);
+}
+
 export function AdminEditor({ initialData, mongoEnabled, session }) {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [settings, setSettings] = useState(initialData.settings);
@@ -1021,8 +1119,18 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
   const [showMediaUpload, setShowMediaUpload] = useState(false);
   const [saveStatus, setSaveStatus] = useState({ state: 'idle', message: '' });
   const saveStatusTimer = useRef(null);
+  const saveLock = useRef(false);
+  const savedPosts = useRef(new Map(initialData.posts.map((post) => [post._id || post.slug, postSaveFingerprint(post)])));
+  const autosaveAction = useRef(null);
+
+  useEffect(() => {
+    const post = posts.find((item) => item.slug === selectedPostId);
+    if (post?._id) setSelectedPostId(post._id);
+  }, [posts, selectedPostId]);
 
   async function save(type, payload) {
+    if (saveLock.current) return;
+    saveLock.current = true;
     if (saveStatusTimer.current) window.clearTimeout(saveStatusTimer.current);
     setSaveStatus({ state: 'saving', message: '' });
     try {
@@ -1033,17 +1141,55 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || 'Save failed');
+      if (type === 'content') {
+        for (const [index, sent] of payload.entries()) {
+          const stored = result.items?.[index];
+          if (sent.kind !== 'post' || !stored) continue;
+          const oldKey = sent._id || sent.slug;
+          const newKey = stored._id || stored.slug;
+          savedPosts.current.set(newKey, postSaveFingerprint(sent));
+          setPosts((current) => current.map((post) => {
+            if ((post._id || post.slug) !== oldKey && !(sent.id && post.id === sent.id)) return post;
+            const next = { ...post, _id: stored._id };
+            if (stored.previewToken) next.previewToken = stored.previewToken;
+            else delete next.previewToken;
+            return next;
+          }));
+          setSelectedPostId((current) => current === oldKey ? newKey : current);
+        }
+      }
       setSaveStatus({ state: 'saved', message: '' });
       saveStatusTimer.current = window.setTimeout(() => {
         setSaveStatus({ state: 'idle', message: '' });
       }, 2000);
     } catch (error) {
       setSaveStatus({ state: 'error', message: error.message });
+    } finally {
+      saveLock.current = false;
     }
   }
 
+  useEffect(() => {
+    autosaveAction.current = () => {
+      if (!mongoEnabled || activeTab !== 'posts' || saveLock.current || saveStatus.state === 'saving') return;
+      const post = posts.find((item) => (item._id || item.slug || item.wordpressId) === selectedPostId);
+      if (!post || savedPosts.current.get(post._id || post.slug) === postSaveFingerprint(post)) return;
+      void save('content', [{ ...post, kind: 'post' }]);
+    };
+  });
+
+  useEffect(() => {
+    const timer = window.setInterval(() => autosaveAction.current?.(), 10000);
+    return () => {
+      window.clearInterval(timer);
+      if (saveStatusTimer.current) window.clearTimeout(saveStatusTimer.current);
+    };
+  }, []);
+
   async function deleteContent(item) {
+    if (saveLock.current) return;
     if (!window.confirm(`Delete "${item.title?.en || item.slug}"? This cannot be undone.`)) return;
+    saveLock.current = true;
     setSaveStatus({ state: 'saving', message: 'Deleting...' });
     try {
       const response = await fetch('/api/cms', {
@@ -1073,6 +1219,8 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
       }, 2000);
     } catch (error) {
       setSaveStatus({ state: 'error', message: error.message });
+    } finally {
+      saveLock.current = false;
     }
   }
 
@@ -1133,6 +1281,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
   function createPost() {
     const suffix = Date.now();
     const post = {
+      id: crypto.randomUUID(),
       kind: 'post',
       slug: `new-post-${suffix}`,
       status: 'draft',
@@ -1246,6 +1395,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
 
   return (
     <section className="admin-app-shell">
+      <SaveToast status={saveStatus} />
       <aside className="admin-sidebar">
         <div>
           <div className="admin-logo">
@@ -1356,7 +1506,7 @@ export function AdminEditor({ initialData, mongoEnabled, session }) {
           <EntityEditor label="Page" items={pages} setItems={setPages} selectedId={selectedPageId} setSelectedId={setSelectedPageId} onSave={saveActiveSection} onCreate={createPage} onDelete={deleteContent} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['page']} richContent entity="page" media={media} />
         )}
         {activeTab === 'posts' && (
-          <EntityEditor label="Post" items={posts} setItems={setPosts} selectedId={selectedPostId} setSelectedId={setSelectedPostId} onSave={saveActiveSection} onCreate={createPost} onDelete={deleteContent} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['post']} richContent entity="post" categories={categories} media={media} />
+          <EntityEditor label="Post" saveLock={saveLock} items={posts} setItems={setPosts} selectedId={selectedPostId} setSelectedId={setSelectedPostId} onSave={saveActiveSection} onCreate={createPost} onDelete={deleteContent} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['post']} richContent entity="post" categories={categories} media={media} />
         )}
         {activeTab === 'categories' && (
           <EntityEditor label="Category" items={categories} setItems={setCategories} selectedId={selectedCategoryId} setSelectedId={setSelectedCategoryId} onSave={saveActiveSection} onCreate={createCategory} onDelete={deleteTaxonomy} onUploadMedia={uploadMedia} saveStatus={saveStatus} typeOptions={['category']} entity="category" categories={categories} media={media} />

@@ -6,6 +6,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BrandLogo } from '@/components/BrandLogo';
+import { PostPreviewBanner } from '@/components/PostPreviewBanner';
 
 function normalizePath(path = '/') {
   const pathOnly = path.split('?')[0] || '/';
@@ -28,6 +29,7 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
   const enabledLanguages = Object.entries(settings.languages || {}).filter(([, config]) => config.enabled);
   const currentLanguage = enabledLanguages.find(([code]) => code === lang)?.[1] || enabledLanguages[0]?.[1];
   const currentPath = normalizePath(pathname);
+  const isPreview = currentPath.startsWith('/preview/');
 
   function isActiveHref(href) {
     const hrefPath = normalizePath(href);
@@ -212,8 +214,11 @@ export function SiteHeaderShell({ settings, lang, menu, homeHref }) {
             );
           })}
         </nav>
+
+        {isPreview && <PostPreviewBanner />}
       </div>
       {/* <p className="tagline">{settings.description}</p> */}
+      
     </header>
   );
 }

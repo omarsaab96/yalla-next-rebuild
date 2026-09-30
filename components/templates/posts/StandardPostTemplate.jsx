@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { localizedHref } from '@/lib/cms';
 import { t } from '@/lib/i18n';
 
-export function StandardPostTemplate({ post, item }) {
+export function StandardPostTemplate({ post, item, isPreview = false }) {
   const { lang } = item;
   const kicker = getTemplateField(post.fields, 'kicker', item.lang, item.dateText);
   const headline = getTemplateField(post.fields, 'headline', item.lang, item.titleText);
@@ -15,7 +15,7 @@ export function StandardPostTemplate({ post, item }) {
       <header className="blogHeader">
         <div className="blogHead">
           <div className="container">
-            <div className="backbtn">
+            {!isPreview && <div className="backbtn">
               <svg
                 width="18"
                 height="18"
@@ -38,7 +38,7 @@ export function StandardPostTemplate({ post, item }) {
               >
                 {t('All posts', lang)}
               </Link>
-            </div>
+            </div>}
 
             <h1>{headline}</h1><br></br>
             <p className="section-kicker">{kicker}</p>

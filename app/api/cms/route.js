@@ -28,8 +28,8 @@ export async function POST(request) {
 
     if (body.type === 'content') {
       if (!Array.isArray(body.payload)) throw new Error('Content payload must be an array.');
-      await saveContentCollection(body.payload);
-      return NextResponse.json({ ok: true });
+      const items = await saveContentCollection(body.payload);
+      return NextResponse.json({ ok: true, items });
     }
 
     if (body.type === 'taxonomies') {

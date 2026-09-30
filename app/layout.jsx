@@ -28,6 +28,7 @@ export default async function RootLayout({ children }) {
   const headerStore = await headers();
   const currentPath = headerStore.get('x-current-path') || '';
   const isAdmin = currentPath === '/admin' || currentPath.startsWith('/admin/');
+  const isPreview = currentPath.startsWith('/preview/');
   const documentLang = isAdmin ? 'en' : lang;
   const dir = isAdmin ? 'ltr' : settings.languages?.[lang]?.direction || 'ltr';
 
@@ -42,7 +43,7 @@ export default async function RootLayout({ children }) {
         )}
         <main>{children}</main>
         {!isAdmin && <SiteFooter settings={settings} lang={lang} />}
-        {!isAdmin && (
+        {!isAdmin && !isPreview && (
           <Suspense fallback={null}>
             <AnalyticsTracker lang={lang} />
           </Suspense>
