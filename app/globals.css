@@ -1424,7 +1424,7 @@ figcaption {
   font-family: var(--font-serif);
 }
 
-.content b{
+.content b,.content strong{
   font-family: var(--font-serif);
 }
 
