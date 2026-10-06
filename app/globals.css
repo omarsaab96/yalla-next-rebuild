@@ -1421,6 +1421,11 @@ figcaption {
   color: var(--terracotta);
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  font-family: var(--font-serif);
+}
+
+.content b{
+  font-family: var(--font-serif);
 }
 
 .content a:hover {
