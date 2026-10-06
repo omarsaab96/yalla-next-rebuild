@@ -1045,14 +1045,9 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
                   <TemplateFieldsEditor item={selected} entity={entity} lang="ar" media={media} updateSelected={updateSelected} onUploadMedia={onUploadMedia} />
                 </>
               )}
-              {/* {entity === 'post' && (
-              <>
+              {entity === 'post' && (
                 <SeoPanel post={selected} updateSelected={updateSelected} media={media} onUploadMedia={onUploadMedia} />
-                <div className="assignment-grid">
-                  <TermPicker label="Categories" terms={categories} selectedIds={selected.categories || []} onChange={(ids) => updateSelected({ ...selected, categories: ids })} />
-                </div>
-              </>
-            )} */}
+              )}
             </div>
           </div>
         )}
