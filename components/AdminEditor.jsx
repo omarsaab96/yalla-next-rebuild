@@ -150,7 +150,7 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', entity = 'page', 
   }
 
   return (
-    <div className={`rich-editor ${entity}-template-${template}`}>
+    <div className={`rich-editor ${entity}-template-${template} admin-editor-${mode}`}>
       <div className="rich-editor-head">
         <span>{label}</span>
         <div className="editor-tabs">
