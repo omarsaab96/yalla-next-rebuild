@@ -3258,6 +3258,10 @@ figcaption {
   margin-top: -120px;
 }
 
+.post-template-standard.admin-editor-standard{
+  margin-top:0;
+}
+
 .page-template-standard .content {
   min-height: calc(100vh - 630px);
 }
