@@ -130,7 +130,7 @@ function PostPreview({ post, onSaved, saving, saveLock }) {
   </div>;
 }
 
-function RichHtmlEditor({ label, value, onChange, dir = 'ltr', template = 'standard', title = '' }) {
+function RichHtmlEditor({ label, value, onChange, dir = 'ltr', entity = 'page', template = 'standard', title = '' }) {
   const [mode, setMode] = useState('visual');
   const editorRef = useRef(null);
 
@@ -150,7 +150,7 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', template = 'stand
   }
 
   return (
-    <div className="rich-editor">
+    <div className={`rich-editor ${entity}-template-${template}`}>
       <div className="rich-editor-head">
         <span>{label}</span>
         <div className="editor-tabs">
@@ -166,8 +166,9 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', template = 'stand
         <>
           <div className="editor-toolbar" aria-label={`${label} toolbar`}>
             <button type="button" onClick={() => setBlock('P')}>P</button>
-            <button type="button" onClick={() => setBlock('H2')}>H2</button>
-            <button type="button" onClick={() => setBlock('H3')}>H3</button>
+            {[1, 2, 3, 4, 5, 6].map((level) => (
+              <button key={level} type="button" aria-label={`Heading ${level}`} onMouseDown={(event) => event.preventDefault()} onClick={() => setBlock(`H${level}`)}>H{level}</button>
+            ))}
             <button type="button" onClick={() => command('bold')}><strong>B</strong></button>
             <button type="button" onClick={() => command('italic')}><em>I</em></button>
             <button type="button" onClick={() => command('insertUnorderedList')}>UL</button>
@@ -180,6 +181,7 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', template = 'stand
             className="visual-editor content"
             contentEditable
             dir={dir}
+            lang={dir === 'rtl' ? 'ar' : 'en'}
             dangerouslySetInnerHTML={{ __html: value || '' }}
             onBlur={(event) => onChange(event.currentTarget.innerHTML)}
             onInput={(event) => onChange(event.currentTarget.innerHTML)}
@@ -801,7 +803,8 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUpl
               label={fieldLabel}
               value={getValue(field)}
               dir={lang === 'ar' ? 'rtl' : 'ltr'}
-              template={item.template || 'standard'}
+                entity={entity}
+                template={entity === 'page' ? getEffectivePageTemplate(item) : item.template || 'standard'}
               title={item.title?.[lang] || item.title?.en || ''}
               onChange={(value) => setValue(field, value)}
             />

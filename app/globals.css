@@ -2002,8 +2002,8 @@ figcaption {
   grid-column: span 2;
 }
 
-.admin-panel h2,
-.admin-panel h3 {
+.admin-panel h2:not(.content *),
+.admin-panel h3:not(.content *) {
   margin-top: 0;
 }
 
