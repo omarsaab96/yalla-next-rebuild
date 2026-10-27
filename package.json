@@ -19,5 +19,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "yoastseo": "^3.6.0"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
   }
 }

@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { BrandLogo } from '@/components/BrandLogo';
+import { createSeoWorker } from '@/lib/seoWorker';
 import { getEffectivePageTemplate, getSchema, PAGE_TEMPLATE_OPTIONS, POST_TEMPLATE_OPTIONS } from '@/lib/templateSchemas';
 import { resolveSeoTemplate } from '@/lib/seoVariables';
 import { categoryKey, categoryParent, compareCategories, reorderCategory } from '@/lib/categoryOrder';
@@ -130,14 +131,72 @@ function PostPreview({ post, onSaved, saving, saveLock }) {
   </div>;
 }
 
-function RichHtmlEditor({ label, value, onChange, dir = 'ltr', entity = 'page', template = 'standard', title = '' }) {
+function RichHtmlEditor({ label, value, onChange, media = [], onUploadMedia, dir = 'ltr', entity = 'page', template = 'standard', title = '' }) {
   const [mode, setMode] = useState('visual');
   const editorRef = useRef(null);
+  const selectionRef = useRef(null);
+  const syncedEditorRef = useRef(null);
+  const lastValueRef = useRef(value || '');
+
+  // Let the browser own the editable DOM while typing. Replacing innerHTML on
+  // each React render resets the caret and invalidates saved image selections.
+  useLayoutEffect(() => {
+    const editor = editorRef.current;
+    if (editor) {
+      const html = value || '';
+      if (syncedEditorRef.current !== editor || lastValueRef.current !== html) {
+        if (editor.innerHTML !== html) {
+          editor.innerHTML = html;
+          selectionRef.current = null;
+        }
+        syncedEditorRef.current = editor;
+        lastValueRef.current = html;
+      }
+    }
+  }, [value, mode]);
+
+  function publishChange() {
+    if (!editorRef.current) return;
+    // Mark this value before React handles it. Its echo is not an external edit
+    // and must never replace the DOM, selection, scroll position, or undo stack.
+    const html = editorRef.current.innerHTML;
+    lastValueRef.current = html;
+    onChange(html);
+  }
+
+  function rememberSelection() {
+    const selection = window.getSelection();
+    if (selection?.rangeCount && editorRef.current?.contains(selection.getRangeAt(0).commonAncestorContainer)) {
+      selectionRef.current = selection.getRangeAt(0).cloneRange();
+    }
+  }
+
+  function insertImage(path, item) {
+    const editor = editorRef.current;
+    if (!editor || !path) return;
+    editor.focus();
+    const selection = window.getSelection();
+    const savedRange = selectionRef.current;
+    const range = savedRange && editor.contains(savedRange.commonAncestorContainer)
+      ? savedRange : document.createRange();
+    if (range !== savedRange) {
+      range.selectNodeContents(editor);
+      range.collapse(false);
+    }
+    selection.removeAllRanges();
+    selection.addRange(range);
+    const image = document.createElement('img');
+    image.setAttribute('src', path);
+    image.setAttribute('alt', getLocalizedValue(item?.alt, dir === 'rtl' ? 'ar' : 'en'));
+    document.execCommand('insertHTML', false, image.outerHTML);
+    rememberSelection();
+    publishChange();
+  }
 
   function command(name, argument = null) {
     editorRef.current?.focus();
     document.execCommand(name, false, argument);
-    onChange(editorRef.current?.innerHTML || '');
+    publishChange();
   }
 
   function setBlock(tag) {
@@ -174,6 +233,7 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', entity = 'page', 
             <button type="button" onClick={() => command('insertUnorderedList')}>UL</button>
             <button type="button" onClick={() => command('insertOrderedList')}>OL</button>
             <button type="button" onClick={setLink}>Link</button>
+            <MediaPicker toolbar media={media} onUploadMedia={onUploadMedia} onOpen={rememberSelection} onSelect={insertImage} />
             <button type="button" onClick={() => command('removeFormat')}>Clear</button>
           </div>
           <div
@@ -182,9 +242,13 @@ function RichHtmlEditor({ label, value, onChange, dir = 'ltr', entity = 'page', 
             contentEditable
             dir={dir}
             lang={dir === 'rtl' ? 'ar' : 'en'}
-            dangerouslySetInnerHTML={{ __html: value || '' }}
-            onBlur={(event) => onChange(event.currentTarget.innerHTML)}
-            onInput={(event) => onChange(event.currentTarget.innerHTML)}
+            onMouseUp={rememberSelection}
+            onKeyUp={rememberSelection}
+            onBlur={() => {
+              rememberSelection();
+              publishChange();
+            }}
+            onInput={publishChange}
             suppressContentEditableWarning
           />
         </>
@@ -305,10 +369,6 @@ function parseSeoTemplateParts(template = '') {
     }));
 }
 
-function unwrapYoastExport(value) {
-  return value?.default?.default || value?.default || value;
-}
-
 function extractImagesFromHtml(html) {
   if (typeof window === 'undefined') return [];
   const node = document.createElement('div');
@@ -387,60 +447,34 @@ function SeoPanel({ post, updateSelected, media, onUploadMedia }) {
   }
 
   useEffect(() => {
-    let active = true;
-    async function analyze() {
+    let worker;
+    const timer = window.setTimeout(() => {
       setAnalysis((current) => ({ ...current, loading: true, error: '' }));
       try {
-        const yoast = await import('yoastseo');
-        const researcherModule = lang === 'ar'
-          ? await import('yoastseo/build/languageProcessing/languages/ar/Researcher.js')
-          : await import('yoastseo/build/languageProcessing/languages/en/Researcher.js');
-        const Researcher = unwrapYoastExport(researcherModule);
-        const yoastApi = unwrapYoastExport(yoast);
-        const Paper = unwrapYoastExport(yoast.Paper || yoastApi.Paper);
-        const SeoAssessor = unwrapYoastExport(yoast.SeoAssessor || yoastApi.SeoAssessor);
-        const ContentAssessor = unwrapYoastExport(yoast.ContentAssessor || yoastApi.ContentAssessor);
-        const paper = new Paper(body || '', {
-          keyword: keyphrase,
-          synonyms,
-          title: seoTitle,
-          titleWidth: measureSeoTitleWidth(seoTitle),
-          textTitle: title,
-          description: seoDescription,
-          slug: post.slug || ''
-        });
-        const researcher = new Researcher(paper);
-        const assessor = new SeoAssessor(researcher);
-        assessor.assess(paper);
-        const readabilityAssessor = new ContentAssessor(researcher);
-        readabilityAssessor.assess(paper);
-        const score = assessor.calculateOverallScore();
-        const readabilityScore = readabilityAssessor.calculateOverallScore();
-        const results = assessor.results
-          .map((result) => ({
-            score: result.getScore?.() ?? 0,
-            text: stripAssessmentText(result.getText?.() || '')
-          }))
-          .filter((result) => result.text)
-          .sort((a, b) => a.score - b.score);
-        const readabilityResults = readabilityAssessor.results
-          .map((result) => ({
-            score: result.getScore?.() ?? 0,
-            text: stripAssessmentText(result.getText?.() || '')
-          }))
-          .filter((result) => result.text)
-          .sort((a, b) => a.score - b.score);
-        if (active) setAnalysis({ loading: false, score, results, readabilityScore, readabilityResults, error: '' });
+        worker = createSeoWorker();
+        worker.onmessage = ({ data }) => {
+          if (data.error) {
+            setAnalysis({ loading: false, score: 0, results: [], readabilityScore: 0, readabilityResults: [], error: data.error });
+          } else {
+            const cleanResults = (results) => results.map((result) => ({ ...result, text: stripAssessmentText(result.text) }));
+            setAnalysis({ ...data, results: cleanResults(data.results), readabilityResults: cleanResults(data.readabilityResults), loading: false, error: '' });
+          }
+          worker.terminate();
+        };
+        worker.onerror = () => {
+          setAnalysis({ loading: false, score: 0, results: [], readabilityScore: 0, readabilityResults: [], error: 'Could not analyze SEO.' });
+          worker.terminate();
+        };
+        worker.postMessage({ body, lang, keyword: keyphrase, synonyms, title: seoTitle, titleWidth: measureSeoTitleWidth(seoTitle), textTitle: title, description: seoDescription, slug: post.slug || '' });
       } catch (error) {
-        if (active) setAnalysis({ loading: false, score: 0, results: [], readabilityScore: 0, readabilityResults: [], error: error.message });
+        setAnalysis({ loading: false, score: 0, results: [], readabilityScore: 0, readabilityResults: [], error: error.message });
       }
-    }
-
-    analyze();
+    }, 700);
     return () => {
-      active = false;
+      window.clearTimeout(timer);
+      worker?.terminate();
     };
-  }, [body, keyphrase, lang, post.slug, seoDescription, seoTitle]);
+  }, [body, keyphrase, synonyms, lang, post.slug, seoDescription, seoTitle, title]);
 
   return (
     <section className="seo-panel">
@@ -693,7 +727,7 @@ function MediaUploadDropzone({ onUpload, compact = false }) {
   );
 }
 
-function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured image' }) {
+function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured image', toolbar = false, onOpen }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const filteredMedia = media
@@ -704,7 +738,11 @@ function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured 
     });
 
   return (
-    <div className="media-picker-field">
+    <div className={toolbar ? undefined : 'media-picker-field'}>
+      {toolbar ? <button type="button" title="Insert image from gallery" onMouseDown={(event) => event.preventDefault()} onClick={() => {
+        onOpen?.();
+        setOpen(true);
+      }}>Insert image</button> : <>
       <span>{label}</span>
       <div className="media-picker-current">
         {value ? <img src={value} alt="" /> : <div className="media-placeholder">No image</div>}
@@ -714,6 +752,7 @@ function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured 
           {value && <button type="button" className="secondary-button" onClick={() => onSelect('')}>Remove</button>}
         </div>
       </div>
+      </>}
 
       {open && (
         <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Select media">
@@ -730,7 +769,7 @@ function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured 
                   const uploaded = await onUploadMedia(files);
                   const firstPath = uploaded?.[0]?.localPath;
                   if (firstPath) {
-                    onSelect(firstPath);
+                    onSelect(firstPath, uploaded[0]);
                     setOpen(false);
                   }
                 }}
@@ -743,7 +782,7 @@ function MediaPicker({ value, media, onSelect, onUploadMedia, label = 'Featured 
                   type="button"
                   className={item.localPath === value ? 'active' : ''}
                   onClick={() => {
-                    onSelect(item.localPath || '');
+                    onSelect(item.localPath || '', item);
                     setOpen(false);
                   }}
                 >
@@ -775,11 +814,13 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUpl
   }
 
   function setValue(field, value) {
-    const fields = { ...(item.fields || {}) };
-    fields[field.name] = field.localized
-      ? { ...(fields[field.name] || {}), [lang]: value }
-      : value;
-    updateSelected({ ...item, fields });
+    updateSelected((current) => {
+      const fields = { ...(current.fields || {}) };
+      fields[field.name] = field.localized
+        ? { ...(fields[field.name] || {}), [lang]: value }
+        : value;
+      return { ...current, fields };
+    });
   }
 
   return (
@@ -802,6 +843,8 @@ function TemplateFieldsEditor({ item, entity, lang, media, updateSelected, onUpl
               key={`${field.name}-${lang}`}
               label={fieldLabel}
               value={getValue(field)}
+              media={media}
+              onUploadMedia={onUploadMedia}
               dir={lang === 'ar' ? 'rtl' : 'ltr'}
                 entity={entity}
                 template={entity === 'page' ? getEffectivePageTemplate(item) : item.template || 'standard'}
@@ -870,8 +913,12 @@ function EntityEditor({ label, items, setItems, selectedId, setSelectedId, saveS
   }
 
   function updateSelected(nextItem) {
-    setItems((current) => current.map((item) => ((item._id || item.slug || item.wordpressId) === selectedId ? nextItem : item)));
-    setSelectedId(nextItem._id || nextItem.slug || nextItem.wordpressId);
+    setItems((current) => current.map((item) => ((item._id || item.slug || item.wordpressId) === selectedId
+      ? (typeof nextItem === 'function' ? nextItem(item) : nextItem)
+      : item)));
+    if (typeof nextItem !== 'function') {
+      setSelectedId(nextItem._id || nextItem.slug || nextItem.wordpressId);
+    }
   }
 
   function renderListItem(node, depth = 0) {
